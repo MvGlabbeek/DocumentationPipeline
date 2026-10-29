@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{#- Donkergroene titelband met kruimelpad, naar het voorbeeld van energiedatawijzer.nl -#}
+{% block hero %}
+<div class="edw-band">
+  <div class="edw-band__inner md-grid">
+    <nav class="edw-kruimels" aria-label="Kruimelpad">
+      {%- if page.is_homepage %}
+        <span class="hier">Home</span>
+      {%- else %}
+        <a href="{{ nav.homepage.url | url }}">Home</a>
+        {%- for a in page.ancestors | reverse %}
+          <span class="sep">›</span>
+          {%- set eerste = a.children | first %}
+          {%- if eerste and eerste.is_page and eerste.url %}
+            <a href="{{ eerste.url | url }}">{{ a.title }}</a>
+          {%- else %}
+            <span>{{ a.title }}</span>
+          {%- endif %}
+        {%- endfor %}
+        <span class="sep">›</span><span class="hier">{{ page.title }}</span>
+      {%- endif %}
+    </nav>
+    <h1 class="edw-band__titel">{% if page.is_homepage %}{{ config.site_name }}{% else %}{{ page.title }}{% endif %}</h1>
+    {%- if page.is_homepage and config.site_description %}
+    <p class="edw-band__sub">{{ config.site_description }}</p>
+    {%- endif %}
+  </div>
+</div>
+{% endblock %}

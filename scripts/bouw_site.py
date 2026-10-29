@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gemeen import ROOT, instellingen  # noqa: E402
+from gemeen import ROOT, footer_html, instellingen, kopieer_huisstijl, top_html  # noqa: E402
 
 SITE = ROOT / "_site"
 KAART = {
@@ -37,14 +37,24 @@ def main() -> None:
     if "respec" in paden:
         subprocess.run([py, "scripts/build_respec.py", str(SITE / "respec")], cwd=ROOT, check=True)
 
+    logo = kopieer_huisstijl(SITE)
     sjabloon = (ROOT / "site_root" / "index.template.html").read_text(encoding="utf-8")
-    kaarten = "\n".join(f'<a class="kaart" href="{KAART[p][0]}"><strong>{KAART[p][1]}</strong><br>{KAART[p][2]}</a>'
-                        for p in paden)
+    kaarten = "\n".join(
+        f'<a class="keuze edw-kaart" href="{KAART[p][0]}"><span><strong>{KAART[p][1]}</strong>'
+        f'<span class="uitleg">{KAART[p][2]}</span></span><span class="edw-pijl" aria-hidden="true"></span></a>'
+        for p in paden)
+    titel = cfg.get("titel", "")
+    *kop, laatste = titel.split(" ") if titel else [""]
+    titel_html = html.escape(" ".join(kop)) + (" " if kop else "") + f"<em>{html.escape(laatste)}</em>"
+    links = [(KAART[p][1], KAART[p][0]) for p in paden]
+    repo = cfg.get("repo")
     (SITE / "index.html").write_text(
-        sjabloon.replace("{{titel}}", html.escape(cfg.get("titel", "")))
+        sjabloon.replace("{{titel}}", html.escape(titel))
+        .replace("{{titel_html}}", titel_html)
         .replace("{{ondertitel}}", html.escape(cfg.get("ondertitel", "")))
         .replace("{{status}}", html.escape(cfg.get("status", "")))
-        .replace("{{organisatie}}", html.escape(cfg.get("organisatie", "")))
+        .replace("{{bovenbalk}}", top_html(cfg, logo, "./", links))
+        .replace("{{footer}}", footer_html(cfg, links + ([("Broncode", f"https://github.com/{repo}")] if repo else [])))
         .replace("{{kaarten}}", kaarten), encoding="utf-8")
     print(f"Site gebouwd in {SITE} met: {', '.join(paden)}")
 

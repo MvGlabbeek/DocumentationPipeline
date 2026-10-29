@@ -4,24 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{titel}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="css/huisstijl.css">
 <style>
-  :root { --hoofd: #00857c; --tekst: #1a1a1a; --achter: #fff; --rand: #c8d2d2; }
-  @media (prefers-color-scheme: dark) { :root { --hoofd: #4fc3b8; --tekst: #e8eeee; --achter: #121a1a; --rand: #2e3d3d; } }
-  body { font-family: Arial, system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1rem;
-         line-height: 1.5; color: var(--tekst); background: var(--achter); }
-  h1 { color: var(--hoofd); margin-bottom: .2rem; }
-  .status { border-left: 4px solid #e0a800; padding: .4rem .8rem; font-size: .9rem; }
-  a.kaart { display: block; border: 1px solid var(--rand); border-radius: 6px; padding: 1rem 1.2rem;
-            margin: 1rem 0; text-decoration: none; color: inherit; }
-  a.kaart:hover { border-color: var(--hoofd); }
-  a.kaart strong { color: var(--hoofd); }
+  body { margin: 0; font-family: var(--edw-font); background: var(--edw-mint); color: var(--edw-tekst); }
+  .keuzes { max-width: 1200px; margin: -48px auto 0; padding: 0 24px; position: relative;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+  a.keuze { display: flex; align-items: center; justify-content: space-between; gap: 20px;
+            text-decoration: none; color: var(--edw-tekst); padding: 28px 28px 28px 34px; }
+  a.keuze strong { display: block; font-size: 20px; color: var(--edw-groen); margin-bottom: 6px; }
+  a.keuze span.uitleg { font-size: 15px; color: var(--edw-tekst-zacht); }
+  .toelichting { max-width: 1200px; margin: 40px auto 0; padding: 0 24px; }
+  .toelichting .edw-kaart { font-size: 16px; line-height: 1.6; }
+  .toelichting h2 { color: var(--edw-groen); font-size: 26px; margin: 0 0 10px; }
+  .label { font-size: 13px; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: var(--edw-groen); }
 </style>
 </head>
 <body>
-<h1>{{titel}}</h1>
-<p>{{ondertitel}} · {{organisatie}}</p>
-<p class="status">{{status}}</p>
-<p>Dezelfde inhoud, gepubliceerd langs twee paden. Vergelijk ze en laat weten welke de voorkeur heeft.</p>
+{{bovenbalk}}
+<div class="edw-band">
+  <div class="edw-band__inner">
+    <nav class="edw-kruimels" aria-label="Kruimelpad"><span class="hier">Home</span></nav>
+    <h1 class="edw-band__titel">{{titel_html}}</h1>
+    <p class="edw-band__sub">{{ondertitel}}</p>
+  </div>
+</div>
+<div class="keuzes">
 {{kaarten}}
+</div>
+<div class="toelichting">
+  <div class="edw-kaart">
+    <div class="label">Pilot</div>
+    <h2>Twee weergaven van dezelfde inhoud</h2>
+    <p>{{status}} De inhoud komt uit Confluence; diagrammen en tabellen zijn genummerde bijlagen uit BizzDesign Horizzon.
+      Vergelijk beide weergaven en laat weten welke de voorkeur heeft.</p>
+  </div>
+</div>
+{{footer}}
 </body>
 </html>

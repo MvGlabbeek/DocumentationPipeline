@@ -1,0 +1,107 @@
+/* Huisstijl naar het voorbeeld van energiedatawijzer.nl.
+   Gedeeld door de startpagina, MkDocs en ReSpec. Kleuren en maten staan alleen hier. */
+
+:root {
+  --edw-groen: #004d3d;          /* hoofdkleur: koppen, links, footer */
+  --edw-groen-80: #407a6e;
+  --edw-groen-donker: #003a2e;
+  --edw-accent: #22b472;         /* accent: knoppen, actieve navigatie */
+  --edw-accent-licht: #35de81;   /* accent op donkere achtergrond */
+  --edw-mint: #f1fbf3;           /* paginaachtergrond */
+  --edw-grijs: #f6f8f8;
+  --edw-lijn: #e5eded;
+  --edw-tekst: #000000;
+  --edw-tekst-zacht: #455454;
+  --edw-radius: 30px;
+  --edw-schaduw: 3px 3px 25px rgba(0, 0, 0, 0.09);
+  --edw-font: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ---------- bovenbalk (startpagina en ReSpec; MkDocs gebruikt zijn eigen header) ---------- */
+.edw-top {
+  background: #fff;
+  border-bottom: 1px solid var(--edw-lijn);
+  font-family: var(--edw-font);
+}
+.edw-top__inner {
+  max-width: 1200px; margin: 0 auto; padding: 18px 24px;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+}
+.edw-merk { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--edw-groen); }
+.edw-merk img { height: 44px; width: auto; display: block; }
+.edw-merk__tekst { display: flex; flex-direction: column; line-height: 1.05; }
+.edw-merk__org { font-size: 13px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--edw-accent); }
+.edw-merk__titel { font-size: 22px; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; color: var(--edw-groen); }
+.edw-top__nav { display: flex; gap: 22px; flex-wrap: wrap; }
+.edw-top__nav a { color: var(--edw-groen); font-weight: 700; font-size: 16px; text-decoration: none; }
+.edw-top__nav a:hover { color: var(--edw-accent); }
+
+/* ---------- donkergroene titelband met stippenpatroon ---------- */
+.edw-band {
+  position: relative; overflow: hidden; color: #fff;
+  background: linear-gradient(105deg, #0b3a30 0%, var(--edw-groen) 45%, #0a6b4f 100%);
+  font-family: var(--edw-font);
+}
+.edw-band::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(rgba(53, 222, 129, .45) 1.3px, transparent 1.8px);
+  background-size: 15px 15px;
+  -webkit-mask-image: radial-gradient(ellipse 55% 90% at 30% 50%, #000 0%, transparent 70%);
+          mask-image: radial-gradient(ellipse 55% 90% at 30% 50%, #000 0%, transparent 70%);
+}
+.edw-band__inner { position: relative; max-width: 1200px; margin: 0 auto; padding: 0 24px 72px; }
+.edw-band__titel { color: #fff; font-size: 40px; line-height: 1.15; font-weight: 700; margin: 36px 0 10px; }
+.edw-band__titel em { font-style: normal; color: var(--edw-accent-licht); }
+.edw-band__sub { color: #fff; font-size: 18px; font-weight: 500; margin: 0; max-width: 46rem; }
+
+/* kruimelpad: wit lipje linksboven in de band */
+.edw-kruimels {
+  display: inline-flex; flex-wrap: wrap; gap: 6px; align-items: center;
+  background: #fff; color: var(--edw-groen); font-size: 13px;
+  padding: 7px 16px; border-radius: 0 0 18px 18px;
+}
+.edw-kruimels a { color: var(--edw-groen); text-decoration: none; }
+.edw-kruimels a:hover { color: var(--edw-accent); }
+.edw-kruimels .sep { opacity: .6; }
+.edw-kruimels .hier { font-weight: 700; }
+
+/* ---------- witte kaarten ---------- */
+.edw-kaart {
+  background: #fff; border-radius: var(--edw-radius); box-shadow: var(--edw-schaduw);
+  padding: 32px 40px;
+}
+
+/* ronde groene pijlknop, zoals op energiedatawijzer.nl */
+.edw-pijl {
+  flex: none; width: 38px; height: 38px; border-radius: 50%;
+  background: var(--edw-groen); display: inline-grid; place-items: center;
+  transition: background .15s;
+}
+.edw-pijl::after {
+  content: ""; width: 9px; height: 9px; margin-left: -3px;
+  border-top: 2px dotted var(--edw-accent-licht); border-right: 2px dotted var(--edw-accent-licht);
+  transform: rotate(45deg);
+}
+a:hover > .edw-pijl { background: var(--edw-accent); }
+
+/* ---------- footer ---------- */
+.edw-footer { background: var(--edw-groen); color: #fff; font-family: var(--edw-font); }
+.edw-footer__inner {
+  max-width: 1200px; margin: 0 auto; padding: 40px 24px;
+  display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; font-size: 15px;
+}
+.edw-footer a { color: #fff; }
+.edw-footer a:hover { color: var(--edw-accent-licht); }
+.edw-footer__merk { font-weight: 900; letter-spacing: .06em; text-transform: uppercase; font-size: 18px; }
+
+/* ---------- bijlagen ---------- */
+.bijlage { margin: 1.4em 0; padding: 1em; border: 1px solid var(--edw-lijn); border-radius: 20px; background: #fff; }
+.bijlage img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.bijlage-onderschrift { font-size: .85em; margin: .7em 0 0; color: var(--edw-tekst-zacht); }
+.bijlage-onderschrift strong { color: var(--edw-groen); }
+.bijlage-tabelwrap { overflow-x: auto; }
+.bijlage-tabel { border-collapse: collapse; font-size: .85em; width: 100%; }
+.bijlage-tabel th, .bijlage-tabel td { border-bottom: 1px solid var(--edw-lijn); padding: .55em .6em; vertical-align: top; text-align: left; }
+.bijlage-tabel th { background: var(--edw-grijs); color: var(--edw-groen); font-weight: 700; }
+.bijlage-ontbreekt { padding: .9em 1.1em; background: var(--edw-mint); border-left: 4px solid var(--edw-accent); border-radius: 0 12px 12px 0; font-size: .9em; }
+.bijlage-register td, .bijlage-register th { font-size: .85em; }

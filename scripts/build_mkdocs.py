@@ -15,7 +15,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gemeen import (CSS, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html,  # noqa: E402
+from gemeen import (CSS, kopieer_huisstijl, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html,  # noqa: E402
                     gebruik, instellingen, lees_register, paginaboom)
 
 DOCS = ROOT / "_build" / "mkdocs_docs"
@@ -101,7 +101,7 @@ def main() -> None:
     verborgen = niet_publieke_paden()
     shutil.rmtree(DOCS, ignore_errors=True)
     (DOCS / "bijlagen").mkdir(parents=True)
-    (DOCS / "css").mkdir()
+    logo = kopieer_huisstijl(DOCS)
 
     for p in alle(paginas):
         (DOCS / p.pad).parent.mkdir(parents=True, exist_ok=True)
@@ -118,7 +118,6 @@ def main() -> None:
         if f and f.suffix != ".md":         # .md-tabellen staan al in de pagina; MkDocs zou er een pagina van maken
             shutil.copy(f, DOCS / "bijlagen" / doelnaam(n, f))
     (DOCS / OVERZICHT).write_text(overzicht(reg, gebruikt), encoding="utf-8")
-    (DOCS / "css" / "bijlagen.css").write_text(CSS, encoding="utf-8")
 
     basis = yaml.safe_load((ROOT / "mkdocs.base.yml").read_text(encoding="utf-8"))
     repo = cfg.get("repo", "")
@@ -129,13 +128,19 @@ def main() -> None:
         "site_author": ", ".join(r["naam"] for r in cfg.get("redacteuren", [])),
         "docs_dir": "_build/mkdocs_docs",
         "use_directory_urls": False,
-        "nav": [{"Start": "index.md"}] + nav_van(paginas) + [{"Overzicht bijlagen": OVERZICHT}],
+        "nav": [{"Home": "index.md"}] + nav_van(paginas) + [{"Overzicht bijlagen": OVERZICHT}],
     })
     if repo:
         basis.setdefault("repo_url", f"https://github.com/{repo}")
         basis.setdefault("repo_name", repo)
         basis.setdefault("site_url", f"https://{eigenaar.lower()}.github.io/{naam}/mkdocs/")
-    basis.setdefault("extra_css", []).append("css/bijlagen.css")
+    basis["extra_css"] = ["css/huisstijl.css", "css/mkdocs.css"] + basis.get("extra_css", [])
+    if logo:
+        basis["theme"]["logo"] = logo
+        basis["theme"]["favicon"] = logo
+    import datetime
+    basis["copyright"] = (f"© {datetime.date.today().year} {cfg.get('organisatie', '')} · "
+                          f"{cfg.get('status', '')}")
     (ROOT / "mkdocs.yml").write_text(
         "# Gegenereerd door scripts/build_mkdocs.py; wijzig mkdocs.base.yml of publicatie.yml.\n"
         + yaml.safe_dump(basis, allow_unicode=True, sort_keys=False), encoding="utf-8")

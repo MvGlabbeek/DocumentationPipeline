@@ -21,7 +21,7 @@ import markdown
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gemeen import (CSS, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html,  # noqa: E402
+from gemeen import (CSS, footer_html, kopieer_huisstijl, top_html, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html,  # noqa: E402
                     gebruik, instellingen, lees_register, paginaboom)
 
 RE_LINK = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s#]*)(#[^)\s]*)?\)")
@@ -114,6 +114,7 @@ def main() -> None:
         sleutels[start.pad.as_posix()] = "abstract"
     shutil.rmtree(uit, ignore_errors=True)
     (uit / "bijlagen").mkdir(parents=True)
+    logo = kopieer_huisstijl(uit)
 
     alle_p = ([start] if start else []) + paginas
     gebruikt = gebruik(alle_p)
@@ -152,7 +153,10 @@ def main() -> None:
     pagina = (sjabloon
               .replace("{{titel}}", html.escape(cfg.get("titel", "")))
               .replace("{{config}}", json.dumps(config, ensure_ascii=False, indent=2))
-              .replace("{{css}}", CSS)
+              .replace("{{bovenbalk}}", top_html(cfg, logo, "../", [
+                  ("Home", "../"), ("Websiteweergave (MkDocs)", "../mkdocs/"), ("Overzicht bijlagen", "#overzicht-bijlagen")]))
+              .replace("{{footer}}", footer_html(cfg, [("Home", "../"), ("MkDocs-weergave", "../mkdocs/")]
+                                                + ([("Broncode", f"https://github.com/{repo}")] if repo else [])))
               .replace("{{samenvatting}}", samenvatting)
               .replace("{{status}}", html.escape(cfg.get("status", "")))
               .replace("{{secties}}", hoofdstukken + "\n" + "\n".join(sectie(p, reg, sleutels) for p in paginas))

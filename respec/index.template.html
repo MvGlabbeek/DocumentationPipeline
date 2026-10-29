@@ -4,18 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{titel}}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap">
   <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
   <script class="remove">
     var respecConfig = {{config}};
+    // Huisstijl: bovenbalk vóór het titelblok van ReSpec zetten, eigen stylesheets als laatste laden.
+    respecConfig.postProcess = [function () {
+      var top = document.querySelector(".edw-top");
+      if (top) document.body.insertBefore(top, document.body.firstChild);
+      // Nederlandse labels voor de onderdelen die ReSpec in het Engels laat staan.
+      var nl = {"More details about this document": "Meer details over dit document",
+                "History:": "Geschiedenis:", "Commit history": "Wijzigingsgeschiedenis",
+                "pull requests": "pull requests", "new issue": "nieuwe melding", "open issues": "open meldingen"};
+      document.querySelectorAll(".head summary, .head dt, .head dd a").forEach(function (el) {
+        var t = el.textContent.trim();
+        if (nl[t]) el.textContent = nl[t];
+      });
+      ["css/huisstijl.css", "css/respec.css"].forEach(function (href) {
+        var l = document.createElement("link");
+        l.rel = "stylesheet"; l.href = href;
+        document.head.appendChild(l);
+      });
+    }];
   </script>
-  <style>
-    {{css}}
-    table { border-collapse: collapse; }
-    th, td { border: 1px solid #c8d2d2; padding: 0.3em 0.5em; vertical-align: top; }
-    blockquote { border-left: 4px solid #00857c; margin-left: 0; padding-left: 1em; }
-  </style>
 </head>
 <body>
+{{bovenbalk}}
   <section id="abstract">
 {{samenvatting}}
   </section>
@@ -28,5 +43,6 @@
   </section>
 {{secties}}
 {{bijlagen}}
+{{footer}}
 </body>
 </html>

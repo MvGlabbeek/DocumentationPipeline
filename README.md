@@ -95,6 +95,14 @@ Tip: zet het bijlagenummer ook in de naam of een eigenschap van de view in BizzD
 
 > De exportmogelijkheden (SVG, PNG, Excel) en de menu-namen verschillen per Horizzon-versie en licentie; controleer ze in jullie omgeving.
 
+## Uiterlijk
+
+Beide weergaven en de startpagina volgen de stijl van [energiedatawijzer.nl](https://energiedatawijzer.nl/): Roboto, donkergroen `#004d3d` met accentgroen `#22b472`, een donkergroene titelband met stippenpatroon en kruimelpad, inhoud in witte kaarten met ronde hoeken op een mintgroene achtergrond, en een donkergroene footer.
+
+- Kleuren, lettertype en gedeelde onderdelen: `stijl/huisstijl.css` (alle kleuren staan bovenin als variabelen).
+- Aanvullingen per pad: `stijl/mkdocs.css` (met de titelband in `overrides/main.html`) en `stijl/respec.css`.
+- Logo: zet een bestand in de repository en vul `logo:` in `publicatie.yml`. Zonder logo verschijnt een woordmerk.
+
 ## Eenmalige instellingen
 
 1. *Settings → Pages → Build and deployment → Source:* **GitHub Actions**.
@@ -133,6 +141,8 @@ bron/bijlagen/            B0001 ….* uit BizzDesign en bijlagen.yml (optioneel 
 publicatie.yml            titel, redacteuren, status, te bouwen paden
 mkdocs.base.yml           basisinstellingen MkDocs
 respec/                   ReSpec-sjabloon
+stijl/                    huisstijl (CSS) voor startpagina, MkDocs en ReSpec
+overrides/                MkDocs-sjabloon met titelband en kruimelpad
 site_root/                sjabloon startpagina
 scripts/                  inname.py, build_mkdocs.py, build_respec.py, bouw_site.py, gemeen.py
 .github/workflows/        publiceer.yml

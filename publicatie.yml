@@ -12,6 +12,10 @@ versie: "0.1"
 status: Pilot. Concept voor interne beoordeling; geen vastgestelde publicatie.
 repo: MvGlabbeek/DocumentationPipeline
 
+# Optioneel: logo linksboven (pad in de repository, bijv. stijl/logo.svg). Zonder logo
+# verschijnt een woordmerk van organisatie en titel. Kleuren en lettertype: stijl/huisstijl.css.
+logo:
+
 # Welke publicatiepaden worden gebouwd. Na het besluit één van beide weghalen.
 paden:
   - mkdocs

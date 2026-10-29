@@ -7,7 +7,7 @@ name: Publiceer site
 on:
   push:
     branches: [main]
-    paths: ["bron/**", "scripts/**", "respec/**", "site_root/**",
+    paths: ["bron/**", "scripts/**", "respec/**", "site_root/**", "stijl/**", "overrides/**",
             "mkdocs.base.yml", "publicatie.yml", "requirements.txt", ".github/workflows/publiceer.yml"]
   workflow_dispatch:
 

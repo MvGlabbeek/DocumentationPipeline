@@ -254,14 +254,52 @@ def gebruik(paginas: list[Pagina]) -> dict[str, list[Pagina]]:
     return res
 
 
-CSS = """
-.bijlage { margin: 1.2em 0; padding: .8em; border: 1px solid #d0d7d7; border-radius: 6px; }
-.bijlage img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
-.bijlage-onderschrift { font-size: .85em; margin: .6em 0 0; opacity: .85; }
-.bijlage-tabelwrap { overflow-x: auto; }
-.bijlage-tabel { border-collapse: collapse; font-size: .85em; width: 100%; }
-.bijlage-tabel th, .bijlage-tabel td { border: 1px solid #c8d2d2; padding: .3em .5em; vertical-align: top; text-align: left; }
-.bijlage-tabel th { background: rgba(0, 133, 124, .1); }
-.bijlage-ontbreekt { padding: .8em; background: rgba(224, 168, 0, .12); border-left: 4px solid #e0a800; font-size: .9em; }
-.bijlage-register td, .bijlage-register th { font-size: .85em; }
-"""
+STIJL = ROOT / "stijl"
+
+
+def kopieer_huisstijl(doel: Path) -> str | None:
+    """Kopieert stijl/*.css naar <doel>/css/ en het logo (publicatie.yml: logo) naar <doel>/img/.
+    Geeft het relatieve pad van het logo terug, of None."""
+    import shutil
+    (doel / "css").mkdir(parents=True, exist_ok=True)
+    for f in STIJL.glob("*.css"):
+        shutil.copy(f, doel / "css" / f.name)
+    logo = instellingen().get("logo")
+    if logo and (ROOT / logo).is_file():
+        (doel / "img").mkdir(exist_ok=True)
+        naam = "logo" + Path(logo).suffix.lower()
+        shutil.copy(ROOT / logo, doel / "img" / naam)
+        return f"img/{naam}"
+    return None
+
+
+# De bijlagestijl staat in stijl/huisstijl.css.
+CSS = ""
+
+
+def merk_html(cfg: dict, logo: str | None, href: str) -> str:
+    """Merk linksboven: logo (publicatie.yml: logo) of een woordmerk van organisatie en titel."""
+    if logo:
+        return f'<a class="edw-merk" href="{href}"><img src="{logo}" alt="{html.escape(cfg.get("organisatie", ""))}"></a>'
+    return (f'<a class="edw-merk" href="{href}"><span class="edw-merk__tekst">'
+            f'<span class="edw-merk__org">{html.escape(cfg.get("organisatie", ""))}</span>'
+            f'<span class="edw-merk__titel">{html.escape(cfg.get("titel", ""))}</span></span></a>')
+
+
+def top_html(cfg: dict, logo: str | None, home: str, links: list[tuple[str, str]]) -> str:
+    nav = "".join(f'<a href="{u}">{html.escape(t)}</a>' for t, u in links)
+    return (f'<header class="edw-top"><div class="edw-top__inner">{merk_html(cfg, logo, home)}'
+            f'<nav class="edw-top__nav">{nav}</nav></div></header>')
+
+
+def footer_html(cfg: dict, links: list[tuple[str, str]]) -> str:
+    import datetime
+    nav = " · ".join(f'<a href="{u}">{html.escape(t)}</a>' for t, u in links)
+    org = html.escape(cfg.get("organisatie", ""))
+    if cfg.get("organisatie_url"):
+        org = f'<a href="{html.escape(cfg["organisatie_url"])}">{org}</a>'
+    return (f'<footer class="edw-footer"><div class="edw-footer__inner">'
+            f'<div><div class="edw-footer__merk">{html.escape(cfg.get("titel", ""))}</div>'
+            f'<div>{html.escape(cfg.get("status", ""))}</div></div>'
+            f'<div><div>{nav}</div><div>© {datetime.date.today().year} {org}</div></div>'
+            f'</div></footer>')
