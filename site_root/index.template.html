@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{titel}}</title>
+<style>
+  :root { --hoofd: #00857c; --tekst: #1a1a1a; --achter: #fff; --rand: #c8d2d2; }
+  @media (prefers-color-scheme: dark) { :root { --hoofd: #4fc3b8; --tekst: #e8eeee; --achter: #121a1a; --rand: #2e3d3d; } }
+  body { font-family: Arial, system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1rem;
+         line-height: 1.5; color: var(--tekst); background: var(--achter); }
+  h1 { color: var(--hoofd); margin-bottom: .2rem; }
+  .status { border-left: 4px solid #e0a800; padding: .4rem .8rem; font-size: .9rem; }
+  a.kaart { display: block; border: 1px solid var(--rand); border-radius: 6px; padding: 1rem 1.2rem;
+            margin: 1rem 0; text-decoration: none; color: inherit; }
+  a.kaart:hover { border-color: var(--hoofd); }
+  a.kaart strong { color: var(--hoofd); }
+</style>
+</head>
+<body>
+<h1>{{titel}}</h1>
+<p>{{ondertitel}} · {{organisatie}}</p>
+<p class="status">{{status}}</p>
+<p>Dezelfde inhoud, gepubliceerd langs twee paden. Vergelijk ze en laat weten welke de voorkeur heeft.</p>
+{{kaarten}}
+</body>
+</html>

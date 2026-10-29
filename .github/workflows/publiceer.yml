@@ -1,0 +1,53 @@
+name: Publiceer site
+
+on:
+  push:
+    branches: [main]
+    paths: ["bron/paginas/**", "bron/bijlagen/**", "scripts/**", "respec/**", "site_root/**",
+            "mkdocs.base.yml", "publicatie.yml", "requirements.txt", ".github/workflows/publiceer.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Controleer of er pagina's zijn
+        id: bron
+        run: |
+          if ls bron/paginas/*.md >/dev/null 2>&1; then echo "klaar=true" >> "$GITHUB_OUTPUT"; else
+            echo "klaar=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Nog geen pagina's in bron/paginas/; upload eerst een Confluence-export."
+          fi
+      - uses: actions/setup-python@v5
+        if: steps.bron.outputs.klaar == 'true'
+        with: {python-version: "3.12", cache: pip}
+      - if: steps.bron.outputs.klaar == 'true'
+        run: pip install -r requirements.txt
+      - name: Bouw MkDocs en ReSpec
+        if: steps.bron.outputs.klaar == 'true'
+        run: python scripts/bouw_site.py
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.bron.outputs.klaar == 'true'
+        with: {path: _site}
+    outputs:
+      klaar: ${{ steps.bron.outputs.klaar }}
+  deploy:
+    needs: build
+    if: needs.build.outputs.klaar == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

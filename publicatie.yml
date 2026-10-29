@@ -1,0 +1,26 @@
+# Instellingen voor beide publicatiepaden (MkDocs en ReSpec).
+# Pas dit bestand aan; de workflow bouwt daarna opnieuw.
+
+titel: MSP CB-architectuur
+ondertitel: Architectuurbeschrijving · pilot externe publicatie
+organisatie: Het Normo
+organisatie_url: https://www.hetnormo.nl/
+redacteuren:
+  - naam: Martijn van Glabbeek
+    organisatie: Het Normo
+versie: "0.1"
+status: Pilot. Concept voor interne beoordeling; geen vastgestelde publicatie.
+repo: HetNormo/MSP_CB_Pilot
+
+# Welke publicatiepaden worden gebouwd. Na het besluit één van beide weghalen.
+paden:
+  - mkdocs
+  - respec
+
+# Confluence-export: tabellen met minder rijen dan deze drempel blijven
+# in de tekst staan; grotere tabellen worden een losse bijlage.
+# 1 = elke tabel wordt een bijlage.
+tabel_drempel: 1
+
+# Pagina's met een van deze Confluence-labels worden niet gepubliceerd.
+labels_niet_publiceren: [intern, niet-publiceren, concept]
