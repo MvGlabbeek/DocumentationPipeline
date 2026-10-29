@@ -22,7 +22,7 @@
         var t = el.textContent.trim();
         if (nl[t]) el.textContent = nl[t];
       });
-      ["css/huisstijl.css", "css/respec.css"].forEach(function (href) {
+      ["css/huisstijl.css?v={{v}}", "css/respec.css?v={{v}}"].forEach(function (href) {
         var l = document.createElement("link");
         l.rel = "stylesheet"; l.href = href;
         document.head.appendChild(l);

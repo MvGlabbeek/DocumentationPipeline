@@ -21,7 +21,7 @@ import markdown
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gemeen import (CSS, footer_html, kopieer_huisstijl, top_html, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html,  # noqa: E402
+from gemeen import (CSS, versie_tag, footer_html, kopieer_huisstijl, top_html, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html,  # noqa: E402
                     gebruik, instellingen, lees_register, paginaboom)
 
 RE_LINK = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s#]*)(#[^)\s]*)?\)")
@@ -152,6 +152,7 @@ def main() -> None:
     sjabloon = (ROOT / "respec" / "index.template.html").read_text(encoding="utf-8")
     pagina = (sjabloon
               .replace("{{titel}}", html.escape(cfg.get("titel", "")))
+              .replace("{{v}}", versie_tag())
               .replace("{{config}}", json.dumps(config, ensure_ascii=False, indent=2))
               .replace("{{bovenbalk}}", top_html(cfg, logo, "../", [
                   ("Home", "../"), ("Websiteweergave (MkDocs)", "../mkdocs/"), ("Overzicht bijlagen", "#overzicht-bijlagen")]))

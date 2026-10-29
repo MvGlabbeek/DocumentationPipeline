@@ -15,7 +15,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gemeen import (CSS, kopieer_huisstijl, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html,  # noqa: E402
+from gemeen import (CSS, versie_tag, kopieer_huisstijl, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html,  # noqa: E402
                     gebruik, instellingen, lees_register, paginaboom)
 
 DOCS = ROOT / "_build" / "mkdocs_docs"
@@ -134,7 +134,8 @@ def main() -> None:
         basis.setdefault("repo_url", f"https://github.com/{repo}")
         basis.setdefault("repo_name", repo)
         basis.setdefault("site_url", f"https://{eigenaar.lower()}.github.io/{naam}/mkdocs/")
-    basis["extra_css"] = ["css/huisstijl.css", "css/mkdocs.css"] + basis.get("extra_css", [])
+    v = versie_tag()
+    basis["extra_css"] = [f"css/huisstijl.css?v={v}", f"css/mkdocs.css?v={v}"] + basis.get("extra_css", [])
     if logo:
         basis["theme"]["logo"] = logo
         basis["theme"]["favicon"] = logo

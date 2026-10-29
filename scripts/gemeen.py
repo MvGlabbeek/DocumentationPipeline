@@ -303,3 +303,12 @@ def footer_html(cfg: dict, links: list[tuple[str, str]]) -> str:
             f'<div>{html.escape(cfg.get("status", ""))}</div></div>'
             f'<div><div>{nav}</div><div>© {datetime.date.today().year} {org}</div></div>'
             f'</div></footer>')
+
+
+def versie_tag() -> str:
+    """Korte tag tegen verouderde stylesheets in de browsercache (GitHub Pages cachet 10 min)."""
+    import hashlib
+    h = hashlib.sha1()
+    for f in sorted(STIJL.glob("*.css")):
+        h.update(f.read_bytes())
+    return h.hexdigest()[:8]

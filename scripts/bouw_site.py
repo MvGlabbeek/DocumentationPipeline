@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gemeen import ROOT, footer_html, instellingen, kopieer_huisstijl, top_html  # noqa: E402
+from gemeen import ROOT, footer_html, versie_tag, instellingen, kopieer_huisstijl, top_html  # noqa: E402
 
 SITE = ROOT / "_site"
 KAART = {
@@ -50,6 +50,7 @@ def main() -> None:
     repo = cfg.get("repo")
     (SITE / "index.html").write_text(
         sjabloon.replace("{{titel}}", html.escape(titel))
+        .replace("{{v}}", versie_tag())
         .replace("{{titel_html}}", titel_html)
         .replace("{{ondertitel}}", html.escape(cfg.get("ondertitel", "")))
         .replace("{{status}}", html.escape(cfg.get("status", "")))
