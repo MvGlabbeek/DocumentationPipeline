@@ -21,7 +21,7 @@ import markdown
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gemeen import (CSS, versie_tag, footer_html, kopieer_huisstijl, top_html, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html,  # noqa: E402
+from gemeen import (CSS, versie_tag, footer_html, kopieer_huisstijl, top_html, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html, kopieer_bijlage,  # noqa: E402
                     gebruik, instellingen, lees_register, paginaboom)
 
 RE_LINK = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s#]*)(#[^)\s]*)?\)")
@@ -121,7 +121,7 @@ def main() -> None:
     for n in gebruikt:
         f = bestand_van(n)
         if f:
-            shutil.copy(f, uit / "bijlagen" / doelnaam(n, f))
+            kopieer_bijlage(n, uit / "bijlagen")
 
     # Startpagina: tekst vóór de eerste kop wordt de samenvatting, de koppen worden de eerste
     # genummerde hoofdstukken (vóór de subpagina's).

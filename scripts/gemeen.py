@@ -138,6 +138,43 @@ def bijlagebestanden() -> dict[str, Path]:
     return res
 
 
+def alle_formaten(nummer: str) -> list[Path]:
+    """Alle bestanden met dit nummer (bijv. B0002.svg én B0002.png), in voorkeursvolgorde."""
+    volgorde = {e: i for i, e in enumerate(BEELD + TABEL + DOCUMENT)}
+    if not BIJLAGEN.is_dir():
+        return []
+    res = [p for p in BIJLAGEN.iterdir() if p.is_file() and p.suffix.lower() in volgorde
+           and (m := RE_BESTAND.match(p.stem)) and m.group(1) == nummer]
+    uniek = {}
+    for p in sorted(res, key=lambda p: volgorde[p.suffix.lower()]):
+        uniek.setdefault(p.suffix.lower(), p)
+    return list(uniek.values())
+
+
+def kopieer_bijlage(nummer: str, doelmap: Path) -> None:
+    """Kopieert alle formaten van een bijlage naar doelmap als B0002.svg, B0002.png, ...
+    Een SVG verliest zijn vaste breedte/hoogte, zodat hij met de pagina meeschaalt
+    (exports uit Horizzon hebben bijv. width="371px" bij een veel groter viewBox)."""
+    import shutil
+    doelmap.mkdir(parents=True, exist_ok=True)
+    for f in alle_formaten(nummer):
+        doel = doelmap / doelnaam(nummer, f)
+        if f.suffix.lower() != ".svg":
+            shutil.copy(f, doel)
+            continue
+        tekst = f.read_text(encoding="utf-8-sig", errors="replace")
+        m = re.search(r"<svg\b[^>]*>", tekst)
+        if m:
+            kop = m.group(0)
+            w = re.search(r'\swidth="([\d.]+)(?:px)?"', kop)
+            h = re.search(r'\sheight="([\d.]+)(?:px)?"', kop)
+            if "viewBox" not in kop and w and h:
+                kop = kop.replace("<svg", f'<svg viewBox="0 0 {w.group(1)} {h.group(1)}"', 1)
+            kop = re.sub(r'\s(width|height)="[^"]*"', "", kop)
+            tekst = tekst[:m.start()] + kop + tekst[m.end():]
+        doel.write_text(tekst, encoding="utf-8")
+
+
 def bestand_van(nummer: str) -> Path | None:
     return bijlagebestanden().get(nummer)
 
@@ -227,9 +264,13 @@ def inhoud_html(nummer: str, b: dict, url_map: str) -> str:
     return f'<p><a href="{src}">Download {titel} ({s[1:].upper()})</a></p>'
 
 
-def onderschrift(nummer: str, b: dict, details_url: str | None) -> str:
+def onderschrift(nummer: str, b: dict, details_url: str | None, url_map: str = "bijlagen") -> str:
     titel = b.get("titel")
     delen = [f"<strong>Bijlage {nummer}</strong>" + (f" {html.escape(str(titel))}" if titel else "")]
+    beelden = [f for f in alle_formaten(nummer) if f.suffix.lower() in BEELD]
+    if beelden:
+        delen.append("download " + " / ".join(
+            f'<a href="{url_map}/{doelnaam(nummer, f)}" download>{f.suffix[1:].upper()}</a>' for f in beelden))
     if b.get("horizzon"):
         delen.append(f'<a href="{html.escape(b["horizzon"])}">bron in BizzDesign Horizzon</a>')
     if details_url:
@@ -242,7 +283,7 @@ def embed_html(nummer: str, reg: dict, url_map: str, details_url: str | None, id
     soort = b.get("soort", soort_van(bestand_van(nummer)))
     ida = f' id="{id_}"' if id_ else ""
     return (f'\n<div class="bijlage bijlage-{soort}"{ida}>\n{inhoud_html(nummer, b, url_map)}\n'
-            f'<p class="bijlage-onderschrift">{onderschrift(nummer, b, details_url)}</p>\n</div>\n')
+            f'<p class="bijlage-onderschrift">{onderschrift(nummer, b, details_url, url_map)}</p>\n</div>\n')
 
 
 def gebruik(paginas: list[Pagina]) -> dict[str, list[Pagina]]:

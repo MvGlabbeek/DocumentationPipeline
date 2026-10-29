@@ -15,7 +15,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gemeen import (CSS, versie_tag, kopieer_huisstijl, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html,  # noqa: E402
+from gemeen import (CSS, versie_tag, kopieer_huisstijl, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html, kopieer_bijlage,  # noqa: E402
                     gebruik, instellingen, lees_register, paginaboom)
 
 DOCS = ROOT / "_build" / "mkdocs_docs"
@@ -116,7 +116,7 @@ def main() -> None:
     for n in gebruikt:                      # alleen bijlagen van gepubliceerde pagina's gaan mee
         f = bestand_van(n)
         if f and f.suffix != ".md":         # .md-tabellen staan al in de pagina; MkDocs zou er een pagina van maken
-            shutil.copy(f, DOCS / "bijlagen" / doelnaam(n, f))
+            kopieer_bijlage(n, DOCS / "bijlagen")
     (DOCS / OVERZICHT).write_text(overzicht(reg, gebruikt), encoding="utf-8")
 
     basis = yaml.safe_load((ROOT / "mkdocs.base.yml").read_text(encoding="utf-8"))

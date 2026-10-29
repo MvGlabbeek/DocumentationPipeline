@@ -14,7 +14,8 @@ body > *:not(.edw-top):not(.edw-footer):not(#toc):not(#respec-ui):not(script) {
 .edw-footer { margin: 48px 0 0; }
 /* met de inhoudsopgave als vaste zijbalk */
 body.toc-sidebar { padding-left: 22em; }
-body.toc-sidebar .edw-top, body.toc-sidebar .edw-footer { margin-left: -22em; }
+/* bovenbalk en footer blijven naast de vaste inhoudsopgave (anders vallen ze eronder weg) */
+body.toc-sidebar .edw-top, body.toc-sidebar .edw-footer { margin-left: 0; }
 body.toc-sidebar #toc { width: 20em; padding: 1.5em 1.2em; box-sizing: border-box; }
 
 /* titelblok van ReSpec als donkergroene band */

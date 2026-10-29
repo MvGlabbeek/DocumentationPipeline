@@ -76,6 +76,8 @@ Afbeeldingen en tabellen komen niet uit Confluence maar worden **los aangeleverd
 
 Upload in `bron/bijlagen/` en commit. Wat na het nummer in de bestandsnaam staat, wordt de titel (tenzij het register een titel geeft). Vervangen = een nieuw bestand met hetzelfde nummer uploaden. Op de site heet het bestand altijd `B0002.svg`, dus spaties in de naam zijn geen probleem.
 
+**SVG en PNG naast elkaar.** Een nummer mag in meerdere formaten bestaan, bijv. `B0002.svg` én `B0002.png`. De site toont de SVG (scherp op elk formaat) en zet onder de bijlage downloadlinks voor beide. Een SVG die je uit de Horizzon-weergave haalt heeft vaak een vaste kleine breedte; die wordt bij het publiceren weggehaald, zodat het diagram de volle kaartbreedte gebruikt.
+
 **Plaats in de tekst:** kies per bijlage een van twee manieren.
 
 1. **In Confluence** een eigen regel onder of boven de afbeelding: `Bijlage B0002` of `Bijlage B0002: Hoofdprocesmodel`. Na de export wordt die regel de bijlage. In een zin wordt *bijlage B0002* een verwijzing.

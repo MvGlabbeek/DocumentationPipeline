@@ -97,6 +97,7 @@ a:hover > .edw-pijl { background: var(--edw-accent); }
 /* ---------- bijlagen ---------- */
 .bijlage { margin: 1.4em 0; padding: 1em; border: 1px solid var(--edw-lijn); border-radius: 20px; background: #fff; }
 .bijlage img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+.bijlage img[src$=".svg"] { width: 100%; }
 .bijlage-onderschrift { font-size: .85em; margin: .7em 0 0; color: var(--edw-tekst-zacht); }
 .bijlage-onderschrift strong { color: var(--edw-groen); }
 .bijlage-tabelwrap { overflow-x: auto; }
