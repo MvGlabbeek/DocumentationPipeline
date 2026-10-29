@@ -4,10 +4,10 @@ Pilot voor het extern publiceren van architectuurdocumentatie van Het Normo die 
 
 | Pad | Weergave | Adres (na eerste publicatie) |
 |---|---|---|
-| 1. **MkDocs** (Material) | Website met een pagina per Confluence-pagina, navigatie volgens de paginaboom, zoekfunctie | https://hetnormo.github.io/MSP_CB_Pilot/mkdocs/ |
-| 2. **ReSpec** | Eén doorlopend document met genummerde hoofdstukken, inhoudsopgave en bijlagen | https://hetnormo.github.io/MSP_CB_Pilot/respec/ |
+| 1. **MkDocs** (Material) | Website met een pagina per Confluence-pagina, navigatie volgens de paginaboom, zoekfunctie | https://mvglabbeek.github.io/DocumentationPipeline/mkdocs/ |
+| 2. **ReSpec** | Eén doorlopend document met genummerde hoofdstukken, inhoudsopgave en bijlagen | https://mvglabbeek.github.io/DocumentationPipeline/respec/ |
 
-Startpagina met beide: https://hetnormo.github.io/MSP_CB_Pilot/
+Startpagina met beide: https://mvglabbeek.github.io/DocumentationPipeline/
 
 ## Hoe het werkt
 

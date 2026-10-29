@@ -10,7 +10,7 @@ redacteuren:
     organisatie: Het Normo
 versie: "0.1"
 status: Pilot. Concept voor interne beoordeling; geen vastgestelde publicatie.
-repo: HetNormo/MSP_CB_Pilot
+repo: MvGlabbeek/DocumentationPipeline
 
 # Welke publicatiepaden worden gebouwd. Na het besluit één van beide weghalen.
 paden:
