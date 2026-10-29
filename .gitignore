@@ -2,6 +2,3 @@ _site/
 _build/
 mkdocs.yml
 __pycache__/
-# Confluence-exports niet per ongeluk lokaal committen (kunnen interne pagina's bevatten).
-# Uploaden via github.com voor de conversieworkflow kan wel; de workflow haalt de zip daarna weg.
-bron/confluence-export/*.zip

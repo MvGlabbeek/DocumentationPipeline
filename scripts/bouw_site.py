@@ -1,6 +1,8 @@
 """Bouwt de complete site in _site/: startpagina plus de publicatiepaden uit publicatie.yml.
 
-Gebruik: python scripts/bouw_site.py
+Gebruik: python scripts/bouw_site.py [--controle]
+  (eerst scripts/inname.py: pagina's uit bron/paginas ordenen volgens bron/structuur.yml;
+   met --controle wordt bron/structuur.yml niet bijgewerkt)
 Lokaal bekijken: python -m http.server -d _site 8000  -> http://localhost:8000
 """
 import html
@@ -28,6 +30,7 @@ def main() -> None:
     (SITE / ".nojekyll").touch()
     py = sys.executable
     os.environ.setdefault("NO_MKDOCS_2_WARNING", "true")   # melding van Material over MkDocs 2.0 (zie README)
+    subprocess.run([py, "scripts/inname.py"] + sys.argv[1:], cwd=ROOT, check=True)
     if "mkdocs" in paden:
         subprocess.run([py, "scripts/build_mkdocs.py"], cwd=ROOT, check=True)
         subprocess.run([py, "-m", "mkdocs", "build", "-q", "-d", str(SITE / "mkdocs")], cwd=ROOT, check=True)

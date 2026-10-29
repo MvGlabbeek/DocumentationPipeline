@@ -1,12 +1,14 @@
-"""Gedeelde onderdelen voor de converter en beide publicatiepaden.
+"""Gedeelde onderdelen voor de inname van pagina's en beide publicatiepaden.
 
 Begrippen
-- Pagina: een Markdown-bestand in bron/paginas/ met front matter (titel, volgorde, ...).
-  Een pagina met subpagina's is een map met index.md; de subpagina's staan in die map.
-- Bijlage: een los, uniek genummerd onderdeel (B0001, B0002, ...): diagram, afbeelding,
-  tabel of document. Het bestand heet naar het nummer (B0007.svg, B0012.csv) en staat in
-  bron/bijlagen/. De metadata staat in bron/bijlagen/bijlagen.yml.
-- Verwijzingen in de tekst:
+- Bronpagina: een Markdown-bestand dat per pagina uit Confluence is geëxporteerd en in
+  bron/paginas/ staat. De bestandsnaam doet er niet toe; de titel (eerste kop) is de identiteit.
+- Structuur: bron/structuur.yml legt de paginaboom vast zoals in Confluence. scripts/inname.py
+  vult hem aan voor nieuwe pagina's en zet de pagina's genormaliseerd in _build/paginas/.
+- Bijlage: een los, uniek genummerd diagram, afbeelding, tabel of document (B0001, B0002, ...)
+  in bron/bijlagen/. De bestandsnaam begint met het nummer: B0007.svg of 'B0007 Hoofdprocesmodel.svg'.
+  Metadata (titel, plaats, Horizzon-link) mag in bron/bijlagen/bijlagen.yml, maar is optioneel.
+- Verwijzingen in de (genormaliseerde) tekst:
     [[bijlage:B0007]]   alleen op een regel: de bijlage wordt hier getoond
     [[zie:B0007]]       in de lopende tekst: een verwijzing naar de bijlage
 """
@@ -22,19 +24,20 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 BRON = ROOT / "bron"
-PAGINAS = BRON / "paginas"
+BRONPAGINAS = BRON / "paginas"
+STRUCTUUR = BRON / "structuur.yml"
 BIJLAGEN = BRON / "bijlagen"
 REGISTER = BIJLAGEN / "bijlagen.yml"
+PAGINAS = ROOT / "_build" / "paginas"          # genormaliseerd, door inname.py gemaakt
 
-# Voorkeursvolgorde als er meerdere bestanden met hetzelfde nummer staan.
 BEELD = (".svg", ".png", ".webp", ".jpg", ".jpeg", ".gif")
 TABEL = (".csv", ".xlsx", ".md")
 DOCUMENT = (".pdf", ".docx", ".pptx", ".zip")
-SOORTEN = ("diagram", "afbeelding", "tabel", "document")
 
 RE_EMBED = re.compile(r"^[ \t]*\[\[bijlage:(B\d{4})\]\][ \t]*$", re.M)
 RE_ZIE = re.compile(r"\[\[zie:(B\d{4})\]\]")
 RE_NUMMER = re.compile(r"^B(\d{4})$")
+RE_BESTAND = re.compile(r"^(B\d{4})(?:[ _\-–.]+(.*))?$")
 
 
 # ---------------------------------------------------------------- instellingen
@@ -46,7 +49,7 @@ def instellingen() -> dict:
 # ---------------------------------------------------------------- front matter
 
 def lees_md(pad: Path) -> tuple[dict, str]:
-    tekst = pad.read_text(encoding="utf-8")
+    tekst = pad.read_text(encoding="utf-8-sig")
     if tekst.startswith("---\n"):
         eind = tekst.find("\n---", 4)
         if eind > 0:
@@ -61,11 +64,11 @@ def schrijf_md(pad: Path, meta: dict, body: str) -> None:
     pad.write_text(f"---\n{kop}\n---\n\n{body.strip()}\n", encoding="utf-8")
 
 
-# ---------------------------------------------------------------- paginaboom
+# ---------------------------------------------------------------- paginaboom (genormaliseerd)
 
 @dataclass
 class Pagina:
-    pad: Path                      # relatief t.o.v. bron/paginas, bijv. architectuur/index.md
+    pad: Path                      # relatief t.o.v. _build/paginas, bijv. procesdomeinen/index.md
     titel: str
     volgorde: int
     meta: dict
@@ -85,12 +88,11 @@ class Pagina:
 
 
 def paginaboom(alleen_publiek: bool = True) -> tuple[Pagina | None, list[Pagina]]:
-    """Geeft (startpagina, hoofdstukken). De startpagina is bron/paginas/index.md (optioneel)."""
+    """Geeft (startpagina, hoofdstukken) uit _build/paginas/."""
     def lees(pad: Path) -> Pagina:
         meta, body = lees_md(pad)
-        rel = pad.relative_to(PAGINAS)
         titel = meta.get("titel") or pad.stem.replace("-", " ").capitalize()
-        return Pagina(rel, str(titel), int(meta.get("volgorde", 999)), meta, body)
+        return Pagina(pad.relative_to(PAGINAS), str(titel), int(meta.get("volgorde", 999)), meta, body)
 
     def map_(d: Path) -> list[Pagina]:
         res = []
@@ -104,9 +106,7 @@ def paginaboom(alleen_publiek: bool = True) -> tuple[Pagina | None, list[Pagina]
                 pg.kinderen = map_(p)
                 res.append(pg)
         res.sort(key=lambda x: (x.volgorde, x.titel.lower()))
-        if alleen_publiek:
-            res = [x for x in res if x.publiek]
-        return res
+        return [x for x in res if x.publiek] if alleen_publiek else res
 
     if not PAGINAS.is_dir():
         return None, []
@@ -122,106 +122,114 @@ def alle(paginas: list[Pagina]):
 
 # ---------------------------------------------------------------- bijlagen
 
+def bijlagebestanden() -> dict[str, Path]:
+    """Nummer -> bestand. Bij meerdere bestanden met hetzelfde nummer wint de voorkeursvolgorde."""
+    volgorde = {e: i for i, e in enumerate(BEELD + TABEL + DOCUMENT)}
+    res: dict[str, Path] = {}
+    if not BIJLAGEN.is_dir():
+        return res
+    for p in BIJLAGEN.iterdir():
+        m = RE_BESTAND.match(p.stem)
+        if not (p.is_file() and m and p.suffix.lower() in volgorde):
+            continue
+        n = m.group(1)
+        if n not in res or volgorde[p.suffix.lower()] < volgorde[res[n].suffix.lower()]:
+            res[n] = p
+    return res
+
+
+def bestand_van(nummer: str) -> Path | None:
+    return bijlagebestanden().get(nummer)
+
+
+def doelnaam(nummer: str, pad: Path) -> str:
+    """Naam waaronder het bestand op de site staat (zonder spaties): B0007.svg."""
+    return f"{nummer}{pad.suffix.lower()}"
+
+
+def soort_van(pad: Path | None) -> str:
+    if pad is None:
+        return "afbeelding"
+    s = pad.suffix.lower()
+    return "tabel" if s in TABEL else "document" if s in DOCUMENT else "afbeelding"
+
+
 def lees_register() -> dict[str, dict]:
-    if not REGISTER.exists():
-        return {}
-    data = yaml.safe_load(REGISTER.read_text(encoding="utf-8")) or {}
-    return {k: (v or {}) for k, v in data.items() if RE_NUMMER.match(str(k))}
-
-
-KOP_REGISTER = """\
-# Register van bijlagen (diagrammen, afbeeldingen, tabellen, documenten).
-#
-# - Het nummer (B0001) is vast en wordt nooit hergebruikt. Een nieuwe bijlage krijgt
-#   het eerstvolgende vrije nummer.
-# - Het bestand heet naar het nummer en staat in deze map: B0001.svg, B0002.png,
-#   B0003.csv. Een export uit BizzDesign vervangt eenvoudig het bestand met hetzelfde nummer.
-# - Velden: titel, soort (diagram|afbeelding|tabel|document), horizzon (link naar de view
-#   in BizzDesign Horizzon), toelichting, bron (confluence|bizzdesign|handmatig).
-#   'sleutel' en 'confluence' worden door de converter beheerd; niet wijzigen.
-"""
-
-
-def schrijf_register(reg: dict[str, dict]) -> None:
-    BIJLAGEN.mkdir(parents=True, exist_ok=True)
-    volg = ("titel", "soort", "bron", "horizzon", "toelichting", "confluence", "sleutel")
-    netjes = {}
-    for k in sorted(reg):
-        v = reg[k]
-        netjes[k] = {**{x: v[x] for x in volg if v.get(x) not in (None, "")},
-                     **{x: y for x, y in v.items() if x not in volg and y not in (None, "")}}
-    REGISTER.write_text(KOP_REGISTER + "\n" + yaml.safe_dump(
-        netjes, allow_unicode=True, sort_keys=False, width=100), encoding="utf-8")
-
-
-def volgend_nummer(reg: dict) -> str:
-    bestaand = [int(RE_NUMMER.match(k).group(1)) for k in reg]
-    bestaand += [int(m.group(1)) for p in BIJLAGEN.glob("B[0-9][0-9][0-9][0-9].*")
-                 if (m := RE_NUMMER.match(p.stem))]
-    return f"B{(max(bestaand) + 1 if bestaand else 1):04d}"
-
-
-def bestand_van(nummer: str, map_: Path = BIJLAGEN) -> Path | None:
-    for ext in BEELD + TABEL + DOCUMENT:
-        p = map_ / f"{nummer}{ext}"
-        if p.exists():
-            return p
-    return None
+    """Register uit bijlagen.yml, aangevuld met bijlagen die alleen als bestand bestaan.
+    Titel valt terug op de bestandsnaam ('B0007 Hoofdprocesmodel.svg' -> 'Hoofdprocesmodel')."""
+    data = {}
+    if REGISTER.exists():
+        data = yaml.safe_load(REGISTER.read_text(encoding="utf-8")) or {}
+    reg = {str(k): dict(v or {}) for k, v in data.items() if RE_NUMMER.match(str(k))}
+    extra = PAGINAS.parent / "bijlagetitels.yml"      # titels uit regels 'Bijlage B0007: titel'
+    if extra.exists():
+        for n, t in (yaml.safe_load(extra.read_text(encoding="utf-8")) or {}).items():
+            reg.setdefault(str(n), {}).setdefault("titel", t)
+    for n, pad in bijlagebestanden().items():
+        b = reg.setdefault(n, {})
+        if not b.get("titel"):
+            rest = RE_BESTAND.match(pad.stem).group(2)
+            if rest:
+                b["titel"] = rest.strip()
+        b.setdefault("soort", soort_van(pad))
+    return reg
 
 
 # ---------------------------------------------------------------- weergave
 
 def tabel_html(pad: Path) -> str:
     """Zet een tabelbijlage (csv, xlsx of md) om naar HTML."""
-    if pad.suffix == ".csv":
+    if pad.suffix.lower() == ".csv":
         tekst = pad.read_text(encoding="utf-8-sig")
         try:
             dialect = csv.Sniffer().sniff(tekst[:4096], delimiters=",;\t")
         except csv.Error:
             dialect = csv.excel
         rijen = list(csv.reader(tekst.splitlines(), dialect))
-    elif pad.suffix == ".xlsx":
+    elif pad.suffix.lower() == ".xlsx":
         import openpyxl
         ws = openpyxl.load_workbook(pad, data_only=True, read_only=True).worksheets[0]
         rijen = [["" if c is None else str(c) for c in r] for r in ws.iter_rows(values_only=True)]
         rijen = [r for r in rijen if any(x.strip() for x in r)]
-    else:  # .md: kan pipe-tabel of HTML bevatten
+    else:
         import markdown
         return markdown.markdown(pad.read_text(encoding="utf-8"), extensions=["tables", "md_in_html"])
     if not rijen:
         return "<p><em>Lege tabel.</em></p>"
     kop, *rest = rijen
+
     def cel(x: str) -> str:
-        x = html.escape(x)
-        return re.sub(r"(https?://[^\s<]+)", r'<a href="\1">\1</a>', x)
-    regels = ["<table class=\"bijlage-tabel\"><thead><tr>"
+        return re.sub(r"(https?://[^\s<]+)", r'<a href="\1">\1</a>', html.escape(x))
+    regels = ['<table class="bijlage-tabel"><thead><tr>'
               + "".join(f"<th>{cel(c)}</th>" for c in kop) + "</tr></thead><tbody>"]
     regels += ["<tr>" + "".join(f"<td>{cel(c)}</td>" for c in r) + "</tr>" for r in rest]
     regels.append("</tbody></table>")
     return "".join(regels)
 
 
+def titel_van(nummer: str, b: dict) -> str:
+    return str(b.get("titel") or f"Bijlage {nummer}")
+
+
 def inhoud_html(nummer: str, b: dict, url_map: str) -> str:
-    """De bijlage zelf (afbeelding, tabel, link of plaatshouder). url_map: pad naar bijlagenmap."""
     pad = bestand_van(nummer)
-    titel = html.escape(str(b.get("titel") or nummer))
+    titel = html.escape(titel_van(nummer, b))
     if pad is None:
-        if b.get("horizzon"):
-            return (f'<div class="bijlage-ontbreekt">Dit diagram is nog niet uit BizzDesign '
-                    f'geëxporteerd. <a href="{html.escape(b["horizzon"])}">Bekijk het in Horizzon</a> '
-                    f'(toegang vereist) of exporteer het als <code>{nummer}.svg</code> naar '
-                    f'<code>bron/bijlagen/</code>.</div>')
-        return f'<div class="bijlage-ontbreekt">Bestand <code>{nummer}.*</code> ontbreekt in <code>bron/bijlagen/</code>.</div>'
-    src = f"{url_map}/{pad.name}"
-    if pad.suffix in BEELD:
+        link = (f' <a href="{html.escape(b["horizzon"])}">Bekijk in BizzDesign Horizzon</a> (toegang vereist).'
+                if b.get("horizzon") else "")
+        return f'<div class="bijlage-ontbreekt">Bijlage {nummer} volgt; deze is nog niet aangeleverd.{link}</div>'
+    src = f"{url_map}/{doelnaam(nummer, pad)}"
+    s = pad.suffix.lower()
+    if s in BEELD:
         return f'<a href="{src}"><img src="{src}" alt="{titel}" loading="lazy"></a>'
-    if pad.suffix in TABEL:
+    if s in TABEL:
         return f'<div class="bijlage-tabelwrap">{tabel_html(pad)}</div>'
-    return f'<p><a href="{src}">Download {titel} ({pad.suffix[1:].upper()})</a></p>'
+    return f'<p><a href="{src}">Download {titel} ({s[1:].upper()})</a></p>'
 
 
 def onderschrift(nummer: str, b: dict, details_url: str | None) -> str:
-    delen = [f"<strong>Bijlage {nummer}</strong> {html.escape(str(b.get('titel') or ''))}".strip()]
+    titel = b.get("titel")
+    delen = [f"<strong>Bijlage {nummer}</strong>" + (f" {html.escape(str(titel))}" if titel else "")]
     if b.get("horizzon"):
         delen.append(f'<a href="{html.escape(b["horizzon"])}">bron in BizzDesign Horizzon</a>')
     if details_url:
@@ -230,11 +238,8 @@ def onderschrift(nummer: str, b: dict, details_url: str | None) -> str:
 
 
 def embed_html(nummer: str, reg: dict, url_map: str, details_url: str | None, id_: str | None = None) -> str:
-    b = reg.get(nummer)
-    if b is None:
-        print(f"::warning::Verwijzing naar onbekende bijlage {nummer}")
-        return f'<p class="bijlage-ontbreekt">Onbekende bijlage {nummer}.</p>'
-    soort = b.get("soort", "afbeelding")
+    b = reg.get(nummer, {})
+    soort = b.get("soort", soort_van(bestand_van(nummer)))
     ida = f' id="{id_}"' if id_ else ""
     return (f'\n<div class="bijlage bijlage-{soort}"{ida}>\n{inhoud_html(nummer, b, url_map)}\n'
             f'<p class="bijlage-onderschrift">{onderschrift(nummer, b, details_url)}</p>\n</div>\n')
@@ -244,19 +249,19 @@ def gebruik(paginas: list[Pagina]) -> dict[str, list[Pagina]]:
     """Op welke (gepubliceerde) pagina's wordt elke bijlage getoond of genoemd."""
     res: dict[str, list[Pagina]] = {}
     for p in alle(paginas):
-        for n in set(RE_EMBED.findall(p.body)) | set(RE_ZIE.findall(p.body)):
+        for n in sorted(set(RE_EMBED.findall(p.body)) | set(RE_ZIE.findall(p.body))):
             res.setdefault(n, []).append(p)
     return res
 
 
 CSS = """
-.bijlage { margin: 1.2em 0; padding: .8em; border: 1px solid var(--rand, #d0d7d7); border-radius: 6px; }
+.bijlage { margin: 1.2em 0; padding: .8em; border: 1px solid #d0d7d7; border-radius: 6px; }
 .bijlage img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
-.bijlage-onderschrift { font-size: .85em; margin: .6em 0 0; color: var(--zacht, #4a5a5a); }
+.bijlage-onderschrift { font-size: .85em; margin: .6em 0 0; opacity: .85; }
 .bijlage-tabelwrap { overflow-x: auto; }
 .bijlage-tabel { border-collapse: collapse; font-size: .85em; width: 100%; }
 .bijlage-tabel th, .bijlage-tabel td { border: 1px solid #c8d2d2; padding: .3em .5em; vertical-align: top; text-align: left; }
-.bijlage-tabel th { background: #e6f2f1; }
-.bijlage-ontbreekt { padding: .8em; background: #fff6e0; border-left: 4px solid #e0a800; font-size: .9em; }
+.bijlage-tabel th { background: rgba(0, 133, 124, .1); }
+.bijlage-ontbreekt { padding: .8em; background: rgba(224, 168, 0, .12); border-left: 4px solid #e0a800; font-size: .9em; }
 .bijlage-register td, .bijlage-register th { font-size: .85em; }
 """

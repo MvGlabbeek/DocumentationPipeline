@@ -15,7 +15,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gemeen import (CSS, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, embed_html,  # noqa: E402
+from gemeen import (CSS, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html,  # noqa: E402
                     gebruik, instellingen, lees_register, paginaboom)
 
 DOCS = ROOT / "_build" / "mkdocs_docs"
@@ -53,29 +53,28 @@ def verwerk(p: Pagina, reg: dict, verborgen: set[str]) -> str:
 
 def overzicht(reg: dict, gebruikt: dict[str, list[Pagina]]) -> str:
     regels = ["# Overzicht bijlagen", "",
-              "Alle diagrammen, afbeeldingen, tabellen en documenten in deze publicatie. Elke bijlage "
-              "heeft een vast nummer; diagrammen uit BizzDesign Horizzon zijn daar onder hetzelfde "
-              "nummer terug te vinden.", "",
+              "Alle diagrammen, afbeeldingen en tabellen in deze publicatie. Elke bijlage heeft een "
+              "vast nummer, waaronder hij ook in BizzDesign Horizzon terug te vinden is.", "",
               '<table class="bijlage-register"><thead><tr><th>Nr.</th><th>Titel</th><th>Soort</th>'
-              "<th>Bron</th><th>Gebruikt op</th></tr></thead><tbody>"]
+              "<th>Status</th><th>Gebruikt op</th></tr></thead><tbody>"]
     nummers = sorted(gebruikt)
     for n in nummers:
         b = reg.get(n, {})
         op = ", ".join(f'<a href="{posixpath.splitext(p.pad.as_posix())[0]}.html">{html.escape(p.titel)}</a>'
                        for p in gebruikt[n])
         regels.append(f'<tr><td><a href="#{n}">{n}</a></td><td>{html.escape(str(b.get("titel", "")))}</td>'
-                      f'<td>{b.get("soort", "")}</td><td>{b.get("bron", "")}</td><td>{op}</td></tr>')
+                      f'<td>{b.get("soort", "")}</td><td>{"aangeleverd" if bestand_van(n) else "volgt"}</td><td>{op}</td></tr>')
     regels += ["</tbody></table>", ""]
     for n in nummers:
         b = reg.get(n, {})
-        regels += [f"## {n} {b.get('titel', '')} {{#{n}}}", ""]
+        regels += [f"## {n} {b.get('titel', '')}".rstrip() + f" {{#{n}}}", ""]
         regels.append(embed_html(n, reg, "bijlagen", None))
         meta = []
         if b.get("toelichting"):
             meta.append(f"- **Toelichting:** {b['toelichting']}")
         f = bestand_van(n)
         if f and f.suffix != ".md":
-            meta.append(f"- **Bestand:** [{f.name}](bijlagen/{f.name})")
+            meta.append(f"- **Bestand:** [{doelnaam(n, f)}](bijlagen/{doelnaam(n, f)})")
         if b.get("horizzon"):
             meta.append(f"- **BizzDesign Horizzon:** [open de view]({b['horizzon']}) (toegang vereist)")
         meta.append("- **Gebruikt op:** " + ", ".join(f"[{p.titel}]({p.pad.as_posix()})" for p in gebruikt[n]))
@@ -97,7 +96,7 @@ def main() -> None:
     cfg = instellingen()
     start, paginas = paginaboom()
     if start is None and not paginas:
-        sys.exit("Geen pagina's in bron/paginas/. Draai eerst scripts/confluence_naar_md.py.")
+        sys.exit("Geen pagina's in bron/paginas/. Draai eerst scripts/inname.py.")
     reg = lees_register()
     verborgen = niet_publieke_paden()
     shutil.rmtree(DOCS, ignore_errors=True)
@@ -117,7 +116,7 @@ def main() -> None:
     for n in gebruikt:                      # alleen bijlagen van gepubliceerde pagina's gaan mee
         f = bestand_van(n)
         if f and f.suffix != ".md":         # .md-tabellen staan al in de pagina; MkDocs zou er een pagina van maken
-            shutil.copy(f, DOCS / "bijlagen" / f.name)
+            shutil.copy(f, DOCS / "bijlagen" / doelnaam(n, f))
     (DOCS / OVERZICHT).write_text(overzicht(reg, gebruikt), encoding="utf-8")
     (DOCS / "css" / "bijlagen.css").write_text(CSS, encoding="utf-8")
 

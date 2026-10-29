@@ -1,0 +1,18 @@
+# Paginastructuur, zoals in Confluence.
+# - Inspringing = subpagina; de volgorde hier is de volgorde in de publicatie.
+# - Een titel is de eerste kop van de geëxporteerde pagina. Zet titels tussen "aanhalingstekens".
+# - Een pagina met subpagina's eindigt op een dubbele punt.
+# - scripts/inname.py vult dit bestand aan voor nieuwe pagina's; verplaats ze gerust.
+#   Wat hier staat wordt bij een volgende inname niet meer verplaatst.
+# - '# nog geen bestand' = pagina waarnaar gelinkt wordt, maar die niet in bron/paginas staat.
+
+- "MSP Congestiebeheersing":
+    - "Procesdomein: Muteren"  # nog geen bestand
+    - "Procesdomein: Plannen"  # nog geen bestand
+    - "Procesdomein: Handelen"
+    - "Procesdomein: Uitvoeren"
+    - "Procesdomein: Meten"
+    - "Procesdomein: Verrekenen":
+        - "Valideren transport (grenswaarde)"  # nog geen bestand
+    - "Procesdomein: Factureren":
+        - "Rapporteren afgeroepen vermogens"  # nog geen bestand

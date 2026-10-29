@@ -21,7 +21,7 @@ import markdown
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from gemeen import (CSS, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, embed_html,  # noqa: E402
+from gemeen import (CSS, RE_EMBED, RE_ZIE, ROOT, Pagina, alle, bestand_van, doelnaam, embed_html,  # noqa: E402
                     gebruik, instellingen, lees_register, paginaboom)
 
 RE_LINK = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s#]*)(#[^)\s]*)?\)")
@@ -83,9 +83,8 @@ def sectie(p: Pagina, reg, sleutels) -> str:
 
 def bijlagen_sectie(reg: dict, gebruikt: dict, sleutels: dict) -> str:
     delen = ['<section class="appendix" id="overzicht-bijlagen"><h2>Overzicht bijlagen</h2>',
-             "<p>Alle diagrammen, afbeeldingen, tabellen en documenten in dit document. Elke bijlage "
-             "heeft een vast nummer; diagrammen uit BizzDesign Horizzon zijn daar onder hetzelfde nummer "
-             "terug te vinden.</p>"]
+             "<p>Alle diagrammen, afbeeldingen en tabellen in dit document. Elke bijlage heeft een vast "
+             "nummer, waaronder hij ook in BizzDesign Horizzon terug te vinden is.</p>"]
     for n in sorted(gebruikt):
         b = reg.get(n, {})
         op = ", ".join(f'<a href="#{sleutels[p.pad.as_posix()]}">{html.escape(p.titel)}</a>' for p in gebruikt[n])
@@ -95,7 +94,7 @@ def bijlagen_sectie(reg: dict, gebruikt: dict, sleutels: dict) -> str:
         f = bestand_van(n)
         regel = [f"Gebruikt in: {op}"]
         if f:
-            regel.append(f'bestand: <a href="bijlagen/{f.name}">{f.name}</a>')
+            regel.append(f'bestand: <a href="bijlagen/{doelnaam(n, f)}">{doelnaam(n, f)}</a>')
         extra.append(f"<p class=\"bijlage-onderschrift\">{' · '.join(regel)}</p>")
         delen.append(f'<section id="{n}"><h2>{n} {html.escape(str(b.get("titel", "")))}</h2>'
                      f'{embed_html(n, reg, "bijlagen", None)}{"".join(extra)}</section>')
@@ -108,7 +107,7 @@ def main() -> None:
     cfg = instellingen()
     start, paginas = paginaboom()
     if start is None and not paginas:
-        sys.exit("Geen pagina's in bron/paginas/. Draai eerst scripts/confluence_naar_md.py.")
+        sys.exit("Geen pagina's in bron/paginas/. Draai eerst scripts/inname.py.")
     reg = lees_register()
     sleutels = {p.pad.as_posix(): p.sleutel for p in alle(paginas)}
     if start:
@@ -121,10 +120,19 @@ def main() -> None:
     for n in gebruikt:
         f = bestand_van(n)
         if f:
-            shutil.copy(f, uit / "bijlagen" / f.name)
+            shutil.copy(f, uit / "bijlagen" / doelnaam(n, f))
 
-    samenvatting = nest(md_naar_html(start, reg, sleutels), "abstract") if start else \
-        f"<p>{html.escape(cfg.get('ondertitel', ''))}</p>"
+    # Startpagina: tekst vóór de eerste kop wordt de samenvatting, de koppen worden de eerste
+    # genummerde hoofdstukken (vóór de subpagina's).
+    samenvatting, hoofdstukken = f"<p>{html.escape(cfg.get('ondertitel', ''))}</p>", ""
+    if start:
+        geheel = nest(md_naar_html(start, reg, sleutels), "abstract")
+        soep = BeautifulSoup(geheel, "html.parser")
+        secs = [el for el in soep.contents if getattr(el, "name", None) == "section"]
+        hoofdstukken = "\n".join(str(el.extract()) for el in secs)
+        rest = soep.decode_contents().strip()
+        if rest:
+            samenvatting = rest
     repo = cfg.get("repo", "")
     eigenaar, _, naam = repo.partition("/")
     config = {
@@ -147,7 +155,7 @@ def main() -> None:
               .replace("{{css}}", CSS)
               .replace("{{samenvatting}}", samenvatting)
               .replace("{{status}}", html.escape(cfg.get("status", "")))
-              .replace("{{secties}}", "\n".join(sectie(p, reg, sleutels) for p in paginas))
+              .replace("{{secties}}", hoofdstukken + "\n" + "\n".join(sectie(p, reg, sleutels) for p in paginas))
               .replace("{{bijlagen}}", bijlagen_sectie(reg, gebruikt, sleutels)))
     (uit / "index.html").write_text(pagina, encoding="utf-8")
     print(f"ReSpec gebouwd: {sum(1 for _ in alle(paginas))} pagina's, {len(gebruikt)} bijlagen -> {uit}")

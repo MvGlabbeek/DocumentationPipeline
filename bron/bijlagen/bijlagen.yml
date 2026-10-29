@@ -1,0 +1,24 @@
+# Register van bijlagen (diagrammen, afbeeldingen, tabellen, documenten). Optioneel.
+#
+# Een bijlage is een bestand in deze map waarvan de naam begint met het nummer:
+#   B0001.png   of   B0001 Gelaagdheid regelgeving.svg   (tabel: B0010.xlsx / B0010.csv)
+# Het nummer is vast en wordt nooit hergebruikt.
+#
+# Waar komt een bijlage in de tekst? Twee manieren:
+#   1. In de Confluence-pagina staat een eigen regel 'Bijlage B0001' (eventueel met titel:
+#      'Bijlage B0001: Gelaagdheid regelgeving'). Die regel wordt de bijlage.
+#   2. Hieronder bij de bijlage 'pagina' (titel van de pagina) en 'na' (een stukje tekst uit
+#      de alinea waarna de bijlage moet komen). Dan hoeft er in Confluence niets te veranderen.
+#
+# Velden (allemaal optioneel): titel, pagina, na, horizzon (link naar de view in BizzDesign
+# Horizzon), toelichting. Zonder titel wordt de bestandsnaam na het nummer gebruikt.
+
+B0001:
+  titel: Gelaagdheid in wetgeving en sectordocumentatie
+  pagina: MSP Congestiebeheersing
+  na: De afbeelding hieronder geeft de gelaagdheid
+
+B0002:
+  titel: Hoofdprocesmodel congestiebeheersing
+  pagina: MSP Congestiebeheersing
+  na: Onderstaand hoofdprocesmodel maakt dit inzichtelijk
