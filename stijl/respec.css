@@ -1,6 +1,6 @@
 /* ReSpec (W3C-profiel, status 'base') in de huisstijl. Wordt na de ReSpec-stijl geladen. */
 
-html { background: var(--edw-mint); }
+html { background: var(--edw-mint); color-scheme: light; }
 body {
   font-family: var(--edw-font); color: var(--edw-tekst); background: var(--edw-mint);
   line-height: 1.65; font-size: 17px;
@@ -51,8 +51,11 @@ section section { background: transparent; box-shadow: none; padding: 0; }
 h2, h3, h4, h5, h6 { color: var(--edw-groen); font-family: var(--edw-font); font-weight: 700; }
 h2 { font-size: 26px; } h3 { font-size: 20px; } h4 { font-size: 18px; }
 .secno, bdi.secno { color: var(--edw-accent); }
-a { color: var(--edw-groen); text-decoration-color: var(--edw-accent); text-underline-offset: 3px; }
-a:hover { color: var(--edw-accent); }
+a, a[href], a:visited { color: var(--edw-groen); text-decoration-color: var(--edw-accent); text-underline-offset: 3px; }
+a[href]:hover { color: var(--edw-accent); }
+.head a[href], .head a:visited { color: var(--edw-accent-licht); }
+.edw-top a[href] { color: var(--edw-groen); text-decoration: none; }
+.edw-footer a[href] { color: #fff; }
 a.self-link { opacity: .5; }
 blockquote { border-left: 4px solid var(--edw-accent); background: var(--edw-mint); margin-left: 0; padding: .3em 1em; border-radius: 0 12px 12px 0; }
 table { border-collapse: collapse; }
