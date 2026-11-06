@@ -1,14 +1,14 @@
 # Instellingen voor beide publicatiepaden (MkDocs en ReSpec).
 # Pas dit bestand aan; de workflow bouwt daarna opnieuw.
 
-titel: MSP Congestiebeheersing
-ondertitel: Markt- en subprocessen congestiebeheersing · pilot externe publicatie
+titel: MSP Retail
+ondertitel: Markt- en subprocessen Retailprocessen v13.0 · pilot externe publicatie met Horizzon-procesplaten
 organisatie: Het Normo
 organisatie_url: https://www.hetnormo.nl/
 redacteuren:
   - naam: Martijn van Glabbeek
     organisatie: Het Normo
-versie: "0.1"
+versie: "0.2"
 status: Pilot. Concept voor interne beoordeling; geen vastgestelde publicatie.
 repo: MvGlabbeek/DocumentationPipeline
 

@@ -1,24 +1,2146 @@
-# Register van bijlagen (diagrammen, afbeeldingen, tabellen, documenten). Optioneel.
-#
-# Een bijlage is een bestand in deze map waarvan de naam begint met het nummer:
-#   B0001.png   of   B0001 Gelaagdheid regelgeving.svg   (tabel: B0010.xlsx / B0010.csv)
-# Het nummer is vast en wordt nooit hergebruikt.
-#
-# Waar komt een bijlage in de tekst? Twee manieren:
-#   1. In de Confluence-pagina staat een eigen regel 'Bijlage B0001' (eventueel met titel:
-#      'Bijlage B0001: Gelaagdheid regelgeving'). Die regel wordt de bijlage.
-#   2. Hieronder bij de bijlage 'pagina' (titel van de pagina) en 'na' (een stukje tekst uit
-#      de alinea waarna de bijlage moet komen). Dan hoeft er in Confluence niets te veranderen.
-#
-# Velden (allemaal optioneel): titel, pagina, na, horizzon (link naar de view in BizzDesign
-# Horizzon), toelichting. Zonder titel wordt de bestandsnaam na het nummer gebruikt.
-
-B0001:
-  titel: Gelaagdheid in wetgeving en sectordocumentatie
-  pagina: MSP Congestiebeheersing
-  na: De afbeelding hieronder geeft de gelaagdheid
-
-B0002:
-  titel: Hoofdprocesmodel congestiebeheersing
-  pagina: MSP Congestiebeheersing
-  na: Onderstaand hoofdprocesmodel maakt dit inzichtelijk
+# Bijlagenregister MSP-pilot. Gegenereerd door scripts/koppel.py; handmatige keuzes in beoordeling.yml.
+# status: gekoppeld | voorstel (bevestigen) | view ontbreekt | geen Horizzon-bron
+B1001:
+  titel: Structuur
+  sleutel: FIG-1.2-1
+  soort: overige figuur
+  msp_paragraaf: '1.2'
+  msp_pagina: 19
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0019-01.png
+B1002:
+  titel: Legenda procesplaten
+  sleutel: LEG-3
+  soort: legenda
+  msp_paragraaf: '3'
+  msp_pagina: 36
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0036-02.png
+B1003:
+  titel: Procesplaat Inhuizing KA
+  sleutel: MP-3.2.1
+  soort: marktprocesplaat
+  msp_paragraaf: 3.2.1
+  msp_pagina: 37
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0; 2 kandidaten
+  horizzon_view_id: b6e5846b-506f-ef11-8b1d-f89e94656359
+  horizzon_view: 02.1 Inhuizing KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/b6e5846b-506f-ef11-8b1d-f89e94656359
+  referentie_pdf: img/msp.pdf-0037-01.png
+B1004:
+  titel: Tijdlijn Inhuizing KA
+  sleutel: TL-3.2.1
+  soort: tijdlijn
+  msp_paragraaf: 3.2.1
+  msp_pagina: 37
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0037-02.png
+B1005:
+  titel: Procesplaat Inhuizing GA
+  sleutel: MP-3.2.2
+  soort: marktprocesplaat
+  msp_paragraaf: 3.2.2
+  msp_pagina: 37
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0; 2 kandidaten
+  horizzon_view_id: a690b9c0-5d4a-ef11-84c4-069a0fb5dc6b
+  horizzon_view: 02.2 Inhuizing GA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/a690b9c0-5d4a-ef11-84c4-069a0fb5dc6b
+  referentie_pdf: img/msp.pdf-0037-04.png
+B1006:
+  titel: Tijdlijn Inhuizing GA
+  sleutel: TL-3.2.2
+  soort: tijdlijn
+  msp_paragraaf: 3.2.2
+  msp_pagina: 38
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0038-00.png
+B1007:
+  titel: Procesplaat Leverancierswitch KA
+  sleutel: MP-3.3.1
+  soort: marktprocesplaat
+  msp_paragraaf: 3.3.1
+  msp_pagina: 38
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0; 2 kandidaten
+  horizzon_view_id: a1d9aa8e-345e-ef11-84c8-06d90d8fd887
+  horizzon_view: 03.1 Leverancierswitch KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/a1d9aa8e-345e-ef11-84c8-06d90d8fd887
+  referentie_pdf: img/msp.pdf-0038-04.png
+B1008:
+  titel: Tijdlijn Leverancierswitch KA
+  sleutel: TL-3.3.1
+  soort: tijdlijn
+  msp_paragraaf: 3.3.1
+  msp_pagina: 38
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0038-05.png
+B1009:
+  titel: Procesplaat Leverancierswitch GA
+  sleutel: MP-3.3.2
+  soort: marktprocesplaat
+  msp_paragraaf: 3.3.2
+  msp_pagina: 39
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0; 2 kandidaten
+  horizzon_view_id: 62fdd833-654a-ef11-84c4-069a0fb5dc6b
+  horizzon_view: 03.2 Leverancierswitch GA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/62fdd833-654a-ef11-84c4-069a0fb5dc6b
+  referentie_pdf: img/msp.pdf-0039-01.png
+B1010:
+  titel: Tijdlijn Leverancierswitch GA
+  sleutel: TL-3.3.2
+  soort: tijdlijn
+  msp_paragraaf: 3.3.2
+  msp_pagina: 39
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0039-02.png
+B1011:
+  titel: Procesplaat Uithuizing KA
+  sleutel: MP-3.4.1
+  soort: marktprocesplaat
+  msp_paragraaf: 3.4.1
+  msp_pagina: 40
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0; 2 kandidaten
+  horizzon_view_id: 16021b62-bb49-ef11-84bf-064bc8c3e99d
+  horizzon_view: 04.1 Uithuizing KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/16021b62-bb49-ef11-84bf-064bc8c3e99d
+  referentie_pdf: img/msp.pdf-0040-03.png
+B1012:
+  titel: Tijdlijn Uithuizing KA
+  sleutel: TL-3.4.1
+  soort: tijdlijn
+  msp_paragraaf: 3.4.1
+  msp_pagina: 40
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0040-04.png
+B1013:
+  titel: Procesplaat Uithuizing GA
+  sleutel: MP-3.4.2
+  soort: marktprocesplaat
+  msp_paragraaf: 3.4.2
+  msp_pagina: 41
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0; 2 kandidaten
+  horizzon_view_id: a785a626-f789-ef11-8b26-f89e94656359
+  horizzon_view: 04.2 Uithuizing GA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/a785a626-f789-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0041-01.png
+B1014:
+  titel: Tijdlijn Uithuizing GA
+  sleutel: TL-3.4.2
+  soort: tijdlijn
+  msp_paragraaf: 3.4.2
+  msp_pagina: 41
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0041-02.png
+B1015:
+  titel: Procesplaat Einde levering KA
+  sleutel: MP-3.5.1
+  soort: marktprocesplaat
+  msp_paragraaf: 3.5.1
+  msp_pagina: 42
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0; 2 kandidaten
+  horizzon_view_id: f7b76d82-008a-ef11-8b26-f89e94656359
+  horizzon_view: 05.1 Einde levering KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/f7b76d82-008a-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0042-03.png
+B1016:
+  titel: Tijdlijn Einde levering KA
+  sleutel: TL-3.5.1
+  soort: tijdlijn
+  msp_paragraaf: 3.5.1
+  msp_pagina: 42
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0042-04.png
+B1017:
+  titel: Procesplaat Einde levering GA
+  sleutel: MP-3.5.2
+  soort: marktprocesplaat
+  msp_paragraaf: 3.5.2
+  msp_pagina: 43
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0; 2 kandidaten
+  horizzon_view_id: 46c2dc5e-038a-ef11-8b26-f89e94656359
+  horizzon_view: 05.2 Einde levering GA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/46c2dc5e-038a-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0043-01.png
+B1018:
+  titel: Tijdlijn Einde levering GA
+  sleutel: TL-3.5.2
+  soort: tijdlijn
+  msp_paragraaf: 3.5.2
+  msp_pagina: 43
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0043-02.png
+B1019:
+  titel: Procesplaat Individuele BRP-switch KA
+  sleutel: MP-3.6.1
+  soort: marktprocesplaat
+  msp_paragraaf: 3.6.1
+  msp_pagina: 44
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0; 2 kandidaten
+  horizzon_view_id: d9e61ca7-3c86-ef11-8b25-f89e94656359
+  horizzon_view: 06.1 Individuele BRP-switch KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/d9e61ca7-3c86-ef11-8b25-f89e94656359
+  referentie_pdf: img/msp.pdf-0044-01.png
+B1020:
+  titel: Tijdlijn Individuele BRP-switch KA
+  sleutel: TL-3.6.1
+  soort: tijdlijn
+  msp_paragraaf: 3.6.1
+  msp_pagina: 44
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0044-02.png
+B1021:
+  titel: Procesplaat Individuele BRP-switch GA
+  sleutel: MP-3.6.2
+  soort: marktprocesplaat
+  msp_paragraaf: 3.6.2
+  msp_pagina: 44
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0; 2 kandidaten
+  horizzon_view_id: cff7cfd7-3c86-ef11-8b25-f89e94656359
+  horizzon_view: 06.2 Individuele BRP-switch GA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/cff7cfd7-3c86-ef11-8b25-f89e94656359
+  referentie_pdf: img/msp.pdf-0044-04.png
+B1022:
+  titel: Tijdlijn Individuele BRP-switch GA
+  sleutel: TL-3.6.2
+  soort: tijdlijn
+  msp_paragraaf: 3.6.2
+  msp_pagina: 45
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0045-00.png
+B1023:
+  titel: Procesplaat Bulk BRP-switch KA
+  sleutel: MP-3.7
+  soort: marktprocesplaat
+  msp_paragraaf: '3.7'
+  msp_pagina: 45
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0
+  horizzon_view_id: 3a298695-3b86-ef11-8b25-f89e94656359
+  horizzon_view: 07.1 Bulk BRP-switch KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/3a298695-3b86-ef11-8b25-f89e94656359
+  referentie_pdf: img/msp.pdf-0045-03.png
+B1024:
+  titel: Tijdlijn Bulk BRP-switch KA
+  sleutel: TL-3.7
+  soort: tijdlijn
+  msp_paragraaf: '3.7'
+  msp_pagina: 45
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0045-04.png
+B1025:
+  titel: Procesplaat Meetverantwoordelijke partij switch met wissel van meetinrichting GA
+  sleutel: MP-3.8
+  soort: marktprocesplaat
+  msp_paragraaf: '3.8'
+  msp_pagina: 46
+  status: voorstel
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.12
+  horizzon_view_id: df796c29-3f86-ef11-8b25-f89e94656359
+  horizzon_view: 08. MV-switch met meterwissel Grote aansluiting (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/df796c29-3f86-ef11-8b25-f89e94656359
+  referentie_pdf: img/msp.pdf-0046-00.png
+B1026:
+  titel: Tijdlijn Meetverantwoordelijke partij switch met wissel van meetinrichting GA
+  sleutel: TL-3.8
+  soort: tijdlijn
+  msp_paragraaf: '3.8'
+  msp_pagina: 46
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0046-01.png
+B1027:
+  titel: Procesplaat Beëindigen meetverantwoordelijkheid GA
+  sleutel: MP-3.9
+  soort: marktprocesplaat
+  msp_paragraaf: '3.9'
+  msp_pagina: 47
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.67
+  horizzon_view_id: 6ddb1271-8e8c-ef11-8b26-f89e94656359
+  horizzon_view: 09. Beëindigen Meetverantwoordelijkheid Grote aansluiting (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/6ddb1271-8e8c-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0047-00.png
+B1028:
+  titel: Tijdlijn Beëindigen meetverantwoordelijkheid GA
+  sleutel: TL-3.9
+  soort: tijdlijn
+  msp_paragraaf: '3.9'
+  msp_pagina: 47
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0047-01.png
+B1029:
+  titel: Procesplaat Meterstand en SJ en volumebepaling KA
+  sleutel: MP-3.10
+  soort: marktprocesplaat
+  msp_paragraaf: '3.10'
+  msp_pagina: 48
+  status: voorstel
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.0
+  horizzon_view_id: 411f5a6f-8b8c-ef11-8b26-f89e94656359
+  horizzon_view: 10. Meterstanden & SJV/SJA/SJI en verbruiksbepaling KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/411f5a6f-8b8c-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0048-00.png
+B1030:
+  titel: Tijdlijn Meterstand en SJ en volumebepaling KA
+  sleutel: TL-3.10
+  soort: tijdlijn
+  msp_paragraaf: '3.10'
+  msp_pagina: 48
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0048-01.png
+B1031:
+  titel: Tijdlijn Meterstand en SJ en volumebepaling KA
+  sleutel: TL-3.10-2
+  soort: tijdlijn
+  msp_paragraaf: '3.10'
+  msp_pagina: 48
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0048-02.png
+B1032:
+  titel: Procesplaat Meterstand en volume en SJ-bepaling GA
+  sleutel: MP-3.11
+  soort: marktprocesplaat
+  msp_paragraaf: '3.11'
+  msp_pagina: 49
+  status: voorstel
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.0
+  horizzon_view_id: 049adabd-958c-ef11-8b26-f89e94656359
+  horizzon_view: 11. Meterstanden & SJV/SJA/SJI en verbruiksbepaling GA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/049adabd-958c-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0049-00.png
+B1033:
+  titel: Tijdlijn Meterstand en volume en SJ-bepaling GA
+  sleutel: TL-3.11
+  soort: tijdlijn
+  msp_paragraaf: '3.11'
+  msp_pagina: 49
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0049-01.png
+B1034:
+  titel: Tijdlijn Meterstand en volume en SJ-bepaling GA
+  sleutel: TL-3.11-2
+  soort: tijdlijn
+  msp_paragraaf: '3.11'
+  msp_pagina: 50
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0050-00.png
+B1035:
+  titel: Procesplaat Fysieke opname KA
+  sleutel: MP-3.12
+  soort: marktprocesplaat
+  msp_paragraaf: '3.12'
+  msp_pagina: 50
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0
+  horizzon_view_id: 6ee0ecc4-158a-ef11-8b26-f89e94656359
+  horizzon_view: 12. Fysieke opname KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/6ee0ecc4-158a-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0050-03.png
+B1036:
+  titel: Tijdlijn Fysieke opname KA
+  sleutel: TL-3.12
+  soort: tijdlijn
+  msp_paragraaf: '3.12'
+  msp_pagina: 50
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0050-04.png
+B1037:
+  titel: Procesplaat Opleveren historische meetgegevens op verzoek GA
+  sleutel: MP-3.13
+  soort: marktprocesplaat
+  msp_paragraaf: '3.13'
+  msp_pagina: 51
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.6
+  horizzon_view_id: f239edb6-2f8d-ef11-8b26-f89e94656359
+  horizzon_view: 13. Opleveren historische meetdata op verzoek GA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/f239edb6-2f8d-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0051-02.png
+B1038:
+  titel: Tijdlijn Opleveren historische meetgegevens op verzoek GA
+  sleutel: TL-3.13
+  soort: tijdlijn
+  msp_paragraaf: '3.13'
+  msp_pagina: 51
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0051-03.png
+B1039:
+  titel: Procesplaat Dispuut over meterstanden KA
+  sleutel: MP-3.14
+  soort: marktprocesplaat
+  msp_paragraaf: '3.14'
+  msp_pagina: 52
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0
+  horizzon_view_id: af3b9d39-318d-ef11-8b26-f89e94656359
+  horizzon_view: 14. Dispuut over meterstanden KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/af3b9d39-318d-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0052-02.png
+B1040:
+  titel: Tijdlijn Dispuut over meterstanden KA
+  sleutel: TL-3.14
+  soort: tijdlijn
+  msp_paragraaf: '3.14'
+  msp_pagina: 52
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0052-03.png
+B1041:
+  titel: Procesplaat Mutatie van de meetinrichting KA
+  sleutel: MP-3.15
+  soort: marktprocesplaat
+  msp_paragraaf: '3.15'
+  msp_pagina: 53
+  status: voorstel
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.0
+  horizzon_view_id: c851c300-338d-ef11-8b26-f89e94656359
+  horizzon_view: 15. Metermutatie KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/c851c300-338d-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0053-02.png
+B1042:
+  titel: Tijdlijn Mutatie van de meetinrichting KA
+  sleutel: TL-3.15
+  soort: tijdlijn
+  msp_paragraaf: '3.15'
+  msp_pagina: 53
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0053-03.png
+B1043:
+  titel: Procesplaat Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA
+  sleutel: MP-3.16.1
+  soort: marktprocesplaat
+  msp_paragraaf: 3.16.1
+  msp_pagina: 54
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.38; 2 kandidaten
+  horizzon_view_id: ce14be37-348d-ef11-8b26-f89e94656359
+  horizzon_view: 16.1 Aanleggen, in- en uit bedrijf nemen en verwijderen aansluiting KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/ce14be37-348d-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0054-01.png
+B1044:
+  titel: Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA
+  sleutel: TL-3.16.1
+  soort: tijdlijn
+  msp_paragraaf: 3.16.1
+  msp_pagina: 54
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0054-02.png
+B1045:
+  titel: Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA
+  sleutel: TL-3.16.1-2
+  soort: tijdlijn
+  msp_paragraaf: 3.16.1
+  msp_pagina: 54
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0054-03.png
+B1046:
+  titel: Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA
+  sleutel: TL-3.16.1-3
+  soort: tijdlijn
+  msp_paragraaf: 3.16.1
+  msp_pagina: 54
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0054-04.png
+B1047:
+  titel: Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA
+  sleutel: TL-3.16.1-4
+  soort: tijdlijn
+  msp_paragraaf: 3.16.1
+  msp_pagina: 54
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0054-05.png
+B1048:
+  titel: Procesplaat Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA
+  sleutel: MP-3.16.2
+  soort: marktprocesplaat
+  msp_paragraaf: 3.16.2
+  msp_pagina: 55
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.38; 2 kandidaten
+  horizzon_view_id: 4047c53b-398d-ef11-8b26-f89e94656359
+  horizzon_view: 16.2 Aanleggen, in- en uit bedrijf nemen en verwijderen aansluiting GA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/4047c53b-398d-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0055-01.png
+B1049:
+  titel: Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA
+  sleutel: TL-3.16.2
+  soort: tijdlijn
+  msp_paragraaf: 3.16.2
+  msp_pagina: 55
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0055-02.png
+B1050:
+  titel: Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA
+  sleutel: TL-3.16.2-2
+  soort: tijdlijn
+  msp_paragraaf: 3.16.2
+  msp_pagina: 55
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0055-03.png
+B1051:
+  titel: Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA
+  sleutel: TL-3.16.2-3
+  soort: tijdlijn
+  msp_paragraaf: 3.16.2
+  msp_pagina: 55
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0055-04.png
+B1052:
+  titel: Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA
+  sleutel: TL-3.16.2-4
+  soort: tijdlijn
+  msp_paragraaf: 3.16.2
+  msp_pagina: 55
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0055-05.png
+B1053:
+  titel: Procesplaat Wijzigen gegevens aangeslotene KA
+  sleutel: MP-3.17
+  soort: marktprocesplaat
+  msp_paragraaf: '3.17'
+  msp_pagina: 56
+  status: voorstel
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.17
+  horizzon_view_id: 50813046-1f91-ef11-8b28-088fc3766e18
+  horizzon_view: 17. Wijzigen naam Keine aansluiting (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/50813046-1f91-ef11-8b28-088fc3766e18
+  referentie_pdf: img/msp.pdf-0056-02.png
+B1054:
+  titel: Tijdlijn Wijzigen gegevens aangeslotene KA
+  sleutel: TL-3.17
+  soort: tijdlijn
+  msp_paragraaf: '3.17'
+  msp_pagina: 56
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0056-03.png
+B1055:
+  titel: Procesplaat Opleveren stamgegevens en Opvraag stamgegevens allocatiepunt KA en GA
+  sleutel: MP-3.18
+  soort: marktprocesplaat
+  msp_paragraaf: '3.18'
+  msp_pagina: 57
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.6
+  horizzon_view_id: 1495905c-b2b0-ef11-8b32-f89e94656359
+  horizzon_view: 18. Opleveren stamgegevens en opvraag stamgegevens Kleine en Grote aansluiting (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/1495905c-b2b0-ef11-8b32-f89e94656359
+  referentie_pdf: img/msp.pdf-0057-00.png
+B1056:
+  titel: Tijdlijn Opleveren stamgegevens en Opvraag stamgegevens allocatiepunt KA en GA
+  sleutel: TL-3.18
+  soort: tijdlijn
+  msp_paragraaf: '3.18'
+  msp_pagina: 57
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0057-01.png
+B1057:
+  titel: Procesplaat Opleveren en opvragen gegevens primair deel van de meetinrichting GA
+  sleutel: MP-3.19
+  soort: marktprocesplaat
+  msp_paragraaf: '3.19'
+  msp_pagina: 58
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0
+  horizzon_view_id: a0e56bd2-b3b0-ef11-8b32-f89e94656359
+  horizzon_view: 19. Opleveren en opvragen gegevens primair deel meetinrichting GA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/a0e56bd2-b3b0-ef11-8b32-f89e94656359
+  referentie_pdf: img/msp.pdf-0058-01.png
+B1058:
+  titel: Procesplaat Opleveren stamgegevens meetinrichting op verzoek GA
+  sleutel: MP-3.20
+  soort: marktprocesplaat
+  msp_paragraaf: '3.20'
+  msp_pagina: 58
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0
+  horizzon_view_id: 37ac4dfd-b4b0-ef11-8b32-f89e94656359
+  horizzon_view: 20. Opleveren stamgegevens meetinrichting op verzoek GA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/37ac4dfd-b4b0-ef11-8b32-f89e94656359
+  referentie_pdf: img/msp.pdf-0058-04.png
+B1059:
+  titel: Procesplaat Opvragen gegevens ten behoeve van compensatievergoedingen KA
+  sleutel: MP-3.21
+  soort: marktprocesplaat
+  msp_paragraaf: '3.21'
+  msp_pagina: 59
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.43
+  horizzon_view_id: fe8dd8c7-10b3-ef11-8b32-f89e94656359
+  horizzon_view: 21. Opvragen gegevens t.b.v. compensatievergoedingen KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/fe8dd8c7-10b3-ef11-8b32-f89e94656359
+  referentie_pdf: img/msp.pdf-0059-01.png
+B1060:
+  titel: Tijdlijn Opvragen gegevens ten behoeve van compensatievergoedingen KA
+  sleutel: TL-3.21
+  soort: tijdlijn
+  msp_paragraaf: '3.21'
+  msp_pagina: 59
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0059-02.png
+B1061:
+  titel: Procesplaat Administratief aan- en uitzetten meetinrichting met communicatiefunctionaliteit KA
+  sleutel: MP-3.22
+  soort: marktprocesplaat
+  msp_paragraaf: '3.22'
+  msp_pagina: 60
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.67
+  horizzon_view_id: 80c8b4ff-11b3-ef11-8b32-f89e94656359
+  horizzon_view: 22. Administratief aan- en uitzetten meetinrichting met CF KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/80c8b4ff-11b3-ef11-8b32-f89e94656359
+  referentie_pdf: img/msp.pdf-0060-00.png
+B1062:
+  titel: Procesplaat Wijzigen allocatiemethode KA
+  sleutel: MP-3.23
+  soort: marktprocesplaat
+  msp_paragraaf: '3.23'
+  msp_pagina: 60
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0
+  horizzon_view_id: 2d24a746-13b3-ef11-8b32-f89e94656359
+  horizzon_view: 23. Wijzigen allocatiemethode KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/2d24a746-13b3-ef11-8b32-f89e94656359
+  referentie_pdf: img/msp.pdf-0060-03.png
+B1063:
+  titel: Tijdlijn Wijzigen allocatiemethode KA
+  sleutel: TL-3.23
+  soort: tijdlijn
+  msp_paragraaf: '3.23'
+  msp_pagina: 61
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0061-00.png
+B1064:
+  titel: Procesplaat Collecteren meterstand P4 KA
+  sleutel: MP-3.24
+  soort: marktprocesplaat
+  msp_paragraaf: '3.24'
+  msp_pagina: 61
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0; 2 kandidaten
+  horizzon_view_id: 898006fc-13b3-ef11-8b32-f89e94656359
+  horizzon_view: 24. Collecteren meterstand P4 KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/898006fc-13b3-ef11-8b32-f89e94656359
+  referentie_pdf: img/msp.pdf-0061-03.png
+B1065:
+  titel: Tijdlijn Collecteren meterstand P4 KA
+  sleutel: TL-3.24
+  soort: tijdlijn
+  msp_paragraaf: '3.24'
+  msp_pagina: 61
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0061-04.png
+B1066:
+  titel: Procesplaat Facturering en afdracht KA
+  sleutel: MP-3.25
+  soort: marktprocesplaat
+  msp_paragraaf: '3.25'
+  msp_pagina: 62
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0
+  horizzon_view_id: 60385699-15b3-ef11-8b32-f89e94656359
+  horizzon_view: 25. Facturering en afdracht KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/60385699-15b3-ef11-8b32-f89e94656359
+  referentie_pdf: img/msp.pdf-0062-02.png
+B1067:
+  titel: Procesplaat Communicatie systeemtarieven KA
+  sleutel: MP-3.26
+  soort: marktprocesplaat
+  msp_paragraaf: '3.26'
+  msp_pagina: 62
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.33
+  horizzon_view_id: 25443d72-978c-ef11-8b26-f89e94656359
+  horizzon_view: 26. Communicatie nettarieven KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/25443d72-978c-ef11-8b26-f89e94656359
+  referentie_pdf: img/msp.pdf-0062-05.png
+B1068:
+  titel: Procesplaat Informeren over meetcorrectie GA
+  sleutel: MP-3.27
+  soort: marktprocesplaat
+  msp_paragraaf: '3.27'
+  msp_pagina: 63
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 1.0
+  horizzon_view_id: 3994d600-17b3-ef11-8b32-f89e94656359
+  horizzon_view: 27. Informeren over meetcorrectie GA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/3994d600-17b3-ef11-8b32-f89e94656359
+  referentie_pdf: img/msp.pdf-0063-04.png
+B1069:
+  titel: Tijdlijn Informeren over meetcorrectie GA
+  sleutel: TL-3.27
+  soort: tijdlijn
+  msp_paragraaf: '3.27'
+  msp_pagina: 63
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0063-05.png
+B1070:
+  titel: Procesplaat Verrekenen meetfouten GA
+  sleutel: MP-3.28
+  soort: marktprocesplaat
+  msp_paragraaf: '3.28'
+  msp_pagina: 64
+  status: view ontbreekt
+  regel: R1
+  reden: geen view met nummer 28 in 03A Retail
+  referentie_pdf: img/msp.pdf-0064-00.png
+B1071:
+  titel: Tijdlijn Verrekenen meetfouten GA
+  sleutel: TL-3.28
+  soort: tijdlijn
+  msp_paragraaf: '3.28'
+  msp_pagina: 64
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0064-01.png
+B1072:
+  titel: Tijdlijn Verrekenen meetfouten GA
+  sleutel: TL-3.28-2
+  soort: tijdlijn
+  msp_paragraaf: '3.28'
+  msp_pagina: 64
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0064-02.png
+B1073:
+  titel: Procesplaat Controleren meetinrichtingnummer KA
+  sleutel: MP-3.29
+  soort: marktprocesplaat
+  msp_paragraaf: '3.29'
+  msp_pagina: 65
+  status: gekoppeld
+  regel: R1
+  reden: nummer klopt, KA/GA klopt, naamovereenkomst 0.33
+  horizzon_view_id: d43b1b3d-1ab3-ef11-8b32-f89e94656359
+  horizzon_view: 29. Controleren meternummer KA (e)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/d43b1b3d-1ab3-ef11-8b32-f89e94656359
+  referentie_pdf: img/msp.pdf-0065-00.png
+B1074:
+  titel: Tijdlijn Controleren meetinrichtingnummer KA
+  sleutel: TL-3.29
+  soort: tijdlijn
+  msp_paragraaf: '3.29'
+  msp_pagina: 65
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0065-01.png
+B1075:
+  titel: Procesplaat Wijzigen meet- en allocatiemethode GA in aansluitingenregister op verzoek van MV
+  sleutel: MP-3.30
+  soort: marktprocesplaat
+  msp_paragraaf: '3.30'
+  msp_pagina: 65
+  status: view ontbreekt
+  regel: R1
+  reden: geen view met nummer 30 in 03A Retail
+  referentie_pdf: img/msp.pdf-0065-03.png
+B1076:
+  titel: Procesplaat Collecteren intervalmeterstanden en berekenen allocatievolumes SMA
+  sleutel: MP-3.31
+  soort: marktprocesplaat
+  msp_paragraaf: '3.31'
+  msp_pagina: 66
+  status: view ontbreekt
+  regel: R1
+  reden: geen view met nummer 31 in 03A Retail
+  referentie_pdf: img/msp.pdf-0066-02.png
+B1077:
+  titel: Tijdlijn Collecteren intervalmeterstanden en berekenen allocatievolumes SMA
+  sleutel: TL-3.31
+  soort: tijdlijn
+  msp_paragraaf: '3.31'
+  msp_pagina: 66
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0066-03.png
+B1078:
+  titel: Tijdlijn Collecteren intervalmeterstanden en berekenen allocatievolumes SMA
+  sleutel: TL-3.31-2
+  soort: tijdlijn
+  msp_paragraaf: '3.31'
+  msp_pagina: 66
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0066-04.png
+B1079:
+  titel: Procesplaat Verzoeken vaststellen meterstand KA
+  sleutel: MP-3.32
+  soort: marktprocesplaat
+  msp_paragraaf: '3.32'
+  msp_pagina: 67
+  status: view ontbreekt
+  regel: R1
+  reden: geen view met nummer 32 in 03A Retail
+  referentie_pdf: img/msp.pdf-0067-00.png
+B1080:
+  titel: Tijdlijn Verzoeken vaststellen meterstand KA
+  sleutel: TL-3.32
+  soort: tijdlijn
+  msp_paragraaf: '3.32'
+  msp_pagina: 67
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0067-01.png
+B1081:
+  titel: Procesplaat Opvragen gegevens ten behoeve van analyse niet gecollecteerde meterstand P4
+  sleutel: MP-3.33
+  soort: marktprocesplaat
+  msp_paragraaf: '3.33'
+  msp_pagina: 67
+  status: view ontbreekt
+  regel: R1
+  reden: geen view met nummer 33 in 03A Retail
+  referentie_pdf: img/msp.pdf-0067-03.png
+B1082:
+  titel: Tijdlijn Opvragen gegevens ten behoeve van analyse niet gecollecteerde meterstand P4
+  sleutel: TL-3.33
+  soort: tijdlijn
+  msp_paragraaf: '3.33'
+  msp_pagina: 68
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0068-00.png
+B1083:
+  titel: Procesplaat Aanpassen meetmethode grote aansluitingen gas in AR op verzoek van MV
+  sleutel: MP-3.34
+  soort: marktprocesplaat
+  msp_paragraaf: '3.34'
+  msp_pagina: 68
+  status: view ontbreekt
+  regel: R1
+  reden: geen view met nummer 34 in 03A Retail
+  referentie_pdf: img/msp.pdf-0068-03.png
+B1084:
+  titel: Tijdlijn Aanpassen meetmethode grote aansluitingen gas in AR op verzoek van MV
+  sleutel: TL-3.34
+  soort: tijdlijn
+  msp_paragraaf: '3.34'
+  msp_pagina: 68
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0068-04.png
+B1085:
+  titel: Subprocesplaat SP0037 KA-GA – Registreren, wijzigen, deactiveren leverancier in leveranciersregister
+  sleutel: SP0037-KA-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.1.2
+  msp_pagina: 71
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0037. Beheer leveranciers- en netbeheerdersregister
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/1852dec3-487c-f011-8b84-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0071-02.png
+B1086:
+  titel: Subprocesplaat SP0048 KA-GA
+  sleutel: SP0048-KA-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.2.2
+  msp_pagina: 76
+  status: gekoppeld
+  regel: R2
+  reden: SP-code in viewnaam
+  horizzon_view_id: 907532dc-ca48-ef11-84bf-06b7e16dc20b
+  horizzon_view: SP0048 Raadplegen AR ter identificatie aansluiting
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/907532dc-ca48-ef11-84bf-06b7e16dc20b
+  referentie_pdf: img/msp.pdf-0076-06.png
+B1087:
+  titel: Subprocesplaat SP0052 KA
+  sleutel: SP0052-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.3.2
+  msp_pagina: 79
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0052. Opvragen gegevens tbv pre-mutatie
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/97ca68ca-d048-ef11-84bf-06b7e16dc20b/explore
+  referentie_pdf: img/msp.pdf-0079-07.png
+B1088:
+  titel: Subprocesplaat SP0054 KA
+  sleutel: SP0054-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.4.2
+  msp_pagina: 84
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0054. Raadplegen TMR in pre-mutatie fase
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/9bca68ca-d048-ef11-84bf-06b7e16dc20b/explore
+  referentie_pdf: img/msp.pdf-0084-01.png
+B1089:
+  titel: Subprocesplaat SP0055 KA
+  sleutel: SP0055-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.5.2
+  msp_pagina: 87
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0055. Aanleveren gegevens aangeslotene (E-Wet)
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3fee9e88-169c-ef11-8b2c-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0087-10.png
+B1090:
+  titel: Subprocesplaat SP0022 KA
+  sleutel: SP0022-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.6.2
+  msp_pagina: 90
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0022. Contracteinde gegevens
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/a2ca68ca-d048-ef11-84bf-06b7e16dc20b/explore
+  referentie_pdf: img/msp.pdf-0090-10.png
+B1091:
+  titel: Subprocesplaat SP0053 KA
+  sleutel: SP0053-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.6.6
+  msp_pagina: 92
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0092-05.png
+B1092:
+  titel: Subprocesplaat SP0022 KA
+  sleutel: SP0022-KA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.6.10
+  msp_pagina: 94
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0022. Contracteinde gegevens
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/a2ca68ca-d048-ef11-84bf-06b7e16dc20b/explore
+  referentie_pdf: img/msp.pdf-0094-01.png
+B1093:
+  titel: Subprocesplaat SP0092 KA
+  sleutel: SP0092-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.6.14
+  msp_pagina: 95
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0092. Vooraankondiging leverancierswitch
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/0637c26f-684a-ef11-84c4-069a0fb5dc6b/explore
+  referentie_pdf: img/msp.pdf-0095-09.png
+B1094:
+  titel: Subprocesplaat SP0095 KA
+  sleutel: SP0095-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.6.18
+  msp_pagina: 98
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0095. Opvragen contracterende leverancier bij Netbeheerder
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/2cd6d8ad-814a-ef11-84c4-06d1e23a8427/explore
+  referentie_pdf: img/msp.pdf-0098-01.png
+B1095:
+  titel: Subprocesplaat SP0024 KA
+  sleutel: SP0024-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.6.22
+  msp_pagina: 99
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0099-01.png
+B1096:
+  titel: Subprocesplaat SP0004 KA
+  sleutel: SP0004-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.7.2
+  msp_pagina: 101
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0004. Indienen en beoordeling melding inhuizing
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/f4b3a875-c749-ef11-84bf-064bc8c3e99d/explore
+  referentie_pdf: img/msp.pdf-0101-01.png
+B1097:
+  titel: Subprocesplaat SP0004 GA
+  sleutel: SP0004-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.7.5
+  msp_pagina: 103
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0004. Indienen en beoordeling melding inhuizing
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/f4b3a875-c749-ef11-84bf-064bc8c3e99d/explore
+  referentie_pdf: img/msp.pdf-0103-09.png
+B1098:
+  titel: Subprocesplaat SP0007 KA
+  sleutel: SP0007-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.8.2
+  msp_pagina: 109
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0007. Indienen en beoordelen melding LV-switch
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/a4ca68ca-d048-ef11-84bf-06b7e16dc20b/explore
+  referentie_pdf: img/msp.pdf-0109-02.png
+B1099:
+  titel: Subprocesplaat SP0007 GA
+  sleutel: SP0007-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.8.5
+  msp_pagina: 112
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0007. Indienen en beoordelen melding LV-switch
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/a4ca68ca-d048-ef11-84bf-06b7e16dc20b/explore
+  referentie_pdf: img/msp.pdf-0112-01.png
+B1100:
+  titel: Subprocesplaat SP0005 KA
+  sleutel: SP0005-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.9.2
+  msp_pagina: 117
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0005. Indienen en beoordeling melding uithuizing
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/d96c9afa-506f-ef11-8b1d-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0117-10.png
+B1101:
+  titel: Subprocesplaat SP0005 GA
+  sleutel: SP0005-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.9.5
+  msp_pagina: 119
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0005. Indienen en beoordeling melding uithuizing
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/d96c9afa-506f-ef11-8b1d-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0119-08.png
+B1102:
+  titel: Subprocesplaat SP0036 KA – Melding vooraankondiging einde levering
+  sleutel: SP0036-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.10.2
+  msp_pagina: 123
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view; meerdere SP-codes in paragraaf, sleutel controleren
+  horizzon_procesobject: SP0036. Indienen en beoordeling "melding einde levering"
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/5744f359-018a-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0123-05.png
+B1103:
+  titel: Subprocesplaat SP0006 KA – Melding einde levering
+  sleutel: SP0006-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.10.2
+  msp_pagina: 123
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0006. Vooraankondiging einde leveringsmelding
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/141b94d4-008a-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0123-10.png
+B1104:
+  titel: Subprocesplaat SP0006 GA
+  sleutel: SP0006-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.10.5
+  msp_pagina: 126
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0006. Vooraankondiging einde leveringsmelding
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/141b94d4-008a-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0126-01.png
+B1105:
+  titel: Subprocesplaat SP0008 KA
+  sleutel: SP0008-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.11.2
+  msp_pagina: 130
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0008. Indienen en beoordeling "melding individuele BRP-switch"
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/5a47f956-2d86-ef11-8b25-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0130-01.png
+B1106:
+  titel: Subprocesplaat SP0008 GA
+  sleutel: SP0008-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.11.5
+  msp_pagina: 132
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0008. Indienen en beoordeling "melding individuele BRP-switch"
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/5a47f956-2d86-ef11-8b25-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0132-01.png
+B1107:
+  titel: Subprocesplaat SP0039 KA
+  sleutel: SP0039-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.12.2
+  msp_pagina: 137
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0039. Indienen en beoordeling "Melding Bulk BRP-switch"
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/07ad32e7-3b86-ef11-8b25-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0137-01.png
+B1108:
+  titel: Subprocesplaat SP0009 GA
+  sleutel: SP0009-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.13.2
+  msp_pagina: 144
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0144-01.png
+B1109:
+  titel: Subprocesplaat SP0010 GA
+  sleutel: SP0010-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.14.2
+  msp_pagina: 148
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0010. Indienen en beoordeling melding einde MV
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/d00df13a-948c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0148-01.png
+B1110:
+  titel: Subprocesplaat SP0013 KA
+  sleutel: SP0013-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.15.2
+  msp_pagina: 151
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view; meerdere SP-codes in paragraaf, sleutel controleren
+  horizzon_procesobject: SP0013. Distribueren stamgegevens na mutatie
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3d2267d1-c849-ef11-84bf-064bc8c3e99d/explore
+  referentie_pdf: img/msp.pdf-0151-13.png
+B1111:
+  titel: Subprocesplaat SP0013 GA
+  sleutel: SP0013-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.15.5
+  msp_pagina: 152
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view; meerdere SP-codes in paragraaf, sleutel controleren
+  horizzon_procesobject: SP0013. Distribueren stamgegevens na mutatie
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3d2267d1-c849-ef11-84bf-064bc8c3e99d/explore
+  referentie_pdf: img/msp.pdf-0152-12.png
+B1112:
+  titel: Subprocesplaat SP0003 KA
+  sleutel: SP0003-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.15.7
+  msp_pagina: 153
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view; meerdere SP-codes in paragraaf, sleutel controleren
+  horizzon_procesobject: SP0003 Opvragen stamgegevens aansluiting MV
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/a971a92b-4086-ef11-8b25-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0153-07.png
+B1113:
+  titel: Subprocesplaat SP0003 GA
+  sleutel: SP0003-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.15.9
+  msp_pagina: 154
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view; meerdere SP-codes in paragraaf, sleutel controleren
+  horizzon_procesobject: SP0003 Opvragen stamgegevens aansluiting MV
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/a971a92b-4086-ef11-8b25-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0154-03.png
+B1114:
+  titel: Subprocesplaat SP0015 KA – Vaststellen en communiceren vastgestelde meterstanden KA door leverancier
+  sleutel: SP0015-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.16.2
+  msp_pagina: 161
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0015. Distribueren meetdata en opnemen in TMR RNB
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3719ec7b-8d8c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0161-10.png
+B1115:
+  titel: Subprocesplaat SP0015 KA – Ontvangen vastgestelde meterstand KA door systeembeheerder
+  sleutel: SP0015-KA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.16.2
+  msp_pagina: 162
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0015. Distribueren meetdata en opnemen in TMR RNB
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3719ec7b-8d8c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0162-06.png
+B1116:
+  titel: Subprocesplaat SP0015 KA – Vaststellen en berekenen meterstanden KA door systeembeheerder
+  sleutel: SP0015-KA-3
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.16.2
+  msp_pagina: 163
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0015. Distribueren meetdata en opnemen in TMR RNB
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3719ec7b-8d8c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0163-19.png
+B1117:
+  titel: Subprocesplaat SP0015 KA – SJ (SJV/SJA/SJI) bepalen
+  sleutel: SP0015-KA-4
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.16.6
+  msp_pagina: 167
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0015. Distribueren meetdata en opnemen in TMR RNB
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3719ec7b-8d8c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0167-02.png
+B1118:
+  titel: Subprocesplaat SP0015 KA – Volume bepalen voor reconciliatie
+  sleutel: SP0015-KA-5
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.16.6
+  msp_pagina: 167
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0015. Distribueren meetdata en opnemen in TMR RNB
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3719ec7b-8d8c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0167-06.png
+B1119:
+  titel: Subprocesplaat SP0015 KA – Distributie meetgegevens en opnemen in TMR
+  sleutel: SP0015-KA-6
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.16.6
+  msp_pagina: 168
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0015. Distribueren meetdata en opnemen in TMR RNB
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3719ec7b-8d8c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0168-01.png
+B1120:
+  titel: Subprocesplaat SP0015 GA – Collecteren meterstand GA
+  sleutel: SP0015-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.16.10
+  msp_pagina: 170
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0015. Distribueren meetdata en opnemen in TMR RNB
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3719ec7b-8d8c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0170-12.png
+B1121:
+  titel: Subprocesplaat SP0015 GA – Berekenen volume en versturen vastgestelde meterstand en volume
+  sleutel: SP0015-GA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.16.10
+  msp_pagina: 171
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0015. Distribueren meetdata en opnemen in TMR RNB
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3719ec7b-8d8c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0171-06.png
+B1122:
+  titel: Subprocesplaat SP0015 GA – SJ (SJV/SJA/SJI)-bepaling
+  sleutel: SP0015-GA-3
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.16.14
+  msp_pagina: 174
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0015. Distribueren meetdata en opnemen in TMR RNB
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3719ec7b-8d8c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0174-08.png
+B1123:
+  titel: Subprocesplaat SP0015 GA – Distributie meetgegevens
+  sleutel: SP0015-GA-4
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.16.14
+  msp_pagina: 175
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0015. Distribueren meetdata en opnemen in TMR RNB
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3719ec7b-8d8c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0175-01.png
+B1124:
+  titel: Subprocesplaat SP0015 GA – Procesbeschrijving
+  sleutel: SP0015-GA-5
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.16.14
+  msp_pagina: 176
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0015. Distribueren meetdata en opnemen in TMR RNB
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/3719ec7b-8d8c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0176-13.png
+B1125:
+  titel: Subprocesplaat SP0015a KA
+  sleutel: SP0015a-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.17.2
+  msp_pagina: 179
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0015a. Beoordelen en verwerken verzoek fysieke opname
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/319af99d-978c-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0179-01.png
+B1126:
+  titel: Subprocesplaat SP0019 KA – Controleren meterstand en eventueel melden meterstand in dispuut
+  sleutel: SP0019-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.18.2
+  msp_pagina: 180
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0019. Dispuut over meterstanden
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/e1fbe860-d148-ef11-84bf-06b7e16dc20b/explore
+  referentie_pdf: img/msp.pdf-0180-12.png
+B1127:
+  titel: Subprocesplaat SP0019 KA – Beoordelen van de melding dispuut en de alternatieve stand
+  sleutel: SP0019-KA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.18.2
+  msp_pagina: 182
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0019. Dispuut over meterstanden
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/e1fbe860-d148-ef11-84bf-06b7e16dc20b/explore
+  referentie_pdf: img/msp.pdf-0182-03.png
+B1128:
+  titel: Subprocesplaat SP0019 KA – Overleg met wederpartij
+  sleutel: SP0019-KA-3
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.18.2
+  msp_pagina: 183
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0019. Dispuut over meterstanden
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/e1fbe860-d148-ef11-84bf-06b7e16dc20b/explore
+  referentie_pdf: img/msp.pdf-0183-01.png
+B1129:
+  titel: Subprocesplaat SP0019 KA – Fysieke opname op basis kosten ongelijk
+  sleutel: SP0019-KA-4
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.18.2
+  msp_pagina: 183
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0019. Dispuut over meterstanden
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/e1fbe860-d148-ef11-84bf-06b7e16dc20b/explore
+  referentie_pdf: img/msp.pdf-0183-06.png
+B1130:
+  titel: Subprocesplaat SP0019 KA – Fysieke opname op basis kosten ongelijk
+  sleutel: SP0019-KA-5
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.18.2
+  msp_pagina: 184
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0019. Dispuut over meterstanden
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/e1fbe860-d148-ef11-84bf-06b7e16dc20b/explore
+  referentie_pdf: img/msp.pdf-0184-04.png
+B1131:
+  titel: Subprocesplaat SP0019 KA – Vaststellen meterstand na dispuut
+  sleutel: SP0019-KA-6
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.18.2
+  msp_pagina: 184
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0019. Dispuut over meterstanden
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/e1fbe860-d148-ef11-84bf-06b7e16dc20b/explore
+  referentie_pdf: img/msp.pdf-0184-10.png
+B1132:
+  titel: Subprocesplaat SP0016 GA
+  sleutel: SP0016-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.19.2
+  msp_pagina: 187
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0016. Uitwisselen historische meetgegevens
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/79755f51-308d-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0187-01.png
+B1133:
+  titel: Subprocesplaat zonder SP-code (§4.20.2) KA
+  sleutel: PB-4.20-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.20.2
+  msp_pagina: 189
+  status: view ontbreekt
+  regel: R2b
+  reden: MSP-paragraaf zonder SP-code; eerst code toekennen
+  referentie_pdf: img/msp.pdf-0189-16.png
+B1134:
+  titel: Subprocesplaat SP0101 KA-GA – Aanleggen van een allocatiepunt KA en GA
+  sleutel: SP0101-KA-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.21.2
+  msp_pagina: 193
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0193-09.png
+B1135:
+  titel: Subprocesplaat SP0101 KA-GA – In bedrijf nemen van een allocatiepunt KA en GA
+  sleutel: SP0101-KA-GA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.21.2
+  msp_pagina: 193
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0193-13.png
+B1136:
+  titel: Subprocesplaat SP0101 KA-GA – Uit bedrijf nemen van een allocatiepunt KA en GA
+  sleutel: SP0101-KA-GA-3
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.21.2
+  msp_pagina: 194
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0194-01.png
+B1137:
+  titel: Subprocesplaat SP0101 KA – Verwijderen van een allocatiepunt KA
+  sleutel: SP0101-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.21.2
+  msp_pagina: 194
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0194-05.png
+B1138:
+  titel: Subprocesplaat SP0101 GA – Verwijderen van een allocatiepunt GA
+  sleutel: SP0101-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.21.2
+  msp_pagina: 195
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0195-01.png
+B1139:
+  titel: Subprocesplaat SP0017 GA – Opleveren gegevens primaire deel van de meetinrichting
+  sleutel: SP0017-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.22.2
+  msp_pagina: 197
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0017. Opvraag en opleveren gegevens primair deel van de meetinrichting
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/fe70be65-4086-ef11-8b25-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0197-02.png
+B1140:
+  titel: Subprocesplaat SP0017 GA – Opvragen gegevens primaire deel van de meetinrichting
+  sleutel: SP0017-GA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.22.2
+  msp_pagina: 197
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0017. Opvraag en opleveren gegevens primair deel van de meetinrichting
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/fe70be65-4086-ef11-8b25-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0197-09.png
+B1141:
+  titel: Subprocesplaat SP0018 GA – Melden en beoordelen opvraag stamgegevens meetinrichting
+  sleutel: SP0018-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.23.2
+  msp_pagina: 200
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0018. Uitwisselen stamgegevens meetinrichting
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/5d51698c-b5b0-ef11-8b32-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0200-11.png
+B1142:
+  titel: Subprocesplaat SP0018 GA – Opleveren stamgegevens meetinrichting
+  sleutel: SP0018-GA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.23.2
+  msp_pagina: 201
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0018. Uitwisselen stamgegevens meetinrichting
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/5d51698c-b5b0-ef11-8b32-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0201-08.png
+B1143:
+  titel: Subprocesplaat SP0011 KA
+  sleutel: SP0011-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.24.2
+  msp_pagina: 203
+  status: gekoppeld
+  regel: R2
+  reden: SP-code in viewnaam
+  horizzon_view_id: de03c32a-e913-f111-8be4-f89e94656359
+  horizzon_view: SP0011 (Collaboration, model SP0011)
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/de03c32a-e913-f111-8be4-f89e94656359
+  referentie_pdf: img/msp.pdf-0203-07.png
+B1144:
+  titel: Subprocesplaat SP0026 KA – Opvragen gegevens getroffen allocatiepunten
+  sleutel: SP0026-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.25.2
+  msp_pagina: 206
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0026. Aanleveren gevraagde gegevens
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/1c2d4826-11b3-ef11-8b32-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0206-02.png
+B1145:
+  titel: Subprocesplaat SP0026 KA – Aanleveren gevraagde gegevens
+  sleutel: SP0026-KA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.25.2
+  msp_pagina: 206
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0026. Aanleveren gevraagde gegevens
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/1c2d4826-11b3-ef11-8b32-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0206-08.png
+B1146:
+  titel: Subprocesplaat SP0102 KA
+  sleutel: SP0102-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.26.2
+  msp_pagina: 208
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0208-16.png
+B1147:
+  titel: Subprocesplaat SP0043 KA
+  sleutel: SP0043-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.27.2
+  msp_pagina: 210
+  status: gekoppeld
+  regel: R2
+  reden: SP-code in viewnaam
+  horizzon_view_id: 9cb61268-ec13-f111-8be4-f89e94656359
+  horizzon_view: SP0043 - Indienen en beoordelen melding wijzigen allocatiemethode
+  horizzon: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/views/9cb61268-ec13-f111-8be4-f89e94656359
+  referentie_pdf: img/msp.pdf-0210-01.png
+B1148:
+  titel: Subprocesplaat SP0020 KA – Indienen en beoordelen verzoek
+  sleutel: SP0020-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.28.2
+  msp_pagina: 212
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0212-03.png
+B1149:
+  titel: Subprocesplaat SP0020 KA – Verwerken verzoek
+  sleutel: SP0020-KA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.28.2
+  msp_pagina: 213
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0213-01.png
+B1150:
+  titel: Subprocesplaat SP0020 KA – Ophalen resultaat
+  sleutel: SP0020-KA-3
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.28.2
+  msp_pagina: 214
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0214-16.png
+B1151:
+  titel: Subprocesplaat SP0025 KA
+  sleutel: SP0025-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.29.2
+  msp_pagina: 219
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0025. Facturering en afdracht LV
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/c79cd4e4-15b3-ef11-8b32-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0219-01.png
+B1152:
+  titel: Subprocesplaat SP0038 KA
+  sleutel: SP0038-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.30.2
+  msp_pagina: 221
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0038. Communicatie nettarieven
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/344a7043-178a-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0221-01.png
+B1153:
+  titel: Subprocesplaat SP0038 KA
+  sleutel: SP0038-KA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.30.3
+  msp_pagina: 221
+  status: view ontbreekt
+  regel: R2b
+  reden: procesobject in Horizzon, nog geen BPMN-view
+  horizzon_procesobject: SP0038. Communicatie nettarieven
+  horizzon_procesobject_link: https://mffbas.horizzon.cloud/sites/ee3cd8e9-b5c0-49ba-9fb8-f878e497e808/objects/344a7043-178a-ef11-8b26-f89e94656359/explore
+  referentie_pdf: img/msp.pdf-0221-12.png
+B1154:
+  titel: Subprocesplaat SP0103 KA
+  sleutel: SP0103-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.31.1
+  msp_pagina: 224
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0224-01.png
+B1155:
+  titel: Subprocesplaat SP0103 KA – Factuur verrekenen
+  sleutel: SP0103-KA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.31.1
+  msp_pagina: 225
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0225-23.png
+B1156:
+  titel: Subprocesplaat SP0103 GA – Procesbeschrijving
+  sleutel: SP0103-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.31.2
+  msp_pagina: 228
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0228-07.png
+B1157:
+  titel: Subprocesplaat SP0103 GA – Factuur verrekenen
+  sleutel: SP0103-GA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.31.2
+  msp_pagina: 230
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0230-01.png
+B1158:
+  titel: Subprocesplaat SP0060 GA
+  sleutel: SP0060-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.32.2
+  msp_pagina: 233
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0233-01.png
+B1159:
+  titel: Subprocesplaat SP0090 GA – Valideren gecorrigeerde meetgegevens en vaststellen te verrekenen volumes Procesbeschrijving
+  sleutel: SP0090-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.33.2
+  msp_pagina: 238
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0238-06.png
+B1160:
+  titel: Subprocesplaat SP0090 GA – Procesbeschrijving
+  sleutel: SP0090-GA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.33.2
+  msp_pagina: 239
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0239-06.png
+B1161:
+  titel: Subprocesplaat SP0090 GA – Procesbeschrijving
+  sleutel: SP0090-GA-3
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.33.2
+  msp_pagina: 240
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0240-18.png
+B1162:
+  titel: Subprocesplaat SP0071 KA
+  sleutel: SP0071-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.34.2
+  msp_pagina: 243
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0243-01.png
+B1163:
+  titel: Subprocesplaat SP0073 KA
+  sleutel: SP0073-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.35.2
+  msp_pagina: 245
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0245-03.png
+B1164:
+  titel: Subprocesplaat SP0072 KA
+  sleutel: SP0072-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.36.2
+  msp_pagina: 246
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0246-11.png
+B1165:
+  titel: Subprocesplaat SP0072 KA
+  sleutel: SP0072-KA-2
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.37.2
+  msp_pagina: 248
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0248-02.png
+B1166:
+  titel: Subprocesplaat SP0100 KA
+  sleutel: SP0100-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.38.2
+  msp_pagina: 249
+  status: view ontbreekt
+  regel: R2b
+  reden: SP-code niet gevonden in Horizzon
+  referentie_pdf: img/msp.pdf-0249-08.png
+B1167:
+  titel: Subprocesplaat zonder SP-code (§4.39.2) GA
+  sleutel: PB-4.39-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.39.2
+  msp_pagina: 251
+  status: view ontbreekt
+  regel: R2b
+  reden: MSP-paragraaf zonder SP-code; eerst code toekennen
+  referentie_pdf: img/msp.pdf-0251-01.png
+B1168:
+  titel: Subprocesplaat zonder SP-code (§4.40.2)
+  sleutel: PB-4.40
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.40.2
+  msp_pagina: 253
+  status: view ontbreekt
+  regel: R2b
+  reden: MSP-paragraaf zonder SP-code; eerst code toekennen
+  referentie_pdf: img/msp.pdf-0253-04.png
+B1169:
+  titel: Subprocesplaat zonder SP-code (§4.41.2) KA
+  sleutel: PB-4.41-KA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.41.2
+  msp_pagina: 255
+  status: view ontbreekt
+  regel: R2b
+  reden: MSP-paragraaf zonder SP-code; eerst code toekennen
+  referentie_pdf: img/msp.pdf-0255-01.png
+B1170:
+  titel: Subprocesplaat zonder SP-code (§4.42.2)
+  sleutel: PB-4.42
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.42.2
+  msp_pagina: 256
+  status: view ontbreekt
+  regel: R2b
+  reden: MSP-paragraaf zonder SP-code; eerst code toekennen
+  referentie_pdf: img/msp.pdf-0256-10.png
+B1171:
+  titel: Subprocesplaat zonder SP-code (§4.43.2) GA
+  sleutel: PB-4.43-GA
+  soort: subprocesplaat (BPMN)
+  msp_paragraaf: 4.43.2
+  msp_pagina: 259
+  status: view ontbreekt
+  regel: R2b
+  reden: MSP-paragraaf zonder SP-code; eerst code toekennen
+  referentie_pdf: img/msp.pdf-0259-04.png
+B1172:
+  titel: Wijzigen stamgegevens
+  sleutel: FIG-toelichting-op-het-begri-1
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 261
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0261-03.png
+B1173:
+  titel: Opvragen stamgegevens
+  sleutel: FIG-toelichting-op-het-begri-2
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 261
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0261-06.png
+B1174:
+  titel: Opvragen gegevens van allocatiepunten ten behoeve van identificatie van het allocatiepunt, premutatie en actief op het allocatiepunt
+  sleutel: FIG-toelichting-op-het-begri-3
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 261
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0261-14.png
+B1175:
+  titel: Uithuizing
+  sleutel: FIG-toelichting-op-het-begri-4
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 262
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0262-02.png
+B1176:
+  titel: Inhuizing
+  sleutel: FIG-toelichting-op-het-begri-5
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 262
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0262-05.png
+B1177:
+  titel: Leverancierswitch
+  sleutel: FIG-toelichting-op-het-begri-6
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 263
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0263-02.png
+B1178:
+  titel: Vaststellen meterstand
+  sleutel: FIG-toelichting-op-het-begri-7
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 263
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0263-05.png
+B1179:
+  titel: Bijlage Uniforme procedure Kruisende processen
+  sleutel: FIG-uniforme-procedure-kruis-1
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 264
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0264-04.png
+B1180:
+  titel: Bijlage Uniforme procedure Kruisende processen
+  sleutel: FIG-uniforme-procedure-kruis-2
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 264
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0264-05.png
+B1181:
+  titel: Bijlage Uniforme procedure Kruisende processen
+  sleutel: FIG-uniforme-procedure-kruis-3
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 265
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0265-00.png
+B1182:
+  titel: Bijlage Uniforme procedure Kruisende processen
+  sleutel: FIG-uniforme-procedure-kruis-4
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 265
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0265-03.png
+B1183:
+  titel: Bijlage Uniforme procedure Kruisende processen
+  sleutel: FIG-uniforme-procedure-kruis-5
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 265
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0265-05.png
+B1184:
+  titel: Bijlage Uniforme procedure Kruisende processen
+  sleutel: FIG-uniforme-procedure-kruis-6
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 266
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0266-01.png
+B1185:
+  titel: Bijlage Uniforme procedure Kruisende processen
+  sleutel: FIG-uniforme-procedure-kruis-7
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 266
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0266-03.png
+B1186:
+  titel: Bijlage Doelbinding in de vereiste gegevenssets voor leveranciers en balanceringsverantwoordelijken
+  sleutel: FIG-doelbinding-in-de-vereis-1
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 271
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0271-01.png
+B1187:
+  titel: Mutatie van de meetinrichting
+  sleutel: FIG-correctieprocessen-1
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 285
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0285-01.png
+B1188:
+  titel: 'Werkwijze I (Verwerking te late mutatie van de meetinrichting met berekende/afwijkende meterstanden):'
+  sleutel: FIG-correctieprocessen-2
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 287
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0287-04.png
+B1189:
+  titel: 'Werkwijze III (Mutatie van de meetinrichting op verkeerde EAN-code geregistreerd):'
+  sleutel: FIG-correctieprocessen-3
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 288
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0288-05.png
+B1190:
+  titel: 'Werkwijze IV (Foutief aangesloten meetinrichting elektriciteit):'
+  sleutel: FIG-correctieprocessen-4
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 289
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0289-16.png
+B1191:
+  titel: 'Werkwijze IV (Foutief aangesloten meetinrichting elektriciteit):'
+  sleutel: FIG-correctieprocessen-5
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 290
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0290-00.png
+B1192:
+  titel: Bijlage Format BTW-verrekening
+  sleutel: FIG-format-btw-verrekening-1
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 297
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0297-01.png
+B1193:
+  titel: maximale capaciteit G2C
+  sleutel: FIG-format-btw-verrekening-2
+  soort: overige figuur
+  msp_paragraaf: ''
+  msp_pagina: 298
+  status: geen Horizzon-bron
+  regel: R3
+  reden: tijdlijn/legenda/toelichting; tussenoplossing uitsnede uit PDF
+  referentie_pdf: img/msp.pdf-0298-06.png
