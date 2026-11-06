@@ -1,4 +1,6 @@
-# MSP Congestiebeheersing · pilot externe publicatie
+# Documentatiepipeline · pilot externe publicatie
+
+> **Huidige inhoud: MSP Retail v13.0.** `bron/` bevat de *Markt- en subprocessen Retailprocessen*, automatisch omgezet uit de PDF, met procesplaten als SVG-export uit BizzDesign Horizzon (B1001 en verder). Hoe figuren aan Horizzon-views worden gekoppeld, de dekking en de scripts om het opnieuw te genereren staan in [`msp_retail/`](msp_retail/) (zie [METHODE.md](msp_retail/METHODE.md) en [DEKKING.md](msp_retail/DEKKING.md)). De eerdere inhoud (MSP Congestiebeheersing, B0001–B0002) staat in de git-geschiedenis.
 
 Pilot voor het extern publiceren van architectuurdocumentatie van Het Normo die in Confluence wordt bijgehouden. Dezelfde inhoud wordt langs **twee paden** gepubliceerd, zodat we ze naast elkaar kunnen beoordelen en daarna één kiezen:
 

@@ -1,0 +1,12 @@
+# Handmatige beoordeling van koppelingen. Gaat altijd voor op de automatische regels.
+# Per bijlagenummer: sleutel (andere figuursleutel), view_id (vaste view), status + reden.
+
+B1103:
+  sleutel: SP0006-KA
+  reden: "§4.10 noemt SP0036 (vooraankondiging) én SP0006 (einde levering); deze plaat is 'Melding einde levering'"
+B1104:
+  sleutel: SP0006-GA
+  reden: "vooraankondiging einde levering bestaat alleen voor KA; GA-plaat hoort bij SP0006"
+B1151:
+  sleutel: SP0025-KA
+  reden: "één plaat voor SP0025 Opstellen + SP0035 Verzenden verplichting; sleutel op het eerste proces"

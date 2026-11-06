@@ -1,0 +1,557 @@
+{
+ "site": "ee3cd8e9-b5c0-49ba-9fb8-f878e497e808",
+ "horizzon": "https://mffbas.horizzon.cloud",
+ "opgehaald": "2026-11-06",
+ "views": [
+  {
+   "id": "049adabd-958c-ef11-8b26-f89e94656359",
+   "naam": "11. Meterstanden & SJV/SJA/SJI en verbruiksbepaling GA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "1495905c-b2b0-ef11-8b32-f89e94656359",
+   "naam": "18. Opleveren stamgegevens en opvraag stamgegevens Kleine en Grote aansluiting (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "16021b62-bb49-ef11-84bf-064bc8c3e99d",
+   "naam": "04.1 Uithuizing KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "25443d72-978c-ef11-8b26-f89e94656359",
+   "naam": "26. Communicatie nettarieven KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "2d24a746-13b3-ef11-8b32-f89e94656359",
+   "naam": "23. Wijzigen allocatiemethode KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "37ac4dfd-b4b0-ef11-8b32-f89e94656359",
+   "naam": "20. Opleveren stamgegevens meetinrichting op verzoek GA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "3994d600-17b3-ef11-8b32-f89e94656359",
+   "naam": "27. Informeren over meetcorrectie GA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "3a298695-3b86-ef11-8b25-f89e94656359",
+   "naam": "07.1 Bulk BRP-switch KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "4047c53b-398d-ef11-8b26-f89e94656359",
+   "naam": "16.2 Aanleggen, in- en uit bedrijf nemen en verwijderen aansluiting GA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "411f5a6f-8b8c-ef11-8b26-f89e94656359",
+   "naam": "10. Meterstanden & SJV/SJA/SJI en verbruiksbepaling KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "46c2dc5e-038a-ef11-8b26-f89e94656359",
+   "naam": "05.2 Einde levering GA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "50813046-1f91-ef11-8b28-088fc3766e18",
+   "naam": "17. Wijzigen naam Keine aansluiting (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "60385699-15b3-ef11-8b32-f89e94656359",
+   "naam": "25. Facturering en afdracht KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "62fdd833-654a-ef11-84c4-069a0fb5dc6b",
+   "naam": "03.2 Leverancierswitch GA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "6bf319b2-cf1b-f111-a335-000c291bd27f",
+   "naam": "24. Collecteren meterstanden KA",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "6ddb1271-8e8c-ef11-8b26-f89e94656359",
+   "naam": "09. Beëindigen Meetverantwoordelijkheid Grote aansluiting (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "6ee0ecc4-158a-ef11-8b26-f89e94656359",
+   "naam": "12. Fysieke opname KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "80c8b4ff-11b3-ef11-8b32-f89e94656359",
+   "naam": "22. Administratief aan- en uitzetten meetinrichting met CF KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "898006fc-13b3-ef11-8b32-f89e94656359",
+   "naam": "24. Collecteren meterstand P4 KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "a0e56bd2-b3b0-ef11-8b32-f89e94656359",
+   "naam": "19. Opleveren en opvragen gegevens primair deel meetinrichting GA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "a1d9aa8e-345e-ef11-84c8-06d90d8fd887",
+   "naam": "03.1 Leverancierswitch KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "a690b9c0-5d4a-ef11-84c4-069a0fb5dc6b",
+   "naam": "02.2 Inhuizing GA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "a785a626-f789-ef11-8b26-f89e94656359",
+   "naam": "04.2 Uithuizing GA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "af3b9d39-318d-ef11-8b26-f89e94656359",
+   "naam": "14. Dispuut over meterstanden KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "b6e5846b-506f-ef11-8b1d-f89e94656359",
+   "naam": "02.1 Inhuizing KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "c851c300-338d-ef11-8b26-f89e94656359",
+   "naam": "15. Metermutatie KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "ce14be37-348d-ef11-8b26-f89e94656359",
+   "naam": "16.1 Aanleggen, in- en uit bedrijf nemen en verwijderen aansluiting KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "cff7cfd7-3c86-ef11-8b25-f89e94656359",
+   "naam": "06.2 Individuele BRP-switch GA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "d43b1b3d-1ab3-ef11-8b32-f89e94656359",
+   "naam": "29. Controleren meternummer KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "d9e61ca7-3c86-ef11-8b25-f89e94656359",
+   "naam": "06.1 Individuele BRP-switch KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "df796c29-3f86-ef11-8b25-f89e94656359",
+   "naam": "08. MV-switch met meterwissel Grote aansluiting (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "f239edb6-2f8d-ef11-8b26-f89e94656359",
+   "naam": "13. Opleveren historische meetdata op verzoek GA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "f7b76d82-008a-ef11-8b26-f89e94656359",
+   "naam": "05.1 Einde levering KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "fe8dd8c7-10b3-ef11-8b32-f89e94656359",
+   "naam": "21. Opvragen gegevens t.b.v. compensatievergoedingen KA (e)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "806c365d-7934-ef11-84a7-065a9469fde7",
+   "naam": "Overzicht Markt- en subprocessen Retail (MSP)",
+   "soort": "ArchiMate:BusinessProcessView",
+   "map": "01. Architectuurmodellen Marktprocessen / 03A Views Markt- en subprocessen Retail"
+  },
+  {
+   "id": "de03c32a-e913-f111-8be4-f89e94656359",
+   "naam": "SP0011 (Collaboration, model SP0011)",
+   "soort": "BPMN:BPMN_CollaborationSchemeView",
+   "map": "SP0011"
+  },
+  {
+   "id": "9cb61268-ec13-f111-8be4-f89e94656359",
+   "naam": "SP0043 - Indienen en beoordelen melding wijzigen allocatiemethode",
+   "soort": "BPMN:BPMN_CollaborationSchemeView",
+   "map": "SP0043"
+  },
+  {
+   "id": "907532dc-ca48-ef11-84bf-06b7e16dc20b",
+   "naam": "SP0048 Raadplegen AR ter identificatie aansluiting",
+   "soort": "BPMN:BPMN_CollaborationSchemeView",
+   "map": "02. Procesmodellen Marktprocessen / Leverancierswitch - SP0048 Raadplegen AR"
+  }
+ ],
+ "sp_procesobjecten": [
+  {
+   "id": "47b8c6b2-008a-ef11-8b26-f89e94656359",
+   "naam": "SP0000. Aankondiging ontbinding contract",
+   "sp": "SP0000"
+  },
+  {
+   "id": "f57e8b0c-2924-f011-852f-06448a8fe01f",
+   "naam": "SP0000. Aankondiging ontbinding contract (2)",
+   "sp": "SP0000"
+  },
+  {
+   "id": "8372f171-348d-ef11-8b26-f89e94656359",
+   "naam": "SP0000. Klantcontact DSB",
+   "sp": "SP0000"
+  },
+  {
+   "id": "94ca68ca-d048-ef11-84bf-06b7e16dc20b",
+   "naam": "SP0000. Klantcontact Leverancier",
+   "sp": "SP0000"
+  },
+  {
+   "id": "ce1706a8-4086-ef11-8b25-f89e94656359",
+   "naam": "SP0000. Klantcontact MV",
+   "sp": "SP0000"
+  },
+  {
+   "id": "afc8d981-12b3-ef11-8b32-f89e94656359",
+   "naam": "SP0000. Verzoek aangeslotene",
+   "sp": "SP0000"
+  },
+  {
+   "id": "2f66e272-17b3-ef11-8b32-f89e94656359",
+   "naam": "SP0001. Beoordelen MCR",
+   "sp": "SP0001"
+  },
+  {
+   "id": "1d26c682-17b3-ef11-8b32-f89e94656359",
+   "naam": "SP0001. Besluit DSB MCR",
+   "sp": "SP0001"
+  },
+  {
+   "id": "d341fa48-17b3-ef11-8b32-f89e94656359",
+   "naam": "SP0001. Constatering meetfout versturen meetcorrectie rapport (MCR)",
+   "sp": "SP0001"
+  },
+  {
+   "id": "9620818c-17b3-ef11-8b32-f89e94656359",
+   "naam": "SP0001. Gecorrigeerde meetgegevens",
+   "sp": "SP0001"
+  },
+  {
+   "id": "3c824e7b-17b3-ef11-8b32-f89e94656359",
+   "naam": "SP0001. Overleg MCR",
+   "sp": "SP0001"
+  },
+  {
+   "id": "a971a92b-4086-ef11-8b25-f89e94656359",
+   "naam": "SP0003 Opvragen stamgegevens aansluiting MV",
+   "sp": "SP0003"
+  },
+  {
+   "id": "a1ca68ca-d048-ef11-84bf-06b7e16dc20b",
+   "naam": "SP0003. Opvragen stamgegevens aansluiting",
+   "sp": "SP0003"
+  },
+  {
+   "id": "f4b3a875-c749-ef11-84bf-064bc8c3e99d",
+   "naam": "SP0004. Indienen en beoordeling melding inhuizing",
+   "sp": "SP0004"
+  },
+  {
+   "id": "d96c9afa-506f-ef11-8b1d-f89e94656359",
+   "naam": "SP0005. Indienen en beoordeling melding uithuizing",
+   "sp": "SP0005"
+  },
+  {
+   "id": "141b94d4-008a-ef11-8b26-f89e94656359",
+   "naam": "SP0006. Vooraankondiging einde leveringsmelding",
+   "sp": "SP0006"
+  },
+  {
+   "id": "a4ca68ca-d048-ef11-84bf-06b7e16dc20b",
+   "naam": "SP0007. Indienen en beoordelen melding LV-switch",
+   "sp": "SP0007"
+  },
+  {
+   "id": "5a47f956-2d86-ef11-8b25-f89e94656359",
+   "naam": "SP0008. Indienen en beoordeling \"melding individuele BRP-switch\"",
+   "sp": "SP0008"
+  },
+  {
+   "id": "1b60888e-4086-ef11-8b25-f89e94656359",
+   "naam": "SP0009a. Uitvoeren meterwissel",
+   "sp": "SP0009a"
+  },
+  {
+   "id": "bf63eaeb-4086-ef11-8b25-f89e94656359",
+   "naam": "SP0009b. Indienen en beoordeling \"melding MV-switch\"",
+   "sp": "SP0009b"
+  },
+  {
+   "id": "4fbce9dd-398d-ef11-8b26-f89e94656359",
+   "naam": "SP0009c. MV-switch met meterwissel",
+   "sp": "SP0009c"
+  },
+  {
+   "id": "d00df13a-948c-ef11-8b26-f89e94656359",
+   "naam": "SP0010. Indienen en beoordeling melding einde MV",
+   "sp": "SP0010"
+  },
+  {
+   "id": "3d2267d1-c849-ef11-84bf-064bc8c3e99d",
+   "naam": "SP0013. Distribueren stamgegevens na mutatie",
+   "sp": "SP0013"
+  },
+  {
+   "id": "3719ec7b-8d8c-ef11-8b26-f89e94656359",
+   "naam": "SP0015. Distribueren meetdata en opnemen in TMR RNB",
+   "sp": "SP0015"
+  },
+  {
+   "id": "b1b49980-968c-ef11-8b26-f89e94656359",
+   "naam": "SP0015. Distributie meetdata DSB",
+   "sp": "SP0015"
+  },
+  {
+   "id": "fb5ec470-cb49-ef11-84bf-064bc8c3e99d",
+   "naam": "SP0015. Vaststellen en communiceren meterstanden DSB",
+   "sp": "SP0015"
+  },
+  {
+   "id": "e4fbe860-d148-ef11-84bf-06b7e16dc20b",
+   "naam": "SP0015. Vaststellen en communiceren meterstanden LV",
+   "sp": "SP0015"
+  },
+  {
+   "id": "1f9b2e4a-5e4a-ef11-84c4-069a0fb5dc6b",
+   "naam": "SP0015. Vaststellen en communiceren meterstanden MV",
+   "sp": "SP0015"
+  },
+  {
+   "id": "319af99d-978c-ef11-8b26-f89e94656359",
+   "naam": "SP0015a. Beoordelen en verwerken verzoek fysieke opname",
+   "sp": "SP0015a"
+  },
+  {
+   "id": "79755f51-308d-ef11-8b26-f89e94656359",
+   "naam": "SP0016. Uitwisselen historische meetgegevens",
+   "sp": "SP0016"
+  },
+  {
+   "id": "fe70be65-4086-ef11-8b25-f89e94656359",
+   "naam": "SP0017. Opvraag en opleveren gegevens primair deel van de meetinrichting",
+   "sp": "SP0017"
+  },
+  {
+   "id": "5d51698c-b5b0-ef11-8b32-f89e94656359",
+   "naam": "SP0018. Uitwisselen stamgegevens meetinrichting",
+   "sp": "SP0018"
+  },
+  {
+   "id": "e1fbe860-d148-ef11-84bf-06b7e16dc20b",
+   "naam": "SP0019. Dispuut over meterstanden",
+   "sp": "SP0019"
+  },
+  {
+   "id": "c9ce4eb5-318d-ef11-8b26-f89e94656359",
+   "naam": "SP0019a. Beoordeling melding en alternatieve stand",
+   "sp": "SP0019a"
+  },
+  {
+   "id": "67df27b2-338d-ef11-8b26-f89e94656359",
+   "naam": "SP0019b. Fysieke opname",
+   "sp": "SP0019b"
+  },
+  {
+   "id": "5e2079de-318d-ef11-8b26-f89e94656359",
+   "naam": "SP0019c. Fysieke opname op basis kosten ongelijk",
+   "sp": "SP0019c"
+  },
+  {
+   "id": "320c18cc-318d-ef11-8b26-f89e94656359",
+   "naam": "SP0019d. Overleg met wederpartij",
+   "sp": "SP0019d"
+  },
+  {
+   "id": "266a8936-328d-ef11-8b26-f89e94656359",
+   "naam": "SP0019e. Vaststellen meterstand na dispuut",
+   "sp": "SP0019e"
+  },
+  {
+   "id": "720ba4a2-318d-ef11-8b26-f89e94656359",
+   "naam": "SP0019f. Versturen melding dispuut",
+   "sp": "SP0019f"
+  },
+  {
+   "id": "6f2b2341-14b3-ef11-8b32-f89e94656359",
+   "naam": "SP0020a. Indienen verzoek meterstanden P4",
+   "sp": "SP0020a"
+  },
+  {
+   "id": "1500d24b-14b3-ef11-8b32-f89e94656359",
+   "naam": "SP0020b. Beoordelen en verwerken verzoek meterstanden P4",
+   "sp": "SP0020b"
+  },
+  {
+   "id": "8b9f2758-14b3-ef11-8b32-f89e94656359",
+   "naam": "SP0020c. Ophalen resultaat meterstanden P4",
+   "sp": "SP0020c"
+  },
+  {
+   "id": "a2ca68ca-d048-ef11-84bf-06b7e16dc20b",
+   "naam": "SP0022. Contracteinde gegevens",
+   "sp": "SP0022"
+  },
+  {
+   "id": "c79cd4e4-15b3-ef11-8b32-f89e94656359",
+   "naam": "SP0025. Facturering en afdracht LV",
+   "sp": "SP0025"
+  },
+  {
+   "id": "1c2d4826-11b3-ef11-8b32-f89e94656359",
+   "naam": "SP0026. Aanleveren gevraagde gegevens",
+   "sp": "SP0026"
+  },
+  {
+   "id": "1b2d4826-11b3-ef11-8b32-f89e94656359",
+   "naam": "SP0026. Bepalen populatie getroffen aansluitingen",
+   "sp": "SP0026"
+  },
+  {
+   "id": "1a2d4826-11b3-ef11-8b32-f89e94656359",
+   "naam": "SP0026. Opvraag gegevens getroffen aansluitingen",
+   "sp": "SP0026"
+  },
+  {
+   "id": "1d2d4826-11b3-ef11-8b32-f89e94656359",
+   "naam": "SP0026. Uitkeren compensatie vergoedingen",
+   "sp": "SP0026"
+  },
+  {
+   "id": "34f69ad9-653c-f011-8b6c-f89e94656359",
+   "naam": "SP0028. Verzamel verreken verzoek",
+   "sp": "SP0028"
+  },
+  {
+   "id": "6d280af2-15b3-ef11-8b32-f89e94656359",
+   "naam": "SP0035. Facturering en afdracht RNB",
+   "sp": "SP0035"
+  },
+  {
+   "id": "5744f359-018a-ef11-8b26-f89e94656359",
+   "naam": "SP0036. Indienen en beoordeling \"melding einde levering\"",
+   "sp": "SP0036"
+  },
+  {
+   "id": "1852dec3-487c-f011-8b84-f89e94656359",
+   "naam": "SP0037. Beheer leveranciers- en netbeheerdersregister",
+   "sp": "SP0037"
+  },
+  {
+   "id": "344a7043-178a-ef11-8b26-f89e94656359",
+   "naam": "SP0038. Communicatie nettarieven",
+   "sp": "SP0038"
+  },
+  {
+   "id": "07ad32e7-3b86-ef11-8b25-f89e94656359",
+   "naam": "SP0039. Indienen en beoordeling \"Melding Bulk BRP-switch\"",
+   "sp": "SP0039"
+  },
+  {
+   "id": "ec3e4685-13b3-ef11-8b32-f89e94656359",
+   "naam": "SP0043. Indienen en beoordeling \"melding wijzigen allocatie methode\"",
+   "sp": "SP0043"
+  },
+  {
+   "id": "a6ca68ca-d048-ef11-84bf-06b7e16dc20b",
+   "naam": "SP0048. Raadplegen AR ter identificatie van de aansluiting",
+   "sp": "SP0048"
+  },
+  {
+   "id": "9cca68ca-d048-ef11-84bf-06b7e16dc20b",
+   "naam": "SP0050. Opvragen gegevens tbv aanbod",
+   "sp": "SP0050"
+  },
+  {
+   "id": "e3fbe860-d148-ef11-84bf-06b7e16dc20b",
+   "naam": "SP0051. Distribueren meetdata en opnemen in TMR",
+   "sp": "SP0051"
+  },
+  {
+   "id": "bca7a5b7-ca49-ef11-84bf-064bc8c3e99d",
+   "naam": "SP0051. Klantsleutel- registratie en aanlevering",
+   "sp": "SP0051"
+  },
+  {
+   "id": "97ca68ca-d048-ef11-84bf-06b7e16dc20b",
+   "naam": "SP0052. Opvragen gegevens tbv pre-mutatie",
+   "sp": "SP0052"
+  },
+  {
+   "id": "9bca68ca-d048-ef11-84bf-06b7e16dc20b",
+   "naam": "SP0054. Raadplegen TMR in pre-mutatie fase",
+   "sp": "SP0054"
+  },
+  {
+   "id": "3fee9e88-169c-ef11-8b2c-f89e94656359",
+   "naam": "SP0055. Aanleveren gegevens aangeslotene (E-Wet)",
+   "sp": "SP0055"
+  },
+  {
+   "id": "0637c26f-684a-ef11-84c4-069a0fb5dc6b",
+   "naam": "SP0092. Vooraankondiging leverancierswitch",
+   "sp": "SP0092"
+  },
+  {
+   "id": "2cd6d8ad-814a-ef11-84c4-06d1e23a8427",
+   "naam": "SP0095. Opvragen contracterende leverancier bij Netbeheerder",
+   "sp": "SP0095"
+  }
+ ]
+}

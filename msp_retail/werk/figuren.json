@@ -1,0 +1,2512 @@
+[
+ {
+  "bijlage": "B1001",
+  "sleutel": "FIG-1.2-1",
+  "type": "overige figuur",
+  "titel": "1.2 Structuur",
+  "paragraaf": "1.2",
+  "kop": "1 Inleiding > 1.2 Structuur",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 19,
+  "referentie": "img/msp.pdf-0019-01.png"
+ },
+ {
+  "bijlage": "B1002",
+  "sleutel": "LEG-3",
+  "type": "legenda",
+  "titel": "Legenda procesplaten",
+  "paragraaf": "3",
+  "kop": "3 Beschrijvingen marktprocessen",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 36,
+  "referentie": "img/msp.pdf-0036-02.png"
+ },
+ {
+  "bijlage": "B1003",
+  "sleutel": "MP-3.2.1",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Inhuizing KA",
+  "paragraaf": "3.2.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.2 Inhuizing KA en GA > 3.2.1 Inhuizing KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 37,
+  "referentie": "img/msp.pdf-0037-01.png"
+ },
+ {
+  "bijlage": "B1004",
+  "sleutel": "TL-3.2.1",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Inhuizing KA",
+  "paragraaf": "3.2.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.2 Inhuizing KA en GA > 3.2.1 Inhuizing KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 37,
+  "referentie": "img/msp.pdf-0037-02.png"
+ },
+ {
+  "bijlage": "B1005",
+  "sleutel": "MP-3.2.2",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Inhuizing GA",
+  "paragraaf": "3.2.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.2 Inhuizing KA en GA > 3.2.2 Inhuizing GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 37,
+  "referentie": "img/msp.pdf-0037-04.png"
+ },
+ {
+  "bijlage": "B1006",
+  "sleutel": "TL-3.2.2",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Inhuizing GA",
+  "paragraaf": "3.2.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.2 Inhuizing KA en GA > 3.2.2 Inhuizing GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 38,
+  "referentie": "img/msp.pdf-0038-00.png"
+ },
+ {
+  "bijlage": "B1007",
+  "sleutel": "MP-3.3.1",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Leverancierswitch KA",
+  "paragraaf": "3.3.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.3 Leverancierswitch KA en GA > 3.3.1 Leverancierswitch KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 38,
+  "referentie": "img/msp.pdf-0038-04.png"
+ },
+ {
+  "bijlage": "B1008",
+  "sleutel": "TL-3.3.1",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Leverancierswitch KA",
+  "paragraaf": "3.3.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.3 Leverancierswitch KA en GA > 3.3.1 Leverancierswitch KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 38,
+  "referentie": "img/msp.pdf-0038-05.png"
+ },
+ {
+  "bijlage": "B1009",
+  "sleutel": "MP-3.3.2",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Leverancierswitch GA",
+  "paragraaf": "3.3.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.3 Leverancierswitch KA en GA > 3.3.2 Leverancierswitch GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 39,
+  "referentie": "img/msp.pdf-0039-01.png"
+ },
+ {
+  "bijlage": "B1010",
+  "sleutel": "TL-3.3.2",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Leverancierswitch GA",
+  "paragraaf": "3.3.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.3 Leverancierswitch KA en GA > 3.3.2 Leverancierswitch GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 39,
+  "referentie": "img/msp.pdf-0039-02.png"
+ },
+ {
+  "bijlage": "B1011",
+  "sleutel": "MP-3.4.1",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Uithuizing KA",
+  "paragraaf": "3.4.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.4 Uithuizing KA en GA > 3.4.1 Uithuizing KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 40,
+  "referentie": "img/msp.pdf-0040-03.png"
+ },
+ {
+  "bijlage": "B1012",
+  "sleutel": "TL-3.4.1",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Uithuizing KA",
+  "paragraaf": "3.4.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.4 Uithuizing KA en GA > 3.4.1 Uithuizing KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 40,
+  "referentie": "img/msp.pdf-0040-04.png"
+ },
+ {
+  "bijlage": "B1013",
+  "sleutel": "MP-3.4.2",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Uithuizing GA",
+  "paragraaf": "3.4.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.4 Uithuizing KA en GA > 3.4.2 Uithuizing GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 41,
+  "referentie": "img/msp.pdf-0041-01.png"
+ },
+ {
+  "bijlage": "B1014",
+  "sleutel": "TL-3.4.2",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Uithuizing GA",
+  "paragraaf": "3.4.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.4 Uithuizing KA en GA > 3.4.2 Uithuizing GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 41,
+  "referentie": "img/msp.pdf-0041-02.png"
+ },
+ {
+  "bijlage": "B1015",
+  "sleutel": "MP-3.5.1",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Einde levering KA",
+  "paragraaf": "3.5.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.5 Einde levering KA en GA > 3.5.1 Einde levering KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 42,
+  "referentie": "img/msp.pdf-0042-03.png"
+ },
+ {
+  "bijlage": "B1016",
+  "sleutel": "TL-3.5.1",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Einde levering KA",
+  "paragraaf": "3.5.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.5 Einde levering KA en GA > 3.5.1 Einde levering KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 42,
+  "referentie": "img/msp.pdf-0042-04.png"
+ },
+ {
+  "bijlage": "B1017",
+  "sleutel": "MP-3.5.2",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Einde levering GA",
+  "paragraaf": "3.5.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.5 Einde levering KA en GA > 3.5.2 Einde levering GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 43,
+  "referentie": "img/msp.pdf-0043-01.png"
+ },
+ {
+  "bijlage": "B1018",
+  "sleutel": "TL-3.5.2",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Einde levering GA",
+  "paragraaf": "3.5.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.5 Einde levering KA en GA > 3.5.2 Einde levering GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 43,
+  "referentie": "img/msp.pdf-0043-02.png"
+ },
+ {
+  "bijlage": "B1019",
+  "sleutel": "MP-3.6.1",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Individuele BRP-switch KA",
+  "paragraaf": "3.6.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.6 Individuele BRP-switch KA en GA > 3.6.1 Individuele BRP-switch KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 44,
+  "referentie": "img/msp.pdf-0044-01.png"
+ },
+ {
+  "bijlage": "B1020",
+  "sleutel": "TL-3.6.1",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Individuele BRP-switch KA",
+  "paragraaf": "3.6.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.6 Individuele BRP-switch KA en GA > 3.6.1 Individuele BRP-switch KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 44,
+  "referentie": "img/msp.pdf-0044-02.png"
+ },
+ {
+  "bijlage": "B1021",
+  "sleutel": "MP-3.6.2",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Individuele BRP-switch GA",
+  "paragraaf": "3.6.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.6 Individuele BRP-switch KA en GA > 3.6.2 Individuele BRP-switch GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 44,
+  "referentie": "img/msp.pdf-0044-04.png"
+ },
+ {
+  "bijlage": "B1022",
+  "sleutel": "TL-3.6.2",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Individuele BRP-switch GA",
+  "paragraaf": "3.6.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.6 Individuele BRP-switch KA en GA > 3.6.2 Individuele BRP-switch GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 45,
+  "referentie": "img/msp.pdf-0045-00.png"
+ },
+ {
+  "bijlage": "B1023",
+  "sleutel": "MP-3.7",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Bulk BRP-switch KA",
+  "paragraaf": "3.7",
+  "kop": "3 Beschrijvingen marktprocessen > 3.7 Bulk BRP-switch KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 45,
+  "referentie": "img/msp.pdf-0045-03.png"
+ },
+ {
+  "bijlage": "B1024",
+  "sleutel": "TL-3.7",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Bulk BRP-switch KA",
+  "paragraaf": "3.7",
+  "kop": "3 Beschrijvingen marktprocessen > 3.7 Bulk BRP-switch KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 45,
+  "referentie": "img/msp.pdf-0045-04.png"
+ },
+ {
+  "bijlage": "B1025",
+  "sleutel": "MP-3.8",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Meetverantwoordelijke partij switch met wissel van meetinrichting GA",
+  "paragraaf": "3.8",
+  "kop": "3 Beschrijvingen marktprocessen > 3.8 Meetverantwoordelijke partij switch met wissel van meetinrichting GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 46,
+  "referentie": "img/msp.pdf-0046-00.png"
+ },
+ {
+  "bijlage": "B1026",
+  "sleutel": "TL-3.8",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Meetverantwoordelijke partij switch met wissel van meetinrichting GA",
+  "paragraaf": "3.8",
+  "kop": "3 Beschrijvingen marktprocessen > 3.8 Meetverantwoordelijke partij switch met wissel van meetinrichting GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 46,
+  "referentie": "img/msp.pdf-0046-01.png"
+ },
+ {
+  "bijlage": "B1027",
+  "sleutel": "MP-3.9",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Beëindigen meetverantwoordelijkheid GA",
+  "paragraaf": "3.9",
+  "kop": "3 Beschrijvingen marktprocessen > 3.9 Beëindigen meetverantwoordelijkheid GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 47,
+  "referentie": "img/msp.pdf-0047-00.png"
+ },
+ {
+  "bijlage": "B1028",
+  "sleutel": "TL-3.9",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Beëindigen meetverantwoordelijkheid GA",
+  "paragraaf": "3.9",
+  "kop": "3 Beschrijvingen marktprocessen > 3.9 Beëindigen meetverantwoordelijkheid GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 47,
+  "referentie": "img/msp.pdf-0047-01.png"
+ },
+ {
+  "bijlage": "B1029",
+  "sleutel": "MP-3.10",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Meterstand en SJ en volumebepaling KA",
+  "paragraaf": "3.10",
+  "kop": "3 Beschrijvingen marktprocessen > 3.10 Meterstand en SJ en volumebepaling KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 48,
+  "referentie": "img/msp.pdf-0048-00.png"
+ },
+ {
+  "bijlage": "B1030",
+  "sleutel": "TL-3.10",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Meterstand en SJ en volumebepaling KA",
+  "paragraaf": "3.10",
+  "kop": "3 Beschrijvingen marktprocessen > 3.10 Meterstand en SJ en volumebepaling KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 48,
+  "referentie": "img/msp.pdf-0048-01.png"
+ },
+ {
+  "bijlage": "B1031",
+  "sleutel": "TL-3.10-2",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Meterstand en SJ en volumebepaling KA",
+  "paragraaf": "3.10",
+  "kop": "3 Beschrijvingen marktprocessen > 3.10 Meterstand en SJ en volumebepaling KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 48,
+  "referentie": "img/msp.pdf-0048-02.png"
+ },
+ {
+  "bijlage": "B1032",
+  "sleutel": "MP-3.11",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Meterstand en volume en SJ-bepaling GA",
+  "paragraaf": "3.11",
+  "kop": "3 Beschrijvingen marktprocessen > 3.11 Meterstand en volume en SJ-bepaling GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 49,
+  "referentie": "img/msp.pdf-0049-00.png"
+ },
+ {
+  "bijlage": "B1033",
+  "sleutel": "TL-3.11",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Meterstand en volume en SJ-bepaling GA",
+  "paragraaf": "3.11",
+  "kop": "3 Beschrijvingen marktprocessen > 3.11 Meterstand en volume en SJ-bepaling GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 49,
+  "referentie": "img/msp.pdf-0049-01.png"
+ },
+ {
+  "bijlage": "B1034",
+  "sleutel": "TL-3.11-2",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Meterstand en volume en SJ-bepaling GA",
+  "paragraaf": "3.11",
+  "kop": "3 Beschrijvingen marktprocessen > 3.11 Meterstand en volume en SJ-bepaling GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 50,
+  "referentie": "img/msp.pdf-0050-00.png"
+ },
+ {
+  "bijlage": "B1035",
+  "sleutel": "MP-3.12",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Fysieke opname KA",
+  "paragraaf": "3.12",
+  "kop": "3 Beschrijvingen marktprocessen > 3.12 Fysieke opname KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 50,
+  "referentie": "img/msp.pdf-0050-03.png"
+ },
+ {
+  "bijlage": "B1036",
+  "sleutel": "TL-3.12",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Fysieke opname KA",
+  "paragraaf": "3.12",
+  "kop": "3 Beschrijvingen marktprocessen > 3.12 Fysieke opname KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 50,
+  "referentie": "img/msp.pdf-0050-04.png"
+ },
+ {
+  "bijlage": "B1037",
+  "sleutel": "MP-3.13",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Opleveren historische meetgegevens op verzoek GA",
+  "paragraaf": "3.13",
+  "kop": "3 Beschrijvingen marktprocessen > 3.13 Opleveren historische meetgegevens op verzoek GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 51,
+  "referentie": "img/msp.pdf-0051-02.png"
+ },
+ {
+  "bijlage": "B1038",
+  "sleutel": "TL-3.13",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Opleveren historische meetgegevens op verzoek GA",
+  "paragraaf": "3.13",
+  "kop": "3 Beschrijvingen marktprocessen > 3.13 Opleveren historische meetgegevens op verzoek GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 51,
+  "referentie": "img/msp.pdf-0051-03.png"
+ },
+ {
+  "bijlage": "B1039",
+  "sleutel": "MP-3.14",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Dispuut over meterstanden KA",
+  "paragraaf": "3.14",
+  "kop": "3 Beschrijvingen marktprocessen > 3.14 Dispuut over meterstanden KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 52,
+  "referentie": "img/msp.pdf-0052-02.png"
+ },
+ {
+  "bijlage": "B1040",
+  "sleutel": "TL-3.14",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Dispuut over meterstanden KA",
+  "paragraaf": "3.14",
+  "kop": "3 Beschrijvingen marktprocessen > 3.14 Dispuut over meterstanden KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 52,
+  "referentie": "img/msp.pdf-0052-03.png"
+ },
+ {
+  "bijlage": "B1041",
+  "sleutel": "MP-3.15",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Mutatie van de meetinrichting KA",
+  "paragraaf": "3.15",
+  "kop": "3 Beschrijvingen marktprocessen > 3.15 Mutatie van de meetinrichting KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 53,
+  "referentie": "img/msp.pdf-0053-02.png"
+ },
+ {
+  "bijlage": "B1042",
+  "sleutel": "TL-3.15",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Mutatie van de meetinrichting KA",
+  "paragraaf": "3.15",
+  "kop": "3 Beschrijvingen marktprocessen > 3.15 Mutatie van de meetinrichting KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 53,
+  "referentie": "img/msp.pdf-0053-03.png"
+ },
+ {
+  "bijlage": "B1043",
+  "sleutel": "MP-3.16.1",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA",
+  "paragraaf": "3.16.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.16 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA en GA > 3.16.1 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 54,
+  "referentie": "img/msp.pdf-0054-01.png"
+ },
+ {
+  "bijlage": "B1044",
+  "sleutel": "TL-3.16.1",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA",
+  "paragraaf": "3.16.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.16 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA en GA > 3.16.1 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 54,
+  "referentie": "img/msp.pdf-0054-02.png"
+ },
+ {
+  "bijlage": "B1045",
+  "sleutel": "TL-3.16.1-2",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA",
+  "paragraaf": "3.16.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.16 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA en GA > 3.16.1 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 54,
+  "referentie": "img/msp.pdf-0054-03.png"
+ },
+ {
+  "bijlage": "B1046",
+  "sleutel": "TL-3.16.1-3",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA",
+  "paragraaf": "3.16.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.16 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA en GA > 3.16.1 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 54,
+  "referentie": "img/msp.pdf-0054-04.png"
+ },
+ {
+  "bijlage": "B1047",
+  "sleutel": "TL-3.16.1-4",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA",
+  "paragraaf": "3.16.1",
+  "kop": "3 Beschrijvingen marktprocessen > 3.16 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA en GA > 3.16.1 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 54,
+  "referentie": "img/msp.pdf-0054-05.png"
+ },
+ {
+  "bijlage": "B1048",
+  "sleutel": "MP-3.16.2",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA",
+  "paragraaf": "3.16.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.16 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA en GA > 3.16.2 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 55,
+  "referentie": "img/msp.pdf-0055-01.png"
+ },
+ {
+  "bijlage": "B1049",
+  "sleutel": "TL-3.16.2",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA",
+  "paragraaf": "3.16.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.16 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA en GA > 3.16.2 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 55,
+  "referentie": "img/msp.pdf-0055-02.png"
+ },
+ {
+  "bijlage": "B1050",
+  "sleutel": "TL-3.16.2-2",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA",
+  "paragraaf": "3.16.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.16 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA en GA > 3.16.2 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 55,
+  "referentie": "img/msp.pdf-0055-03.png"
+ },
+ {
+  "bijlage": "B1051",
+  "sleutel": "TL-3.16.2-3",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA",
+  "paragraaf": "3.16.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.16 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA en GA > 3.16.2 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 55,
+  "referentie": "img/msp.pdf-0055-04.png"
+ },
+ {
+  "bijlage": "B1052",
+  "sleutel": "TL-3.16.2-4",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA",
+  "paragraaf": "3.16.2",
+  "kop": "3 Beschrijvingen marktprocessen > 3.16 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt KA en GA > 3.16.2 Aanleggen, in- en uitbedrijf nemen en verwijderen van een allocatiepunt GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 55,
+  "referentie": "img/msp.pdf-0055-05.png"
+ },
+ {
+  "bijlage": "B1053",
+  "sleutel": "MP-3.17",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Wijzigen gegevens aangeslotene KA",
+  "paragraaf": "3.17",
+  "kop": "3 Beschrijvingen marktprocessen > 3.17 Wijzigen gegevens aangeslotene KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 56,
+  "referentie": "img/msp.pdf-0056-02.png"
+ },
+ {
+  "bijlage": "B1054",
+  "sleutel": "TL-3.17",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Wijzigen gegevens aangeslotene KA",
+  "paragraaf": "3.17",
+  "kop": "3 Beschrijvingen marktprocessen > 3.17 Wijzigen gegevens aangeslotene KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 56,
+  "referentie": "img/msp.pdf-0056-03.png"
+ },
+ {
+  "bijlage": "B1055",
+  "sleutel": "MP-3.18",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Opleveren stamgegevens en Opvraag stamgegevens allocatiepunt KA en GA",
+  "paragraaf": "3.18",
+  "kop": "3 Beschrijvingen marktprocessen > 3.18 Opleveren stamgegevens en Opvraag stamgegevens allocatiepunt KA en GA",
+  "variant": "KA-GA",
+  "sp_codes": [],
+  "pdf_pagina": 57,
+  "referentie": "img/msp.pdf-0057-00.png"
+ },
+ {
+  "bijlage": "B1056",
+  "sleutel": "TL-3.18",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Opleveren stamgegevens en Opvraag stamgegevens allocatiepunt KA en GA",
+  "paragraaf": "3.18",
+  "kop": "3 Beschrijvingen marktprocessen > 3.18 Opleveren stamgegevens en Opvraag stamgegevens allocatiepunt KA en GA",
+  "variant": "KA-GA",
+  "sp_codes": [],
+  "pdf_pagina": 57,
+  "referentie": "img/msp.pdf-0057-01.png"
+ },
+ {
+  "bijlage": "B1057",
+  "sleutel": "MP-3.19",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Opleveren en opvragen gegevens primair deel van de meetinrichting GA",
+  "paragraaf": "3.19",
+  "kop": "3 Beschrijvingen marktprocessen > 3.19 Opleveren en opvragen gegevens primair deel van de meetinrichting GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 58,
+  "referentie": "img/msp.pdf-0058-01.png"
+ },
+ {
+  "bijlage": "B1058",
+  "sleutel": "MP-3.20",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Opleveren stamgegevens meetinrichting op verzoek GA",
+  "paragraaf": "3.20",
+  "kop": "3 Beschrijvingen marktprocessen > 3.20 Opleveren stamgegevens meetinrichting op verzoek GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 58,
+  "referentie": "img/msp.pdf-0058-04.png"
+ },
+ {
+  "bijlage": "B1059",
+  "sleutel": "MP-3.21",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Opvragen gegevens ten behoeve van compensatievergoedingen KA",
+  "paragraaf": "3.21",
+  "kop": "3 Beschrijvingen marktprocessen > 3.21 Opvragen gegevens ten behoeve van compensatievergoedingen KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 59,
+  "referentie": "img/msp.pdf-0059-01.png"
+ },
+ {
+  "bijlage": "B1060",
+  "sleutel": "TL-3.21",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Opvragen gegevens ten behoeve van compensatievergoedingen KA",
+  "paragraaf": "3.21",
+  "kop": "3 Beschrijvingen marktprocessen > 3.21 Opvragen gegevens ten behoeve van compensatievergoedingen KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 59,
+  "referentie": "img/msp.pdf-0059-02.png"
+ },
+ {
+  "bijlage": "B1061",
+  "sleutel": "MP-3.22",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Administratief aan- en uitzetten meetinrichting met communicatiefunctionaliteit KA",
+  "paragraaf": "3.22",
+  "kop": "3 Beschrijvingen marktprocessen > 3.22 Administratief aan- en uitzetten meetinrichting met communicatiefunctionaliteit KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 60,
+  "referentie": "img/msp.pdf-0060-00.png"
+ },
+ {
+  "bijlage": "B1062",
+  "sleutel": "MP-3.23",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Wijzigen allocatiemethode KA",
+  "paragraaf": "3.23",
+  "kop": "3 Beschrijvingen marktprocessen > 3.23 Wijzigen allocatiemethode KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 60,
+  "referentie": "img/msp.pdf-0060-03.png"
+ },
+ {
+  "bijlage": "B1063",
+  "sleutel": "TL-3.23",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Wijzigen allocatiemethode KA",
+  "paragraaf": "3.23",
+  "kop": "3 Beschrijvingen marktprocessen > 3.23 Wijzigen allocatiemethode KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 61,
+  "referentie": "img/msp.pdf-0061-00.png"
+ },
+ {
+  "bijlage": "B1064",
+  "sleutel": "MP-3.24",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Collecteren meterstand P4 KA",
+  "paragraaf": "3.24",
+  "kop": "3 Beschrijvingen marktprocessen > 3.24 Collecteren meterstand P4 KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 61,
+  "referentie": "img/msp.pdf-0061-03.png"
+ },
+ {
+  "bijlage": "B1065",
+  "sleutel": "TL-3.24",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Collecteren meterstand P4 KA",
+  "paragraaf": "3.24",
+  "kop": "3 Beschrijvingen marktprocessen > 3.24 Collecteren meterstand P4 KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 61,
+  "referentie": "img/msp.pdf-0061-04.png"
+ },
+ {
+  "bijlage": "B1066",
+  "sleutel": "MP-3.25",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Facturering en afdracht KA",
+  "paragraaf": "3.25",
+  "kop": "3 Beschrijvingen marktprocessen > 3.25 Facturering en afdracht KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 62,
+  "referentie": "img/msp.pdf-0062-02.png"
+ },
+ {
+  "bijlage": "B1067",
+  "sleutel": "MP-3.26",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Communicatie systeemtarieven KA",
+  "paragraaf": "3.26",
+  "kop": "3 Beschrijvingen marktprocessen > 3.26 Communicatie systeemtarieven KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 62,
+  "referentie": "img/msp.pdf-0062-05.png"
+ },
+ {
+  "bijlage": "B1068",
+  "sleutel": "MP-3.27",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Informeren over meetcorrectie GA",
+  "paragraaf": "3.27",
+  "kop": "3 Beschrijvingen marktprocessen > 3.27 Informeren over meetcorrectie GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 63,
+  "referentie": "img/msp.pdf-0063-04.png"
+ },
+ {
+  "bijlage": "B1069",
+  "sleutel": "TL-3.27",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Informeren over meetcorrectie GA",
+  "paragraaf": "3.27",
+  "kop": "3 Beschrijvingen marktprocessen > 3.27 Informeren over meetcorrectie GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 63,
+  "referentie": "img/msp.pdf-0063-05.png"
+ },
+ {
+  "bijlage": "B1070",
+  "sleutel": "MP-3.28",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Verrekenen meetfouten GA",
+  "paragraaf": "3.28",
+  "kop": "3 Beschrijvingen marktprocessen > 3.28 Verrekenen meetfouten GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 64,
+  "referentie": "img/msp.pdf-0064-00.png"
+ },
+ {
+  "bijlage": "B1071",
+  "sleutel": "TL-3.28",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Verrekenen meetfouten GA",
+  "paragraaf": "3.28",
+  "kop": "3 Beschrijvingen marktprocessen > 3.28 Verrekenen meetfouten GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 64,
+  "referentie": "img/msp.pdf-0064-01.png"
+ },
+ {
+  "bijlage": "B1072",
+  "sleutel": "TL-3.28-2",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Verrekenen meetfouten GA",
+  "paragraaf": "3.28",
+  "kop": "3 Beschrijvingen marktprocessen > 3.28 Verrekenen meetfouten GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 64,
+  "referentie": "img/msp.pdf-0064-02.png"
+ },
+ {
+  "bijlage": "B1073",
+  "sleutel": "MP-3.29",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Controleren meetinrichtingnummer KA",
+  "paragraaf": "3.29",
+  "kop": "3 Beschrijvingen marktprocessen > 3.29 Controleren meetinrichtingnummer KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 65,
+  "referentie": "img/msp.pdf-0065-00.png"
+ },
+ {
+  "bijlage": "B1074",
+  "sleutel": "TL-3.29",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Controleren meetinrichtingnummer KA",
+  "paragraaf": "3.29",
+  "kop": "3 Beschrijvingen marktprocessen > 3.29 Controleren meetinrichtingnummer KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 65,
+  "referentie": "img/msp.pdf-0065-01.png"
+ },
+ {
+  "bijlage": "B1075",
+  "sleutel": "MP-3.30",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Wijzigen meet- en allocatiemethode GA in aansluitingenregister op verzoek van MV",
+  "paragraaf": "3.30",
+  "kop": "3 Beschrijvingen marktprocessen > 3.30 Wijzigen meet- en allocatiemethode GA in aansluitingenregister op verzoek van MV",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 65,
+  "referentie": "img/msp.pdf-0065-03.png"
+ },
+ {
+  "bijlage": "B1076",
+  "sleutel": "MP-3.31",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Collecteren intervalmeterstanden en berekenen allocatievolumes SMA",
+  "paragraaf": "3.31",
+  "kop": "3 Beschrijvingen marktprocessen > 3.31 Collecteren intervalmeterstanden en berekenen allocatievolumes SMA",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 66,
+  "referentie": "img/msp.pdf-0066-02.png"
+ },
+ {
+  "bijlage": "B1077",
+  "sleutel": "TL-3.31",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Collecteren intervalmeterstanden en berekenen allocatievolumes SMA",
+  "paragraaf": "3.31",
+  "kop": "3 Beschrijvingen marktprocessen > 3.31 Collecteren intervalmeterstanden en berekenen allocatievolumes SMA",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 66,
+  "referentie": "img/msp.pdf-0066-03.png"
+ },
+ {
+  "bijlage": "B1078",
+  "sleutel": "TL-3.31-2",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Collecteren intervalmeterstanden en berekenen allocatievolumes SMA",
+  "paragraaf": "3.31",
+  "kop": "3 Beschrijvingen marktprocessen > 3.31 Collecteren intervalmeterstanden en berekenen allocatievolumes SMA",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 66,
+  "referentie": "img/msp.pdf-0066-04.png"
+ },
+ {
+  "bijlage": "B1079",
+  "sleutel": "MP-3.32",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Verzoeken vaststellen meterstand KA",
+  "paragraaf": "3.32",
+  "kop": "3 Beschrijvingen marktprocessen > 3.32 Verzoeken vaststellen meterstand KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 67,
+  "referentie": "img/msp.pdf-0067-00.png"
+ },
+ {
+  "bijlage": "B1080",
+  "sleutel": "TL-3.32",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Verzoeken vaststellen meterstand KA",
+  "paragraaf": "3.32",
+  "kop": "3 Beschrijvingen marktprocessen > 3.32 Verzoeken vaststellen meterstand KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 67,
+  "referentie": "img/msp.pdf-0067-01.png"
+ },
+ {
+  "bijlage": "B1081",
+  "sleutel": "MP-3.33",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Opvragen gegevens ten behoeve van analyse niet gecollecteerde meterstand P4",
+  "paragraaf": "3.33",
+  "kop": "3 Beschrijvingen marktprocessen > 3.33 Opvragen gegevens ten behoeve van analyse niet gecollecteerde meterstand P4",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 67,
+  "referentie": "img/msp.pdf-0067-03.png"
+ },
+ {
+  "bijlage": "B1082",
+  "sleutel": "TL-3.33",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Opvragen gegevens ten behoeve van analyse niet gecollecteerde meterstand P4",
+  "paragraaf": "3.33",
+  "kop": "3 Beschrijvingen marktprocessen > 3.33 Opvragen gegevens ten behoeve van analyse niet gecollecteerde meterstand P4",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 68,
+  "referentie": "img/msp.pdf-0068-00.png"
+ },
+ {
+  "bijlage": "B1083",
+  "sleutel": "MP-3.34",
+  "type": "marktprocesplaat",
+  "titel": "Procesplaat Aanpassen meetmethode grote aansluitingen gas in AR op verzoek van MV",
+  "paragraaf": "3.34",
+  "kop": "3 Beschrijvingen marktprocessen > 3.34 Aanpassen meetmethode grote aansluitingen gas in AR op verzoek van MV",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 68,
+  "referentie": "img/msp.pdf-0068-03.png"
+ },
+ {
+  "bijlage": "B1084",
+  "sleutel": "TL-3.34",
+  "type": "tijdlijn",
+  "titel": "Tijdlijn Aanpassen meetmethode grote aansluitingen gas in AR op verzoek van MV",
+  "paragraaf": "3.34",
+  "kop": "3 Beschrijvingen marktprocessen > 3.34 Aanpassen meetmethode grote aansluitingen gas in AR op verzoek van MV",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 68,
+  "referentie": "img/msp.pdf-0068-04.png"
+ },
+ {
+  "bijlage": "B1085",
+  "sleutel": "SP0037-KA-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0037 KA-GA – Registreren, wijzigen, deactiveren leverancier in leveranciersregister",
+  "paragraaf": "4.1.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.1 SP0037 Beheer leveranciers- en netbeheerdersregister > 4.1.2 Procesbeschrijving KA en GA > Registreren, wijzigen, deactiveren leverancier in leveranciersregister",
+  "variant": "KA-GA",
+  "sp_codes": [
+   "SP0037"
+  ],
+  "pdf_pagina": 71,
+  "referentie": "img/msp.pdf-0071-02.png"
+ },
+ {
+  "bijlage": "B1086",
+  "sleutel": "SP0048-KA-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0048 KA-GA",
+  "paragraaf": "4.2.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.2 SP0048 Raadplegen aansluitingenregister ter identificatie van het allocatiepunt > 4.2.2 Procesbeschrijving KA en GA",
+  "variant": "KA-GA",
+  "sp_codes": [
+   "SP0048"
+  ],
+  "pdf_pagina": 76,
+  "referentie": "img/msp.pdf-0076-06.png"
+ },
+ {
+  "bijlage": "B1087",
+  "sleutel": "SP0052-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0052 KA",
+  "paragraaf": "4.3.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.3 SP0052 Opvragen gegevens ten behoeve van pre-mutatiefase > 4.3.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0052"
+  ],
+  "pdf_pagina": 79,
+  "referentie": "img/msp.pdf-0079-07.png"
+ },
+ {
+  "bijlage": "B1088",
+  "sleutel": "SP0054-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0054 KA",
+  "paragraaf": "4.4.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.4 SP0054 Raadplegen Toegankelijk Meetregister in pre-mutatiefase > 4.4.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0054"
+  ],
+  "pdf_pagina": 84,
+  "referentie": "img/msp.pdf-0084-01.png"
+ },
+ {
+  "bijlage": "B1089",
+  "sleutel": "SP0055-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0055 KA",
+  "paragraaf": "4.5.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.5 SP0055 Raadplegen Toegankelijk Meetregister door (actuele) leverancier > 4.5.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0055"
+  ],
+  "pdf_pagina": 87,
+  "referentie": "img/msp.pdf-0087-10.png"
+ },
+ {
+  "bijlage": "B1090",
+  "sleutel": "SP0022-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0022 KA",
+  "paragraaf": "4.6.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.6 SP0022, SP0092, SP0095, SP0024, SP0053: Contracteindegegevens > 4.6.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0022",
+   "SP0024",
+   "SP0053",
+   "SP0092",
+   "SP0095"
+  ],
+  "pdf_pagina": 90,
+  "referentie": "img/msp.pdf-0090-10.png"
+ },
+ {
+  "bijlage": "B1091",
+  "sleutel": "SP0053-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0053 KA",
+  "paragraaf": "4.6.6",
+  "kop": "4 Beschrijvingen subprocessen > 4.6 SP0022, SP0092, SP0095, SP0024, SP0053: Contracteindegegevens > 4.6.6 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0022",
+   "SP0024",
+   "SP0053",
+   "SP0092",
+   "SP0095"
+  ],
+  "pdf_pagina": 92,
+  "referentie": "img/msp.pdf-0092-05.png"
+ },
+ {
+  "bijlage": "B1092",
+  "sleutel": "SP0022-KA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0022 KA",
+  "paragraaf": "4.6.10",
+  "kop": "4 Beschrijvingen subprocessen > 4.6 SP0022, SP0092, SP0095, SP0024, SP0053: Contracteindegegevens > 4.6.10 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0022",
+   "SP0024",
+   "SP0053",
+   "SP0092",
+   "SP0095"
+  ],
+  "pdf_pagina": 94,
+  "referentie": "img/msp.pdf-0094-01.png"
+ },
+ {
+  "bijlage": "B1093",
+  "sleutel": "SP0092-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0092 KA",
+  "paragraaf": "4.6.14",
+  "kop": "4 Beschrijvingen subprocessen > 4.6 SP0022, SP0092, SP0095, SP0024, SP0053: Contracteindegegevens > 4.6.14 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0022",
+   "SP0024",
+   "SP0053",
+   "SP0092",
+   "SP0095"
+  ],
+  "pdf_pagina": 95,
+  "referentie": "img/msp.pdf-0095-09.png"
+ },
+ {
+  "bijlage": "B1094",
+  "sleutel": "SP0095-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0095 KA",
+  "paragraaf": "4.6.18",
+  "kop": "4 Beschrijvingen subprocessen > 4.6 SP0022, SP0092, SP0095, SP0024, SP0053: Contracteindegegevens > 4.6.18 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0022",
+   "SP0024",
+   "SP0053",
+   "SP0092",
+   "SP0095"
+  ],
+  "pdf_pagina": 98,
+  "referentie": "img/msp.pdf-0098-01.png"
+ },
+ {
+  "bijlage": "B1095",
+  "sleutel": "SP0024-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0024 KA",
+  "paragraaf": "4.6.22",
+  "kop": "4 Beschrijvingen subprocessen > 4.6 SP0022, SP0092, SP0095, SP0024, SP0053: Contracteindegegevens > 4.6.22 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0022",
+   "SP0024",
+   "SP0053",
+   "SP0092",
+   "SP0095"
+  ],
+  "pdf_pagina": 99,
+  "referentie": "img/msp.pdf-0099-01.png"
+ },
+ {
+  "bijlage": "B1096",
+  "sleutel": "SP0004-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0004 KA",
+  "paragraaf": "4.7.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.7 SP0004 Indienen en beoordelen ‘melding inhuizing’ > 4.7.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0004"
+  ],
+  "pdf_pagina": 101,
+  "referentie": "img/msp.pdf-0101-01.png"
+ },
+ {
+  "bijlage": "B1097",
+  "sleutel": "SP0004-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0004 GA",
+  "paragraaf": "4.7.5",
+  "kop": "4 Beschrijvingen subprocessen > 4.7 SP0004 Indienen en beoordelen ‘melding inhuizing’ > 4.7.5 Procesbeschrijving GA",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0004"
+  ],
+  "pdf_pagina": 103,
+  "referentie": "img/msp.pdf-0103-09.png"
+ },
+ {
+  "bijlage": "B1098",
+  "sleutel": "SP0007-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0007 KA",
+  "paragraaf": "4.8.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.8 SP0007 Indienen en beoordelen ‘melding leverancierswitch’ > 4.8.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0007"
+  ],
+  "pdf_pagina": 109,
+  "referentie": "img/msp.pdf-0109-02.png"
+ },
+ {
+  "bijlage": "B1099",
+  "sleutel": "SP0007-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0007 GA",
+  "paragraaf": "4.8.5",
+  "kop": "4 Beschrijvingen subprocessen > 4.8 SP0007 Indienen en beoordelen ‘melding leverancierswitch’ > 4.8.5 Procesbeschrijving GA",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0007"
+  ],
+  "pdf_pagina": 112,
+  "referentie": "img/msp.pdf-0112-01.png"
+ },
+ {
+  "bijlage": "B1100",
+  "sleutel": "SP0005-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0005 KA",
+  "paragraaf": "4.9.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.9 SP0005 Indienen en beoordelen ‘melding uithuizing’ > 4.9.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0005"
+  ],
+  "pdf_pagina": 117,
+  "referentie": "img/msp.pdf-0117-10.png"
+ },
+ {
+  "bijlage": "B1101",
+  "sleutel": "SP0005-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0005 GA",
+  "paragraaf": "4.9.5",
+  "kop": "4 Beschrijvingen subprocessen > 4.9 SP0005 Indienen en beoordelen ‘melding uithuizing’ > 4.9.5 Procesbeschrijving GA",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0005"
+  ],
+  "pdf_pagina": 119,
+  "referentie": "img/msp.pdf-0119-08.png"
+ },
+ {
+  "bijlage": "B1102",
+  "sleutel": "SP0036-KA",
+  "type": "subprocesplaat (BPMN) | controle: meerdere SP-codes in paragraaf",
+  "titel": "Subprocesplaat SP0036 KA – Melding vooraankondiging einde levering",
+  "paragraaf": "4.10.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.10 SP0036 & SP0006: Indienen ‘melding vooraankondiging einde levering’ (KA) & Indienen en beoordelen ‘melding einde levering’ (KA & GA) > 4.10.2 Procesbeschrijvingen KA > Melding vooraankondiging einde levering",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0006",
+   "SP0036"
+  ],
+  "pdf_pagina": 123,
+  "referentie": "img/msp.pdf-0123-05.png"
+ },
+ {
+  "bijlage": "B1103",
+  "sleutel": "SP0036-KA-2",
+  "type": "subprocesplaat (BPMN) | controle: meerdere SP-codes in paragraaf",
+  "titel": "Subprocesplaat SP0036 KA – Melding einde levering",
+  "paragraaf": "4.10.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.10 SP0036 & SP0006: Indienen ‘melding vooraankondiging einde levering’ (KA) & Indienen en beoordelen ‘melding einde levering’ (KA & GA) > 4.10.2 Procesbeschrijvingen KA > Melding vooraankondiging einde levering > Melding einde levering",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0006",
+   "SP0036"
+  ],
+  "pdf_pagina": 123,
+  "referentie": "img/msp.pdf-0123-10.png"
+ },
+ {
+  "bijlage": "B1104",
+  "sleutel": "SP0036-GA",
+  "type": "subprocesplaat (BPMN) | controle: meerdere SP-codes in paragraaf",
+  "titel": "Subprocesplaat SP0036 GA",
+  "paragraaf": "4.10.5",
+  "kop": "4 Beschrijvingen subprocessen > 4.10 SP0036 & SP0006: Indienen ‘melding vooraankondiging einde levering’ (KA) & Indienen en beoordelen ‘melding einde levering’ (KA & GA) > 4.10.5 Procesbeschrijving GA",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0006",
+   "SP0036"
+  ],
+  "pdf_pagina": 126,
+  "referentie": "img/msp.pdf-0126-01.png"
+ },
+ {
+  "bijlage": "B1105",
+  "sleutel": "SP0008-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0008 KA",
+  "paragraaf": "4.11.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.11 SP0008 Indienen en beoordelen ‘melding individuele BRP-switch’ > 4.11.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0008"
+  ],
+  "pdf_pagina": 130,
+  "referentie": "img/msp.pdf-0130-01.png"
+ },
+ {
+  "bijlage": "B1106",
+  "sleutel": "SP0008-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0008 GA",
+  "paragraaf": "4.11.5",
+  "kop": "4 Beschrijvingen subprocessen > 4.11 SP0008 Indienen en beoordelen ‘melding individuele BRP-switch’ > 4.11.5 Procesbeschrijving GA",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0008"
+  ],
+  "pdf_pagina": 132,
+  "referentie": "img/msp.pdf-0132-01.png"
+ },
+ {
+  "bijlage": "B1107",
+  "sleutel": "SP0039-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0039 KA",
+  "paragraaf": "4.12.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.12 SP0039 Melden en beoordelen ‘melding bulk BRP-switch’ > 4.12.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0039"
+  ],
+  "pdf_pagina": 137,
+  "referentie": "img/msp.pdf-0137-01.png"
+ },
+ {
+  "bijlage": "B1108",
+  "sleutel": "SP0009-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0009 GA",
+  "paragraaf": "4.13.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.13 SP0009 Indienen en beoordelen ‘melding meetverantwoordelijke partij switch’ met eventuele wissel van de meetinrichting > 4.13.2 Procesbeschrijving GA",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0009"
+  ],
+  "pdf_pagina": 144,
+  "referentie": "img/msp.pdf-0144-01.png"
+ },
+ {
+  "bijlage": "B1109",
+  "sleutel": "SP0010-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0010 GA",
+  "paragraaf": "4.14.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.14 SP0010 Indienen en beoordelen ‘melding beëindigen meetverantwoordelijkheid’ > 4.14.2 Procesbeschrijving GA",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0010"
+  ],
+  "pdf_pagina": 148,
+  "referentie": "img/msp.pdf-0148-01.png"
+ },
+ {
+  "bijlage": "B1110",
+  "sleutel": "SP0013-KA",
+  "type": "subprocesplaat (BPMN) | controle: meerdere SP-codes in paragraaf",
+  "titel": "Subprocesplaat SP0013 KA",
+  "paragraaf": "4.15.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.15 SP0013 & SP0003: Distribueren stamgegevens na mutatie & Opvragen stamgegevens allocatiepunt > 4.15.2 Procesbeschrijving KA Distribueren stamgegevens na mutatie",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0003",
+   "SP0013"
+  ],
+  "pdf_pagina": 151,
+  "referentie": "img/msp.pdf-0151-13.png"
+ },
+ {
+  "bijlage": "B1111",
+  "sleutel": "SP0013-GA",
+  "type": "subprocesplaat (BPMN) | controle: meerdere SP-codes in paragraaf",
+  "titel": "Subprocesplaat SP0013 GA",
+  "paragraaf": "4.15.5",
+  "kop": "4 Beschrijvingen subprocessen > 4.15 SP0013 & SP0003: Distribueren stamgegevens na mutatie & Opvragen stamgegevens allocatiepunt > 4.15.5 Procesbeschrijving GA Distribueren stamgegevens na mutatie",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0003",
+   "SP0013"
+  ],
+  "pdf_pagina": 152,
+  "referentie": "img/msp.pdf-0152-12.png"
+ },
+ {
+  "bijlage": "B1112",
+  "sleutel": "SP0003-KA",
+  "type": "subprocesplaat (BPMN) | controle: meerdere SP-codes in paragraaf",
+  "titel": "Subprocesplaat SP0003 KA",
+  "paragraaf": "4.15.7",
+  "kop": "4 Beschrijvingen subprocessen > 4.15 SP0013 & SP0003: Distribueren stamgegevens na mutatie & Opvragen stamgegevens allocatiepunt > 4.15.7 Procesbeschrijving KA Opvragen stamgegevens allocatiepunt",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0003",
+   "SP0013"
+  ],
+  "pdf_pagina": 153,
+  "referentie": "img/msp.pdf-0153-07.png"
+ },
+ {
+  "bijlage": "B1113",
+  "sleutel": "SP0003-GA",
+  "type": "subprocesplaat (BPMN) | controle: meerdere SP-codes in paragraaf",
+  "titel": "Subprocesplaat SP0003 GA",
+  "paragraaf": "4.15.9",
+  "kop": "4 Beschrijvingen subprocessen > 4.15 SP0013 & SP0003: Distribueren stamgegevens na mutatie & Opvragen stamgegevens allocatiepunt > 4.15.9 Procesbeschrijving GA Opvragen stamgegevens allocatiepunt",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0003",
+   "SP0013"
+  ],
+  "pdf_pagina": 154,
+  "referentie": "img/msp.pdf-0154-03.png"
+ },
+ {
+  "bijlage": "B1114",
+  "sleutel": "SP0015-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0015 KA – Vaststellen en communiceren vastgestelde meterstanden KA door leverancier",
+  "paragraaf": "4.16.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.16 SP0015 Vaststellen en communiceren meterstanden en volume(s) KA > 4.16.2 Procesbeschrijvingen KA > Vaststellen en communiceren vastgestelde meterstanden KA door leverancier",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0015"
+  ],
+  "pdf_pagina": 161,
+  "referentie": "img/msp.pdf-0161-10.png"
+ },
+ {
+  "bijlage": "B1115",
+  "sleutel": "SP0015-KA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0015 KA – Ontvangen vastgestelde meterstand KA door systeembeheerder",
+  "paragraaf": "4.16.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.16 SP0015 Vaststellen en communiceren meterstanden en volume(s) KA > 4.16.2 Procesbeschrijvingen KA > Ontvangen vastgestelde meterstand KA door systeembeheerder",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0015"
+  ],
+  "pdf_pagina": 162,
+  "referentie": "img/msp.pdf-0162-06.png"
+ },
+ {
+  "bijlage": "B1116",
+  "sleutel": "SP0015-KA-3",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0015 KA – Vaststellen en berekenen meterstanden KA door systeembeheerder",
+  "paragraaf": "4.16.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.16 SP0015 Vaststellen en communiceren meterstanden en volume(s) KA > 4.16.2 Procesbeschrijvingen KA > Vaststellen en berekenen meterstanden KA door systeembeheerder",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0015"
+  ],
+  "pdf_pagina": 163,
+  "referentie": "img/msp.pdf-0163-19.png"
+ },
+ {
+  "bijlage": "B1117",
+  "sleutel": "SP0015-KA-4",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0015 KA – SJ (SJV/SJA/SJI) bepalen",
+  "paragraaf": "4.16.6",
+  "kop": "4 Beschrijvingen subprocessen > 4.16 SP0015 Vaststellen en communiceren meterstanden en volume(s) KA > 4.16.6 Procesbeschrijvingen KA > SJ (SJV/SJA/SJI) bepalen",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0015"
+  ],
+  "pdf_pagina": 167,
+  "referentie": "img/msp.pdf-0167-02.png"
+ },
+ {
+  "bijlage": "B1118",
+  "sleutel": "SP0015-KA-5",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0015 KA – Volume bepalen voor reconciliatie",
+  "paragraaf": "4.16.6",
+  "kop": "4 Beschrijvingen subprocessen > 4.16 SP0015 Vaststellen en communiceren meterstanden en volume(s) KA > 4.16.6 Procesbeschrijvingen KA > Volume bepalen voor reconciliatie",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0015"
+  ],
+  "pdf_pagina": 167,
+  "referentie": "img/msp.pdf-0167-06.png"
+ },
+ {
+  "bijlage": "B1119",
+  "sleutel": "SP0015-KA-6",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0015 KA – Distributie meetgegevens en opnemen in TMR",
+  "paragraaf": "4.16.6",
+  "kop": "4 Beschrijvingen subprocessen > 4.16 SP0015 Vaststellen en communiceren meterstanden en volume(s) KA > 4.16.6 Procesbeschrijvingen KA > Distributie meetgegevens en opnemen in TMR",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0015"
+  ],
+  "pdf_pagina": 168,
+  "referentie": "img/msp.pdf-0168-01.png"
+ },
+ {
+  "bijlage": "B1120",
+  "sleutel": "SP0015-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0015 GA – Collecteren meterstand GA",
+  "paragraaf": "4.16.10",
+  "kop": "4 Beschrijvingen subprocessen > 4.16 SP0015 Vaststellen en communiceren meterstanden en volume(s) KA > 4.16.10 Procesbeschrijvingen GA > Collecteren meterstand GA",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0015"
+  ],
+  "pdf_pagina": 170,
+  "referentie": "img/msp.pdf-0170-12.png"
+ },
+ {
+  "bijlage": "B1121",
+  "sleutel": "SP0015-GA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0015 GA – Berekenen volume en versturen vastgestelde meterstand en volume",
+  "paragraaf": "4.16.10",
+  "kop": "4 Beschrijvingen subprocessen > 4.16 SP0015 Vaststellen en communiceren meterstanden en volume(s) KA > 4.16.10 Procesbeschrijvingen GA > Berekenen volume en versturen vastgestelde meterstand en volume",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0015"
+  ],
+  "pdf_pagina": 171,
+  "referentie": "img/msp.pdf-0171-06.png"
+ },
+ {
+  "bijlage": "B1122",
+  "sleutel": "SP0015-GA-3",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0015 GA – SJ (SJV/SJA/SJI)-bepaling",
+  "paragraaf": "4.16.14",
+  "kop": "4 Beschrijvingen subprocessen > 4.16 SP0015 Vaststellen en communiceren meterstanden en volume(s) KA > 4.16.14 Procesbeschrijvingen GA > SJ (SJV/SJA/SJI)-bepaling",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0015"
+  ],
+  "pdf_pagina": 174,
+  "referentie": "img/msp.pdf-0174-08.png"
+ },
+ {
+  "bijlage": "B1123",
+  "sleutel": "SP0015-GA-4",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0015 GA – Distributie meetgegevens",
+  "paragraaf": "4.16.14",
+  "kop": "4 Beschrijvingen subprocessen > 4.16 SP0015 Vaststellen en communiceren meterstanden en volume(s) KA > 4.16.14 Procesbeschrijvingen GA > Distributie meetgegevens",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0015"
+  ],
+  "pdf_pagina": 175,
+  "referentie": "img/msp.pdf-0175-01.png"
+ },
+ {
+  "bijlage": "B1124",
+  "sleutel": "SP0015-GA-5",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0015 GA – Procesbeschrijving",
+  "paragraaf": "4.16.14",
+  "kop": "4 Beschrijvingen subprocessen > 4.16 SP0015 Vaststellen en communiceren meterstanden en volume(s) KA > 4.16.14 Procesbeschrijvingen GA > Procesbeschrijving",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0015"
+  ],
+  "pdf_pagina": 176,
+  "referentie": "img/msp.pdf-0176-13.png"
+ },
+ {
+  "bijlage": "B1125",
+  "sleutel": "SP0015a-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0015a KA",
+  "paragraaf": "4.17.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.17 SP0015a Fysieke opname > 4.17.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0015a"
+  ],
+  "pdf_pagina": 179,
+  "referentie": "img/msp.pdf-0179-01.png"
+ },
+ {
+  "bijlage": "B1126",
+  "sleutel": "SP0019-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0019 KA – Controleren meterstand en eventueel melden meterstand in dispuut",
+  "paragraaf": "4.18.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.18 SP0019 Dispuut over meterstanden > 4.18.2 Procesbeschrijvingen KA > Controleren meterstand en eventueel melden meterstand in dispuut",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0019"
+  ],
+  "pdf_pagina": 180,
+  "referentie": "img/msp.pdf-0180-12.png"
+ },
+ {
+  "bijlage": "B1127",
+  "sleutel": "SP0019-KA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0019 KA – Beoordelen van de melding dispuut en de alternatieve stand",
+  "paragraaf": "4.18.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.18 SP0019 Dispuut over meterstanden > 4.18.2 Procesbeschrijvingen KA > Beoordelen van de melding dispuut en de alternatieve stand",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0019"
+  ],
+  "pdf_pagina": 182,
+  "referentie": "img/msp.pdf-0182-03.png"
+ },
+ {
+  "bijlage": "B1128",
+  "sleutel": "SP0019-KA-3",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0019 KA – Overleg met wederpartij",
+  "paragraaf": "4.18.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.18 SP0019 Dispuut over meterstanden > 4.18.2 Procesbeschrijvingen KA > Overleg met wederpartij",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0019"
+  ],
+  "pdf_pagina": 183,
+  "referentie": "img/msp.pdf-0183-01.png"
+ },
+ {
+  "bijlage": "B1129",
+  "sleutel": "SP0019-KA-4",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0019 KA – Fysieke opname op basis kosten ongelijk",
+  "paragraaf": "4.18.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.18 SP0019 Dispuut over meterstanden > 4.18.2 Procesbeschrijvingen KA > Fysieke opname op basis kosten ongelijk",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0019"
+  ],
+  "pdf_pagina": 183,
+  "referentie": "img/msp.pdf-0183-06.png"
+ },
+ {
+  "bijlage": "B1130",
+  "sleutel": "SP0019-KA-5",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0019 KA – Fysieke opname op basis kosten ongelijk",
+  "paragraaf": "4.18.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.18 SP0019 Dispuut over meterstanden > 4.18.2 Procesbeschrijvingen KA > Fysieke opname op basis kosten ongelijk",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0019"
+  ],
+  "pdf_pagina": 184,
+  "referentie": "img/msp.pdf-0184-04.png"
+ },
+ {
+  "bijlage": "B1131",
+  "sleutel": "SP0019-KA-6",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0019 KA – Vaststellen meterstand na dispuut",
+  "paragraaf": "4.18.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.18 SP0019 Dispuut over meterstanden > 4.18.2 Procesbeschrijvingen KA > Vaststellen meterstand na dispuut",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0019"
+  ],
+  "pdf_pagina": 184,
+  "referentie": "img/msp.pdf-0184-10.png"
+ },
+ {
+  "bijlage": "B1132",
+  "sleutel": "SP0016-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0016 GA",
+  "paragraaf": "4.19.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.19 SP0016 Uitwisselen historische meetgegevens > 4.19.2 Procesbeschrijving GA",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0016"
+  ],
+  "pdf_pagina": 187,
+  "referentie": "img/msp.pdf-0187-01.png"
+ },
+ {
+  "bijlage": "B1133",
+  "sleutel": "PB-4.20-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat zonder SP-code (§4.20.2) KA",
+  "paragraaf": "4.20.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.20 Mutatie van de meetinrichting KA > 4.20.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 189,
+  "referentie": "img/msp.pdf-0189-16.png"
+ },
+ {
+  "bijlage": "B1134",
+  "sleutel": "SP0101-KA-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0101 KA-GA – Aanleggen van een allocatiepunt KA en GA",
+  "paragraaf": "4.21.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.21 SP0101 Aanleggen, in- en uit bedrijf nemen en verwijderen allocatiepunt > 4.21.2 Procesbeschrijvingen KA en GA > Aanleggen van een allocatiepunt KA en GA",
+  "variant": "KA-GA",
+  "sp_codes": [
+   "SP0101"
+  ],
+  "pdf_pagina": 193,
+  "referentie": "img/msp.pdf-0193-09.png"
+ },
+ {
+  "bijlage": "B1135",
+  "sleutel": "SP0101-KA-GA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0101 KA-GA – In bedrijf nemen van een allocatiepunt KA en GA",
+  "paragraaf": "4.21.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.21 SP0101 Aanleggen, in- en uit bedrijf nemen en verwijderen allocatiepunt > 4.21.2 Procesbeschrijvingen KA en GA > In bedrijf nemen van een allocatiepunt KA en GA",
+  "variant": "KA-GA",
+  "sp_codes": [
+   "SP0101"
+  ],
+  "pdf_pagina": 193,
+  "referentie": "img/msp.pdf-0193-13.png"
+ },
+ {
+  "bijlage": "B1136",
+  "sleutel": "SP0101-KA-GA-3",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0101 KA-GA – Uit bedrijf nemen van een allocatiepunt KA en GA",
+  "paragraaf": "4.21.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.21 SP0101 Aanleggen, in- en uit bedrijf nemen en verwijderen allocatiepunt > 4.21.2 Procesbeschrijvingen KA en GA > Uit bedrijf nemen van een allocatiepunt KA en GA",
+  "variant": "KA-GA",
+  "sp_codes": [
+   "SP0101"
+  ],
+  "pdf_pagina": 194,
+  "referentie": "img/msp.pdf-0194-01.png"
+ },
+ {
+  "bijlage": "B1137",
+  "sleutel": "SP0101-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0101 KA – Verwijderen van een allocatiepunt KA",
+  "paragraaf": "4.21.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.21 SP0101 Aanleggen, in- en uit bedrijf nemen en verwijderen allocatiepunt > 4.21.2 Procesbeschrijvingen KA en GA > Verwijderen van een allocatiepunt KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0101"
+  ],
+  "pdf_pagina": 194,
+  "referentie": "img/msp.pdf-0194-05.png"
+ },
+ {
+  "bijlage": "B1138",
+  "sleutel": "SP0101-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0101 GA – Verwijderen van een allocatiepunt GA",
+  "paragraaf": "4.21.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.21 SP0101 Aanleggen, in- en uit bedrijf nemen en verwijderen allocatiepunt > 4.21.2 Procesbeschrijvingen KA en GA > Verwijderen van een allocatiepunt GA",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0101"
+  ],
+  "pdf_pagina": 195,
+  "referentie": "img/msp.pdf-0195-01.png"
+ },
+ {
+  "bijlage": "B1139",
+  "sleutel": "SP0017-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0017 GA – Opleveren gegevens primaire deel van de meetinrichting",
+  "paragraaf": "4.22.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.22 SP0017 Uitwisselen gegevens primaire deel van de meetinrichting > 4.22.2 Procesbeschrijvingen GA > Opleveren gegevens primaire deel van de meetinrichting",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0017"
+  ],
+  "pdf_pagina": 197,
+  "referentie": "img/msp.pdf-0197-02.png"
+ },
+ {
+  "bijlage": "B1140",
+  "sleutel": "SP0017-GA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0017 GA – Opvragen gegevens primaire deel van de meetinrichting",
+  "paragraaf": "4.22.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.22 SP0017 Uitwisselen gegevens primaire deel van de meetinrichting > 4.22.2 Procesbeschrijvingen GA > Opvragen gegevens primaire deel van de meetinrichting",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0017"
+  ],
+  "pdf_pagina": 197,
+  "referentie": "img/msp.pdf-0197-09.png"
+ },
+ {
+  "bijlage": "B1141",
+  "sleutel": "SP0018-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0018 GA – Melden en beoordelen opvraag stamgegevens meetinrichting",
+  "paragraaf": "4.23.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.23 SP0018 Uitwisselen stamgegevens meetinrichting > 4.23.2 Procesbeschrijvingen GA > Melden en beoordelen opvraag stamgegevens meetinrichting",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0018"
+  ],
+  "pdf_pagina": 200,
+  "referentie": "img/msp.pdf-0200-11.png"
+ },
+ {
+  "bijlage": "B1142",
+  "sleutel": "SP0018-GA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0018 GA – Opleveren stamgegevens meetinrichting",
+  "paragraaf": "4.23.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.23 SP0018 Uitwisselen stamgegevens meetinrichting > 4.23.2 Procesbeschrijvingen GA > Opleveren stamgegevens meetinrichting",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0018"
+  ],
+  "pdf_pagina": 201,
+  "referentie": "img/msp.pdf-0201-08.png"
+ },
+ {
+  "bijlage": "B1143",
+  "sleutel": "SP0011-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0011 KA",
+  "paragraaf": "4.24.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.24 SP0011 Indienen ‘melding wijzigen gegevens aangeslotene > 4.24.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0011"
+  ],
+  "pdf_pagina": 203,
+  "referentie": "img/msp.pdf-0203-07.png"
+ },
+ {
+  "bijlage": "B1144",
+  "sleutel": "SP0026-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0026 KA – Opvragen gegevens getroffen allocatiepunten",
+  "paragraaf": "4.25.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.25 SP0026 Opvragen gegevens ten behoeve van compensatievergoedingen > 4.25.2 Procesbeschrijvingen KA > Opvragen gegevens getroffen allocatiepunten",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0026"
+  ],
+  "pdf_pagina": 206,
+  "referentie": "img/msp.pdf-0206-02.png"
+ },
+ {
+  "bijlage": "B1145",
+  "sleutel": "SP0026-KA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0026 KA – Aanleveren gevraagde gegevens",
+  "paragraaf": "4.25.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.25 SP0026 Opvragen gegevens ten behoeve van compensatievergoedingen > 4.25.2 Procesbeschrijvingen KA > Aanleveren gevraagde gegevens",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0026"
+  ],
+  "pdf_pagina": 206,
+  "referentie": "img/msp.pdf-0206-08.png"
+ },
+ {
+  "bijlage": "B1146",
+  "sleutel": "SP0102-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0102 KA",
+  "paragraaf": "4.26.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.26 SP0102 Administratief aan- en uitzetten van een meetinrichting met communicatiefunctionaliteit > 4.26.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0102"
+  ],
+  "pdf_pagina": 208,
+  "referentie": "img/msp.pdf-0208-16.png"
+ },
+ {
+  "bijlage": "B1147",
+  "sleutel": "SP0043-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0043 KA",
+  "paragraaf": "4.27.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.27 SP0043 Indienen en beoordelen ‘wijzigen allocatiemethode’ > 4.27.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0043"
+  ],
+  "pdf_pagina": 210,
+  "referentie": "img/msp.pdf-0210-01.png"
+ },
+ {
+  "bijlage": "B1148",
+  "sleutel": "SP0020-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0020 KA – Indienen en beoordelen verzoek",
+  "paragraaf": "4.28.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.28 SP0020 Collecteren meterstand P4 > 4.28.2 Procesbeschrijvingen KA > Indienen en beoordelen verzoek",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0020"
+  ],
+  "pdf_pagina": 212,
+  "referentie": "img/msp.pdf-0212-03.png"
+ },
+ {
+  "bijlage": "B1149",
+  "sleutel": "SP0020-KA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0020 KA – Verwerken verzoek",
+  "paragraaf": "4.28.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.28 SP0020 Collecteren meterstand P4 > 4.28.2 Procesbeschrijvingen KA > Verwerken verzoek",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0020"
+  ],
+  "pdf_pagina": 213,
+  "referentie": "img/msp.pdf-0213-01.png"
+ },
+ {
+  "bijlage": "B1150",
+  "sleutel": "SP0020-KA-3",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0020 KA – Ophalen resultaat",
+  "paragraaf": "4.28.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.28 SP0020 Collecteren meterstand P4 > 4.28.2 Procesbeschrijvingen KA > Ophalen resultaat",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0020"
+  ],
+  "pdf_pagina": 214,
+  "referentie": "img/msp.pdf-0214-16.png"
+ },
+ {
+  "bijlage": "B1151",
+  "sleutel": "SP0035-KA",
+  "type": "subprocesplaat (BPMN) | controle: meerdere SP-codes in paragraaf",
+  "titel": "Subprocesplaat SP0035 KA",
+  "paragraaf": "4.29.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.29 SP0025 Opstellen Verplichting en SP0035 Verzenden Verplichting en ophalen resultaat (Facturering en afdracht) > 4.29.2 Procesbeschrijving Facturering en afdracht KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0025",
+   "SP0035"
+  ],
+  "pdf_pagina": 219,
+  "referentie": "img/msp.pdf-0219-01.png"
+ },
+ {
+  "bijlage": "B1152",
+  "sleutel": "SP0038-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0038 KA",
+  "paragraaf": "4.30.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.30 SP0038 Communicatie systeemtarieven > 4.30.2 Procesbeschrijving Communiceren te hanteren systeemtarieven KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0038"
+  ],
+  "pdf_pagina": 221,
+  "referentie": "img/msp.pdf-0221-01.png"
+ },
+ {
+  "bijlage": "B1153",
+  "sleutel": "SP0038-KA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0038 KA",
+  "paragraaf": "4.30.3",
+  "kop": "4 Beschrijvingen subprocessen > 4.30 SP0038 Communicatie systeemtarieven > 4.30.3 Procesbeschrijving Communiceren nieuw tarief KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0038"
+  ],
+  "pdf_pagina": 221,
+  "referentie": "img/msp.pdf-0221-12.png"
+ },
+ {
+  "bijlage": "B1154",
+  "sleutel": "SP0103-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0103 KA",
+  "paragraaf": "4.31.1",
+  "kop": "4 Beschrijvingen subprocessen > 4.31 SP0103 Verrekenen > 4.31.1 Procesbeschrijving Verrekenen KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0103"
+  ],
+  "pdf_pagina": 224,
+  "referentie": "img/msp.pdf-0224-01.png"
+ },
+ {
+  "bijlage": "B1155",
+  "sleutel": "SP0103-KA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0103 KA – Factuur verrekenen",
+  "paragraaf": "4.31.1",
+  "kop": "4 Beschrijvingen subprocessen > 4.31 SP0103 Verrekenen > 4.31.1 Procesbeschrijving Verrekenen KA > Factuur verrekenen",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0103"
+  ],
+  "pdf_pagina": 225,
+  "referentie": "img/msp.pdf-0225-23.png"
+ },
+ {
+  "bijlage": "B1156",
+  "sleutel": "SP0103-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0103 GA – Procesbeschrijving",
+  "paragraaf": "4.31.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.31 SP0103 Verrekenen > 4.31.2 Procesbeschrijving Verrekenen GA > Procesbeschrijving",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0103"
+  ],
+  "pdf_pagina": 228,
+  "referentie": "img/msp.pdf-0228-07.png"
+ },
+ {
+  "bijlage": "B1157",
+  "sleutel": "SP0103-GA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0103 GA – Factuur verrekenen",
+  "paragraaf": "4.31.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.31 SP0103 Verrekenen > 4.31.2 Procesbeschrijving Verrekenen GA > Factuur verrekenen",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0103"
+  ],
+  "pdf_pagina": 230,
+  "referentie": "img/msp.pdf-0230-01.png"
+ },
+ {
+  "bijlage": "B1158",
+  "sleutel": "SP0060-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0060 GA",
+  "paragraaf": "4.32.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.32 SP0060 Informeren over meetcorrectie GA > 4.32.2 Procesbeschrijving",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0060"
+  ],
+  "pdf_pagina": 233,
+  "referentie": "img/msp.pdf-0233-01.png"
+ },
+ {
+  "bijlage": "B1159",
+  "sleutel": "SP0090-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0090 GA – Valideren gecorrigeerde meetgegevens en vaststellen te verrekenen volumes Procesbeschrijving",
+  "paragraaf": "4.33.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.33 SP0090 Verrekenen meetfouten GA > 4.33.2 Procesbeschrijvingen > Valideren gecorrigeerde meetgegevens en vaststellen te verrekenen volumes Procesbeschrijving",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0090"
+  ],
+  "pdf_pagina": 238,
+  "referentie": "img/msp.pdf-0238-06.png"
+ },
+ {
+  "bijlage": "B1160",
+  "sleutel": "SP0090-GA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0090 GA – Procesbeschrijving",
+  "paragraaf": "4.33.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.33 SP0090 Verrekenen meetfouten GA > 4.33.2 Procesbeschrijvingen > Procesbeschrijving",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0090"
+  ],
+  "pdf_pagina": 239,
+  "referentie": "img/msp.pdf-0239-06.png"
+ },
+ {
+  "bijlage": "B1161",
+  "sleutel": "SP0090-GA-3",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0090 GA – Procesbeschrijving",
+  "paragraaf": "4.33.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.33 SP0090 Verrekenen meetfouten GA > 4.33.2 Procesbeschrijvingen > Procesbeschrijving",
+  "variant": "GA",
+  "sp_codes": [
+   "SP0090"
+  ],
+  "pdf_pagina": 240,
+  "referentie": "img/msp.pdf-0240-18.png"
+ },
+ {
+  "bijlage": "B1162",
+  "sleutel": "SP0071-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0071 KA",
+  "paragraaf": "4.34.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.34 SP0071 Eenmalig aanleveren historische dagovergangmeterstanden van een allocatiepunt > 4.34.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0071"
+  ],
+  "pdf_pagina": 243,
+  "referentie": "img/msp.pdf-0243-01.png"
+ },
+ {
+  "bijlage": "B1163",
+  "sleutel": "SP0073-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0073 KA",
+  "paragraaf": "4.35.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.35 SP0073 Continu aanleveren dagovergangmeterstanden van een allocatiepunt > 4.35.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0073"
+  ],
+  "pdf_pagina": 245,
+  "referentie": "img/msp.pdf-0245-03.png"
+ },
+ {
+  "bijlage": "B1164",
+  "sleutel": "SP0072-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0072 KA",
+  "paragraaf": "4.36.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.36 SP0072 Ophalen gereedstaande dagovergangmeterstanden > 4.36.2 Procesbeschrijving KV",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0072"
+  ],
+  "pdf_pagina": 246,
+  "referentie": "img/msp.pdf-0246-11.png"
+ },
+ {
+  "bijlage": "B1165",
+  "sleutel": "SP0072-KA-2",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0072 KA",
+  "paragraaf": "4.37.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.37 SP0072 Beëindigen continue aanlevering dagovergangmeterstanden van een allocatiepunt > 4.37.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0072"
+  ],
+  "pdf_pagina": 248,
+  "referentie": "img/msp.pdf-0248-02.png"
+ },
+ {
+  "bijlage": "B1166",
+  "sleutel": "SP0100-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat SP0100 KA",
+  "paragraaf": "4.38.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.38 SP0100 Controleren meetinrichtingnummer KA > 4.38.2 Procesbeschrijving",
+  "variant": "KA",
+  "sp_codes": [
+   "SP0100"
+  ],
+  "pdf_pagina": 249,
+  "referentie": "img/msp.pdf-0249-08.png"
+ },
+ {
+  "bijlage": "B1167",
+  "sleutel": "PB-4.39-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat zonder SP-code (§4.39.2) GA",
+  "paragraaf": "4.39.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.39 Wijzigen meet- en allocatiemethode GA elektriciteit in aansluitingenregister op verzoek van MV > 4.39.2 Procesbeschrijving GA",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 251,
+  "referentie": "img/msp.pdf-0251-01.png"
+ },
+ {
+  "bijlage": "B1168",
+  "sleutel": "PB-4.40",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat zonder SP-code (§4.40.2)",
+  "paragraaf": "4.40.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.40 Collecteren intervalmeterstanden en berekenen allocatievolumes SMA > 4.40.2 Procesbeschrijving",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 253,
+  "referentie": "img/msp.pdf-0253-04.png"
+ },
+ {
+  "bijlage": "B1169",
+  "sleutel": "PB-4.41-KA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat zonder SP-code (§4.41.2) KA",
+  "paragraaf": "4.41.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.41 Verzoeken vaststellen meterstand KA > 4.41.2 Procesbeschrijving KA",
+  "variant": "KA",
+  "sp_codes": [],
+  "pdf_pagina": 255,
+  "referentie": "img/msp.pdf-0255-01.png"
+ },
+ {
+  "bijlage": "B1170",
+  "sleutel": "PB-4.42",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat zonder SP-code (§4.42.2)",
+  "paragraaf": "4.42.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.42 Opvragen gegevens ten behoeve van analyse niet gecollecteerde meterstand P4 > 4.42.2 Procesbeschrijving",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 256,
+  "referentie": "img/msp.pdf-0256-10.png"
+ },
+ {
+  "bijlage": "B1171",
+  "sleutel": "PB-4.43-GA",
+  "type": "subprocesplaat (BPMN)",
+  "titel": "Subprocesplaat zonder SP-code (§4.43.2) GA",
+  "paragraaf": "4.43.2",
+  "kop": "4 Beschrijvingen subprocessen > 4.43 Aanpassen meetmethode GA gas in AR op verzoek van MV > 4.43.2 Procesbeschrijving",
+  "variant": "GA",
+  "sp_codes": [],
+  "pdf_pagina": 259,
+  "referentie": "img/msp.pdf-0259-04.png"
+ },
+ {
+  "bijlage": "B1172",
+  "sleutel": "FIG-toelichting-op-het-begri-1",
+  "type": "overige figuur",
+  "titel": "Wijzigen stamgegevens",
+  "paragraaf": "",
+  "kop": "Bijlage Toelichting op het begrip datum in processen > Wijzigen stamgegevens",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 261,
+  "referentie": "img/msp.pdf-0261-03.png"
+ },
+ {
+  "bijlage": "B1173",
+  "sleutel": "FIG-toelichting-op-het-begri-2",
+  "type": "overige figuur",
+  "titel": "Opvragen stamgegevens",
+  "paragraaf": "",
+  "kop": "Bijlage Toelichting op het begrip datum in processen > Opvragen stamgegevens",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 261,
+  "referentie": "img/msp.pdf-0261-06.png"
+ },
+ {
+  "bijlage": "B1174",
+  "sleutel": "FIG-toelichting-op-het-begri-3",
+  "type": "overige figuur",
+  "titel": "Opvragen gegevens van allocatiepunten ten behoeve van identificatie van het allocatiepunt, premutatie en actief op het allocatiepunt",
+  "paragraaf": "",
+  "kop": "Bijlage Toelichting op het begrip datum in processen > Opvragen gegevens van allocatiepunten ten behoeve van identificatie van het allocatiepunt, premutatie en actief op het allocatiepunt",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 261,
+  "referentie": "img/msp.pdf-0261-14.png"
+ },
+ {
+  "bijlage": "B1175",
+  "sleutel": "FIG-toelichting-op-het-begri-4",
+  "type": "overige figuur",
+  "titel": "Uithuizing",
+  "paragraaf": "",
+  "kop": "Bijlage Toelichting op het begrip datum in processen > Uithuizing",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 262,
+  "referentie": "img/msp.pdf-0262-02.png"
+ },
+ {
+  "bijlage": "B1176",
+  "sleutel": "FIG-toelichting-op-het-begri-5",
+  "type": "overige figuur",
+  "titel": "Inhuizing",
+  "paragraaf": "",
+  "kop": "Bijlage Toelichting op het begrip datum in processen > Inhuizing",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 262,
+  "referentie": "img/msp.pdf-0262-05.png"
+ },
+ {
+  "bijlage": "B1177",
+  "sleutel": "FIG-toelichting-op-het-begri-6",
+  "type": "overige figuur",
+  "titel": "Leverancierswitch",
+  "paragraaf": "",
+  "kop": "Bijlage Toelichting op het begrip datum in processen > Leverancierswitch",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 263,
+  "referentie": "img/msp.pdf-0263-02.png"
+ },
+ {
+  "bijlage": "B1178",
+  "sleutel": "FIG-toelichting-op-het-begri-7",
+  "type": "overige figuur",
+  "titel": "Vaststellen meterstand",
+  "paragraaf": "",
+  "kop": "Bijlage Toelichting op het begrip datum in processen > Vaststellen meterstand",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 263,
+  "referentie": "img/msp.pdf-0263-05.png"
+ },
+ {
+  "bijlage": "B1179",
+  "sleutel": "FIG-uniforme-procedure-kruis-1",
+  "type": "overige figuur",
+  "titel": "Bijlage Uniforme procedure Kruisende processen",
+  "paragraaf": "",
+  "kop": "Bijlage Uniforme procedure Kruisende processen",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 264,
+  "referentie": "img/msp.pdf-0264-04.png"
+ },
+ {
+  "bijlage": "B1180",
+  "sleutel": "FIG-uniforme-procedure-kruis-2",
+  "type": "overige figuur",
+  "titel": "Bijlage Uniforme procedure Kruisende processen",
+  "paragraaf": "",
+  "kop": "Bijlage Uniforme procedure Kruisende processen",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 264,
+  "referentie": "img/msp.pdf-0264-05.png"
+ },
+ {
+  "bijlage": "B1181",
+  "sleutel": "FIG-uniforme-procedure-kruis-3",
+  "type": "overige figuur",
+  "titel": "Bijlage Uniforme procedure Kruisende processen",
+  "paragraaf": "",
+  "kop": "Bijlage Uniforme procedure Kruisende processen",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 265,
+  "referentie": "img/msp.pdf-0265-00.png"
+ },
+ {
+  "bijlage": "B1182",
+  "sleutel": "FIG-uniforme-procedure-kruis-4",
+  "type": "overige figuur",
+  "titel": "Bijlage Uniforme procedure Kruisende processen",
+  "paragraaf": "",
+  "kop": "Bijlage Uniforme procedure Kruisende processen",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 265,
+  "referentie": "img/msp.pdf-0265-03.png"
+ },
+ {
+  "bijlage": "B1183",
+  "sleutel": "FIG-uniforme-procedure-kruis-5",
+  "type": "overige figuur",
+  "titel": "Bijlage Uniforme procedure Kruisende processen",
+  "paragraaf": "",
+  "kop": "Bijlage Uniforme procedure Kruisende processen",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 265,
+  "referentie": "img/msp.pdf-0265-05.png"
+ },
+ {
+  "bijlage": "B1184",
+  "sleutel": "FIG-uniforme-procedure-kruis-6",
+  "type": "overige figuur",
+  "titel": "Bijlage Uniforme procedure Kruisende processen",
+  "paragraaf": "",
+  "kop": "Bijlage Uniforme procedure Kruisende processen",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 266,
+  "referentie": "img/msp.pdf-0266-01.png"
+ },
+ {
+  "bijlage": "B1185",
+  "sleutel": "FIG-uniforme-procedure-kruis-7",
+  "type": "overige figuur",
+  "titel": "Bijlage Uniforme procedure Kruisende processen",
+  "paragraaf": "",
+  "kop": "Bijlage Uniforme procedure Kruisende processen",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 266,
+  "referentie": "img/msp.pdf-0266-03.png"
+ },
+ {
+  "bijlage": "B1186",
+  "sleutel": "FIG-doelbinding-in-de-vereis-1",
+  "type": "overige figuur",
+  "titel": "Bijlage Doelbinding in de vereiste gegevenssets voor leveranciers en balanceringsverantwoordelijken",
+  "paragraaf": "",
+  "kop": "Bijlage Doelbinding in de vereiste gegevenssets voor leveranciers en balanceringsverantwoordelijken",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 271,
+  "referentie": "img/msp.pdf-0271-01.png"
+ },
+ {
+  "bijlage": "B1187",
+  "sleutel": "FIG-correctieprocessen-1",
+  "type": "overige figuur",
+  "titel": "Mutatie van de meetinrichting",
+  "paragraaf": "",
+  "kop": "Bijlage Correctieprocessen > Mutatie van de meetinrichting",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 285,
+  "referentie": "img/msp.pdf-0285-01.png"
+ },
+ {
+  "bijlage": "B1188",
+  "sleutel": "FIG-correctieprocessen-2",
+  "type": "overige figuur",
+  "titel": "Werkwijze I (Verwerking te late mutatie van de meetinrichting met berekende/afwijkende meterstanden):",
+  "paragraaf": "",
+  "kop": "Bijlage Correctieprocessen > <u>Werkwijze I (Verwerking te late mutatie van de meetinrichting met berekende/afwijkende meterstanden):</u>",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 287,
+  "referentie": "img/msp.pdf-0287-04.png"
+ },
+ {
+  "bijlage": "B1189",
+  "sleutel": "FIG-correctieprocessen-3",
+  "type": "overige figuur",
+  "titel": "Werkwijze III (Mutatie van de meetinrichting op verkeerde EAN-code geregistreerd):",
+  "paragraaf": "",
+  "kop": "Bijlage Correctieprocessen > <u>Werkwijze III (Mutatie van de meetinrichting op verkeerde EAN-code geregistreerd):</u>",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 288,
+  "referentie": "img/msp.pdf-0288-05.png"
+ },
+ {
+  "bijlage": "B1190",
+  "sleutel": "FIG-correctieprocessen-4",
+  "type": "overige figuur",
+  "titel": "Werkwijze IV (Foutief aangesloten meetinrichting elektriciteit):",
+  "paragraaf": "",
+  "kop": "Bijlage Correctieprocessen > <u>Werkwijze IV (Foutief aangesloten meetinrichting elektriciteit):</u>",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 289,
+  "referentie": "img/msp.pdf-0289-16.png"
+ },
+ {
+  "bijlage": "B1191",
+  "sleutel": "FIG-correctieprocessen-5",
+  "type": "overige figuur",
+  "titel": "Werkwijze IV (Foutief aangesloten meetinrichting elektriciteit):",
+  "paragraaf": "",
+  "kop": "Bijlage Correctieprocessen > <u>Werkwijze IV (Foutief aangesloten meetinrichting elektriciteit):</u>",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 290,
+  "referentie": "img/msp.pdf-0290-00.png"
+ },
+ {
+  "bijlage": "B1192",
+  "sleutel": "FIG-format-btw-verrekening-1",
+  "type": "overige figuur",
+  "titel": "Bijlage Format BTW-verrekening",
+  "paragraaf": "",
+  "kop": "Bijlage Format BTW-verrekening",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 297,
+  "referentie": "img/msp.pdf-0297-01.png"
+ },
+ {
+  "bijlage": "B1193",
+  "sleutel": "FIG-format-btw-verrekening-2",
+  "type": "overige figuur",
+  "titel": "maximale capaciteit G2C",
+  "paragraaf": "",
+  "kop": "Bijlage Format BTW-verrekening > maximale capaciteit G2C",
+  "variant": null,
+  "sp_codes": [],
+  "pdf_pagina": 298,
+  "referentie": "img/msp.pdf-0298-06.png"
+ }
+]
